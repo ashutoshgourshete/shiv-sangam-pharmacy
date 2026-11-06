@@ -415,7 +415,7 @@
               Session 2026-27
             </div>
 
-            <div class="flex items-center gap-4 pb-6 border-b border-white/15">
+            <div class="flex items-center gap-4 pb-4 border-b border-white/15">
               <div class="w-14 h-14 rounded-2xl bg-white p-2 shadow-inner flex items-center justify-center flex-shrink-0">
                 <img src="assets/trust-logo.svg" alt="Trust Logo" class="w-full h-full object-contain">
               </div>
@@ -423,6 +423,26 @@
                 <h4 class="font-extrabold text-white text-lg leading-tight">Shiv Sangam Campus</h4>
                 <p class="text-xs text-amber-300 font-medium">Vivekanand Yuvak Mandal (Latur / Pune)</p>
                 <p class="text-[11px] text-slate-300">Phursungi, Tal. Haveli, Dist. Pune - 412308</p>
+              </div>
+            </div>
+
+            <!-- College Campus Building Real Photograph -->
+            <div class="relative rounded-2xl overflow-hidden my-4 border border-white/20 shadow-2xl group cursor-pointer" onclick="document.getElementById('gallery').scrollIntoView({behavior: 'smooth'})">
+              <img src="assets/campus-building.jpg" alt="Shiv Sangam Pune College of Physiotherapy Campus Building" class="w-full h-48 sm:h-56 object-cover object-center group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
+              
+              <div class="absolute top-3 left-3 flex items-center gap-2">
+                <span class="px-2.5 py-1 bg-amber-500 text-slate-950 font-black text-[10px] rounded-full uppercase tracking-wider shadow">
+                  <i class="fas fa-building mr-1"></i> Official Campus
+                </span>
+                <span class="px-2.5 py-1 bg-black/60 backdrop-blur-md text-white font-bold text-[10px] rounded-full border border-white/20">
+                  <i class="fas fa-location-dot text-rose-400 mr-1"></i> Phursungi, Pune
+                </span>
+              </div>
+
+              <div class="absolute bottom-3 left-3 right-3 text-left">
+                <h5 class="text-white font-extrabold text-sm drop-shadow" data-i18n="hero_building_title">Shiv Sangam College Building</h5>
+                <p class="text-slate-300 text-[11px] drop-shadow" data-i18n="hero_building_sub">Dedicated Academic &amp; Clinical Hospital Training Complex</p>
               </div>
             </div>
 
@@ -1322,6 +1342,24 @@
       <!-- Gallery Grid -->
       <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         
+        <!-- Official College Campus Building Photo -->
+        <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all cursor-pointer border-2 border-amber-400/40 bg-white" data-category="campus" data-title="Shiv Sangam Pune College of Physiotherapy - Main Campus Building" data-desc="Dedicated multi-storeyed academic and clinical physiotherapy complex located at Phursungi, Tal. Haveli, Dist. Pune - 412308. Houses state-of-the-art physiotherapy laboratories, lecture halls, OPD wings, and administrative cells.">
+          <div class="h-56 relative overflow-hidden bg-slate-900">
+            <img src="assets/campus-building.jpg" alt="Shiv Sangam Pune College of Physiotherapy Main Building" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20"></div>
+            <span class="absolute top-3 left-3 px-2.5 py-1 bg-amber-500 text-slate-950 font-black text-[10px] rounded-full uppercase tracking-wider shadow">
+              <i class="fas fa-building mr-1"></i> Official Campus
+            </span>
+            <span class="absolute bottom-3 left-3 text-white text-xs font-bold drop-shadow flex items-center gap-1.5">
+              <i class="fas fa-location-dot text-amber-400"></i> Phursungi, Pune
+            </span>
+          </div>
+          <div class="p-4 bg-white">
+            <h5 class="font-bold text-slate-900 text-sm" data-i18n="gallery_building_title">Main College Building</h5>
+            <p class="text-xs text-slate-500 mt-0.5" data-i18n="gallery_building_sub">Spacious multi-storeyed academic &amp; clinical therapy complex</p>
+          </div>
+        </div>
+
         <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer border border-slate-200 bg-slate-100" data-category="labs" data-title="Electrotherapy &amp; Traction Lab" data-desc="Features Shortwave Diathermy, Laser, Ultrasound, and computerized traction units.">
           <div class="h-56 bg-gradient-to-br from-amber-700/80 to-slate-900 flex flex-col items-center justify-center text-white p-6 text-center">
             <i class="fas fa-bolt text-5xl mb-3 text-amber-300 group-hover:scale-110 transition-transform"></i>
@@ -1722,29 +1760,42 @@
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
-        <!-- Pune Campus Address Card -->
-        <div class="lg:col-span-4 academic-card p-6 border-t-4 border-t-sky-600 space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-lg">
-              <i class="fas fa-building-columns"></i>
-            </div>
-            <div>
-              <h4 class="font-extrabold text-slate-900 text-base" data-i18n="contact_pune_title">College Campus (Pune)</h4>
-              <span class="text-xs text-sky-700 font-semibold" data-i18n="contact_pune_sub">Shiv Sangam Educational Complex</span>
+        <!-- Pune Campus Address Card with Real Building Image -->
+        <div class="lg:col-span-4 academic-card overflow-hidden border-t-4 border-t-sky-600 shadow-md">
+          <div class="relative h-44 overflow-hidden group">
+            <img src="assets/campus-building.jpg" alt="Shiv Sangam Pune College Building" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent"></div>
+            <span class="absolute top-3 left-3 px-2.5 py-1 bg-amber-500 text-slate-950 font-black text-[10px] rounded-full uppercase tracking-wider shadow">
+              <i class="fas fa-building mr-1"></i> Official Campus
+            </span>
+            <div class="absolute bottom-2.5 left-3 right-3 text-white">
+              <div class="font-extrabold text-xs drop-shadow">Shiv Sangam Pune Campus</div>
+              <div class="text-[11px] text-slate-300 drop-shadow">Phursungi, Tal. Haveli, Dist. Pune</div>
             </div>
           </div>
-          <p class="text-xs text-slate-600 leading-relaxed" data-i18n="contact_pune_addr" data-i18n-html="true">
-            <strong>Address:</strong> Phursungi, Tal. Haveli, Dist. Pune, Maharashtra - 412308.<br>
-            (Adjacent to Hadapsar and Saswad Road corridor, Pune Metropolitan Area)
-          </p>
-          <div class="pt-2 border-t border-slate-100 space-y-2 text-xs text-slate-700">
-            <div><strong class="text-slate-900">Helpline:</strong> <a href="tel:8805029999" class="text-sky-700 font-bold hover:underline">+91 88050 29999</a></div>
-            <div><strong class="text-slate-900">WhatsApp:</strong> <a href="https://wa.me/919422472393" target="_blank" class="text-emerald-700 font-bold hover:underline">+91 94224 72393</a></div>
-            <div><strong class="text-slate-900">Email:</strong> <a href="mailto:vivekanandym@gmail.com" class="text-sky-700 hover:underline">vivekanandym@gmail.com</a></div>
+          <div class="p-6 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-lg flex-shrink-0">
+                <i class="fas fa-building-columns"></i>
+              </div>
+              <div>
+                <h4 class="font-extrabold text-slate-900 text-base" data-i18n="contact_pune_title">College Campus (Pune)</h4>
+                <span class="text-xs text-sky-700 font-semibold" data-i18n="contact_pune_sub">Shiv Sangam Educational Complex</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed" data-i18n="contact_pune_addr" data-i18n-html="true">
+              <strong>Address:</strong> Phursungi, Tal. Haveli, Dist. Pune, Maharashtra - 412308.<br>
+              (Adjacent to Hadapsar and Saswad Road corridor, Pune Metropolitan Area)
+            </p>
+            <div class="pt-2 border-t border-slate-100 space-y-2 text-xs text-slate-700">
+              <div><strong class="text-slate-900">Helpline:</strong> <a href="tel:8805029999" class="text-sky-700 font-bold hover:underline">+91 88050 29999</a></div>
+              <div><strong class="text-slate-900">WhatsApp:</strong> <a href="https://wa.me/919422472393" target="_blank" class="text-emerald-700 font-bold hover:underline">+91 94224 72393</a></div>
+              <div><strong class="text-slate-900">Email:</strong> <a href="mailto:vivekanandym@gmail.com" class="text-sky-700 hover:underline">vivekanandym@gmail.com</a></div>
+            </div>
+            <a href="https://wa.me/918805029999?text=Hello%20College%20Campus,%20I%20want%20to%20visit%20Phursungi%20Pune" target="_blank" class="block text-center py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition-all">
+              <i class="fab fa-whatsapp mr-1 text-emerald-400"></i> WhatsApp Campus Desk
+            </a>
           </div>
-          <a href="https://wa.me/918805029999?text=Hello%20College%20Campus,%20I%20want%20to%20visit%20Phursungi%20Pune" target="_blank" class="block text-center py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition-all">
-            <i class="fab fa-whatsapp mr-1 text-emerald-400"></i> WhatsApp Campus Desk
-          </a>
         </div>
 
         <!-- Latur Headquarters Card -->
@@ -1906,6 +1957,53 @@
     <i class="fab fa-whatsapp whatsapp-float-icon"></i>
     <span class="hidden sm:inline">WhatsApp Help</span>
   </a>
+
+  <!-- ================= VIRTUAL ADMISSION ASSISTANT CHATBOT ================= -->
+  <div id="chatbot-launcher" class="chatbot-launcher no-print" role="button" tabindex="0" aria-label="Open Virtual Admission Assistant">
+    <div class="relative">
+      <i class="fas fa-robot text-base text-amber-400"></i>
+      <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-400 rounded-full border-2 border-[#0A2540]"></span>
+    </div>
+    <span class="text-xs font-bold" data-i18n="chatbot_launcher_btn">Admission AI Bot</span>
+  </div>
+
+  <div id="chatbot-window" class="chatbot-window hidden no-print" role="dialog" aria-modal="true" aria-label="Virtual Admission Assistant">
+    <!-- Chatbot Header -->
+    <div class="bg-gradient-to-r from-[#0A2540] via-slate-900 to-[#0284C7] text-white p-3.5 flex items-center justify-between border-b border-white/10 flex-shrink-0">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-full bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-amber-300 relative">
+          <i class="fas fa-user-doctor text-xs"></i>
+          <span class="absolute bottom-0 right-0 w-2 h-2 bg-emerald-400 rounded-full border border-slate-900"></span>
+        </div>
+        <div>
+          <h4 class="text-xs font-extrabold tracking-wide" data-i18n="chatbot_title">Shiv Sangam Assistant</h4>
+          <p class="text-[10px] text-emerald-300 font-medium" data-i18n="chatbot_status">● Online | B.P.Th Admissions</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-1">
+        <button id="chatbot-refresh-btn" class="text-slate-300 hover:text-white p-1 rounded text-xs transition-colors" title="Reset Chat">
+          <i class="fas fa-rotate-right"></i>
+        </button>
+        <button id="chatbot-close-btn" class="text-slate-300 hover:text-white p-1 rounded text-xs transition-colors" title="Close">
+          <i class="fas fa-times text-sm"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Chat Messages Scroll Area -->
+    <div id="chatbot-messages" class="flex-1 p-3.5 overflow-y-auto space-y-3 bg-slate-50 text-xs"></div>
+
+    <!-- Quick Question Chips -->
+    <div id="chatbot-chips" class="p-2 bg-white border-t border-slate-100 flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-shrink-0"></div>
+
+    <!-- Input Form -->
+    <form id="chatbot-form" class="p-2.5 bg-white border-t border-slate-200 flex items-center gap-2 flex-shrink-0">
+      <input type="text" id="chatbot-input" placeholder="Ask question (fees, eligibility, hospital)..." class="flex-1 bg-slate-100 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:bg-white" autocomplete="off">
+      <button type="submit" class="w-8 h-8 rounded-xl bg-[#0A2540] hover:bg-sky-700 text-white flex items-center justify-center text-xs transition-all flex-shrink-0">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
 
   <!-- ================= PROVISIONAL ENQUIRY ACKNOWLEDGEMENT MODAL ================= -->
   <div id="receipt-modal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4">

@@ -201,7 +201,16 @@ const translations = {
     contact_pune_addr: "<strong>Address:</strong> Phursungi, Tal. Haveli, Dist. Pune, Maharashtra - 412308.<br>(Adjacent to Hadapsar and Saswad Road corridor, Pune Metropolitan Area)",
     contact_latur_title: "Trust Head Office (Latur)",
     contact_latur_sub: "Vivekanand Yuvak Mandal",
-    contact_latur_addr: "<strong>Headquarters:</strong> Shivaji Road, Ganj Golai, Latur - 413512, Maharashtra.<br>(Registration No: MAHA/10600/Latur)"
+    contact_latur_addr: "<strong>Headquarters:</strong> Shivaji Road, Ganj Golai, Latur - 413512, Maharashtra.<br>(Registration No: MAHA/10600/Latur)",
+
+    // Real Building & Chatbot
+    hero_building_title: "Shiv Sangam College Building",
+    hero_building_sub: "Dedicated Academic & Clinical Hospital Training Complex (Phursungi, Pune)",
+    gallery_building_title: "Main Campus Building",
+    gallery_building_sub: "Spacious multi-storeyed academic & clinical therapy complex",
+    chatbot_launcher_btn: "Admission Assistant",
+    chatbot_title: "Shiv Sangam Assistant",
+    chatbot_status: "● Online | B.P.Th Admissions"
   },
 
   mr: {
@@ -400,7 +409,16 @@ const translations = {
     contact_pune_addr: "<strong>पत्ता:</strong> फुरसुंगी (Phursungi), ता. हवेली, जि. पुणे, महाराष्ट्र - ४१२३०८.<br>(हडपसर व सासवड रोड नजीक, पुणे शहर परिसर)",
     contact_latur_title: "संस्था मुख्यालय (लातूर)",
     contact_latur_sub: "विवेकानंद युवक मंडळ",
-    contact_latur_addr: "<strong>मुख्यालय:</strong> शिवाजी रोड, गंज गोलाई, लातूर - ४१३५१२, महाराष्ट्र.<br>(नोंदणी क्रमांक: MAHA/10600/Latur)"
+    contact_latur_addr: "<strong>मुख्यालय:</strong> शिवाजी रोड, गंज गोलाई, लातूर - ४१३५१२, महाराष्ट्र.<br>(नोंदणी क्रमांक: MAHA/10600/Latur)",
+
+    // Real Building & Chatbot (Marathi)
+    hero_building_title: "शिव संगम कॉलेज इमारत",
+    hero_building_sub: "स्वतंत्र शैक्षणिक व हॉस्पिटल क्लिनिकल प्रशिक्षण कॉम्प्लेक्स (फुरसुंगी, पुणे)",
+    gallery_building_title: "मुख्य कॉलेज इमारत",
+    gallery_building_sub: "अद्ययावत बहुमजली शैक्षणिक व फिजिओथेरपी प्रशिक्षण संकुल",
+    chatbot_launcher_btn: "प्रवेश सहाय्यक AI",
+    chatbot_title: "शिव संगम प्रवेश सहाय्यक",
+    chatbot_status: "● ऑनलाईन | B.P.Th प्रवेश मदत"
   }
 };
 
@@ -707,11 +725,18 @@ function setupGalleryLightbox() {
     item.addEventListener('click', () => {
       const title = item.getAttribute('data-title');
       const desc = item.getAttribute('data-desc');
-      const previewHtml = item.querySelector('div').outerHTML;
+      const imgEl = item.querySelector('img');
 
       if (titleEl) titleEl.textContent = title;
       if (descEl) descEl.textContent = desc;
-      if (imgContainer) imgContainer.innerHTML = previewHtml;
+      if (imgContainer) {
+        if (imgEl) {
+          imgContainer.innerHTML = `<img src="${imgEl.src}" alt="${title}" class="w-full h-full object-contain">`;
+        } else {
+          const previewHtml = item.querySelector('div').outerHTML;
+          imgContainer.innerHTML = previewHtml;
+        }
+      }
       if (modal) modal.classList.remove('hidden');
     });
   });
@@ -918,6 +943,161 @@ function exportLeadsToCSV() {
   document.body.removeChild(link);
 }
 
+// Virtual Admission Assistant Chatbot
+function setupChatbot() {
+  const launcher = document.getElementById('chatbot-launcher');
+  const windowEl = document.getElementById('chatbot-window');
+  const closeBtn = document.getElementById('chatbot-close-btn');
+  const refreshBtn = document.getElementById('chatbot-refresh-btn');
+  const messagesEl = document.getElementById('chatbot-messages');
+  const chipsEl = document.getElementById('chatbot-chips');
+  const form = document.getElementById('chatbot-form');
+  const input = document.getElementById('chatbot-input');
+
+  if (!launcher || !windowEl) return;
+
+  const quickQuestions = [
+    { key: 'bpth', labelEn: '🎓 B.P.Th Course', labelMr: '🎓 B.P.Th माहिती' },
+    { key: 'eligibility', labelEn: '📋 Eligibility & NEET', labelMr: '📋 पात्रता व NEET' },
+    { key: 'hospital', labelEn: '🏥 Hospital Postings', labelMr: '🏥 हॉस्पिटल ट्रेनिंग' },
+    { key: 'campus', labelEn: '🏢 Campus Building', labelMr: '🏢 कॉलेज इमारत व पत्ता' },
+    { key: 'fees', labelEn: '💰 Fees & Scholarship', labelMr: '💰 फी व शिष्यवृत्ती' },
+    { key: 'whatsapp', labelEn: '💬 Talk on WhatsApp', labelMr: '💬 व्हॉट्सॲपवर बोला' }
+  ];
+
+  const botResponses = {
+    bpth: {
+      en: "<strong>Bachelor of Physiotherapy (B.P.Th)</strong> is a 4.5-year undergraduate health sciences degree program (4 years academic coursework + 6 months mandatory rotatory clinical internship) under MUHS Nashik norms.<br><br>The program equips students in orthopedic, neurological, pediatric, cardio-pulmonary, and sports physical rehabilitation.",
+      mr: "<strong>बॅचलर ऑफ फिजियोथेरपी (B.P.Th)</strong> हा ४.५ वर्षांचा आरोग्य विज्ञान पदवी अभ्यासक्रम आहे (४ वर्षे शैक्षणिक अभ्यास + ६ महिने फिरती क्लिनिकल इंटर्नशिप).<br><br>हा अभ्यासक्रम MUHS नाशिक मानकांनुसार ऑर्थोपेडिक, न्यूरोलॉजी, बालरोग, व क्रीडा पुनर्वसन क्षेत्रात तज्ज्ञ घडवतो."
+    },
+    eligibility: {
+      en: "<strong>B.P.Th Admission Eligibility:</strong><br>• 10+2 / HSC Science Passed with Physics, Chemistry & Biology (PCB).<br>• Minimum PCB Aggregate: <strong>50% for Open Category</strong>, <strong>40% for Reserved Category</strong>.<br>• Valid non-zero score in <strong>NEET-UG</strong> entrance exam.",
+      mr: "<strong>B.P.Th प्रवेश पात्रता:</strong><br>• १२ वी विज्ञान (HSC Science) PCB (भौतिकशास्त्र, रसायनशास्त्र, जीवशास्त्र) विषयासह उत्तीर्ण.<br>• किमान PCB गुण: <strong>खुला प्रवर्ग - ५०%</strong>, <strong>मागास प्रवर्ग - ४०%</strong>.<br>• <strong>NEET-UG</strong> परीक्षेत प्रविष्ट व वैध गुण आवश्यक."
+    },
+    hospital: {
+      en: "<strong>Attached Multi-Specialty Hospital Postings:</strong><br>Our students get daily clinical bedside postings, hands-on patient evaluation in live OPDs, post-surgical mobilization in ICU wards, and specialized sports injury treatment.",
+      mr: "<strong>संलग्न मल्टी-स्पेशालिटी हॉस्पिटल क्लिनिकल प्रशिक्षण:</strong><br>विद्यार्थ्यांना दररोज थेट ओपीडी, शस्त्रक्रियेनंतरची आयसीयू वॉर्ड फिजिओथेरपी, ऑर्थोपेडिक व न्यूरो रुग्णांवर प्रात्यक्षिक उपचारांचे सखोल प्रशिक्षण मिळते."
+    },
+    campus: {
+      en: "<strong>Official College Campus & Building:</strong><br>Shiv Sangam Pune College of Physiotherapy<br>Phursungi, Tal. Haveli, Dist. Pune - 412308 (Adjacent to Hadapsar & Saswad Road Corridor).<br>Managed by Vivekanand Yuvak Mandal (Reg: MAHA/10600/Latur).<br><br>Features a spacious multi-storeyed academic building, Electrotherapy & Kinesiotherapy labs, and digital health library.",
+      mr: "<strong>महाविद्यालय इमारत व कॅम्पस पत्ता:</strong><br>शिव संगम पुणे कॉलेज ऑफ फिजियोथेरपी<br>फुरसुंगी, ता. हवेली, जि. पुणे - ४१२३०८ (हडपसर-सासवड रोड कॉरिडोअर).<br>संस्था: विवेकानंद युवक मंडळ (नोंदणी क्र: MAHA/10600/Latur).<br><br>अत्याधुनिक बहुमजली इमारत, सुसज्ज इलेक्ट्रोथेरपी व किनेसिओथेरपी लॅब आणि डिजिटल लायब्ररी."
+    },
+    fees: {
+      en: "<strong>Fee Structure & Government Scholarships:</strong><br>Fees are structured as per Fees Regulating Authority (FRA) & DMER Maharashtra norms.<br>All Government Scholarships (EBC, SC, ST, OBC, VJNT, SEBC, Minority) and Freeships are strictly applicable for eligible students.",
+      mr: "<strong>फी रचना व शासकीय शिष्यवृत्ती:</strong><br>शिक्षण शुल्क नियंत्रण समिती (FRA) व महाराष्ट्र शासनाच्या नियमांनुसार फी निश्चित केली जाते.<br>SC, ST, OBC, VJNT, EBC, SEBC व अल्पसंख्याक प्रवर्गातील सर्व शासकीय शिष्यवृत्ती व सवलती नियमानुसार लागू आहेत."
+    },
+    whatsapp: {
+      en: "Connect directly with our <strong>Admission Counseling Desk</strong> on WhatsApp:<br><a href='https://wa.me/918805029999?text=Hello%20Admission%20Officer,%20I%20need%20details%20for%20BPTh%20Admission%202026-27' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 text-white rounded-lg font-bold text-xs mt-2 shadow hover:bg-emerald-700 transition-all'><i class='fab fa-whatsapp'></i> Click to Chat on WhatsApp (+91 88050 29999)</a>",
+      mr: "आमच्या <strong>प्रवेश समुपदेशन कक्षाशी</strong> थेट व्हॉट्सॲपवर संपर्क साधा:<br><a href='https://wa.me/918805029999?text=Hello%20Admission%20Officer,%20I%20need%20details%20for%20BPTh%20Admission%202026-27' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 text-white rounded-lg font-bold text-xs mt-2 shadow hover:bg-emerald-700 transition-all'><i class='fab fa-whatsapp'></i> व्हॉट्सॲपवर बोला (+91 88050 29999)</a>"
+    }
+  };
+
+  function appendBotMessage(html) {
+    if (!messagesEl) return;
+    const msgDiv = document.createElement('div');
+    msgDiv.className = 'chat-bubble-bot';
+    msgDiv.innerHTML = html;
+    messagesEl.appendChild(msgDiv);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+
+  function appendUserMessage(text) {
+    if (!messagesEl) return;
+    const msgDiv = document.createElement('div');
+    msgDiv.className = 'chat-bubble-user';
+    msgDiv.textContent = text;
+    messagesEl.appendChild(msgDiv);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+
+  function renderChips() {
+    if (!chipsEl) return;
+    chipsEl.innerHTML = '';
+    quickQuestions.forEach(q => {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'chat-chip flex-shrink-0';
+      chip.textContent = currentLang === 'mr' ? q.labelMr : q.labelEn;
+      chip.addEventListener('click', () => {
+        handleUserQuery(q.key, chip.textContent);
+      });
+      chipsEl.appendChild(chip);
+    });
+  }
+
+  function initChat() {
+    if (!messagesEl) return;
+    messagesEl.innerHTML = '';
+    const welcome = currentLang === 'mr'
+      ? "👋 <strong>नमस्कार!</strong> शिव संगम पुणे कॉलेज ऑफ फिजियोथेरपी (B.P.Th) च्या प्रवेश सहाय्यक कक्षात आपले स्वागत आहे. मी आपल्याला प्रवेश पात्रता, हॉस्पिटल ट्रेनिंग, कॅम्पस इमारत किंवा शुल्काविषयी माहिती देऊ शकतो. खालील पर्यायांवर क्लिक करा किंवा आपला प्रश्न विचारा."
+      : "👋 <strong>Hello & Welcome!</strong> I am your Admission Assistant for <strong>Shiv Sangam Pune College of Physiotherapy (B.P.Th)</strong>. How can I assist you today? Select a question below or type your inquiry.";
+    appendBotMessage(welcome);
+    renderChips();
+  }
+
+  function handleUserQuery(keyOrText, displayText) {
+    const query = (displayText || keyOrText).trim();
+    if (!query) return;
+    appendUserMessage(query);
+
+    setTimeout(() => {
+      const qLower = keyOrText.toLowerCase();
+      let response = null;
+
+      if (qLower === 'bpth' || qLower.includes('bpth') || qLower.includes('course') || qLower.includes('duration') || qLower.includes('अभ्यासक्रम') || qLower.includes('कालावधी')) {
+        response = botResponses.bpth[currentLang] || botResponses.bpth.en;
+      } else if (qLower === 'eligibility' || qLower.includes('eligib') || qLower.includes('neet') || qLower.includes('mark') || qLower.includes('पात्रता') || qLower.includes('टक्के')) {
+        response = botResponses.eligibility[currentLang] || botResponses.eligibility.en;
+      } else if (qLower === 'hospital' || qLower.includes('hosp') || qLower.includes('bedside') || qLower.includes('हॉस्पिटल') || qLower.includes('प्रशिक्षण')) {
+        response = botResponses.hospital[currentLang] || botResponses.hospital.en;
+      } else if (qLower === 'campus' || qLower.includes('campus') || qLower.includes('address') || qLower.includes('building') || qLower.includes('location') || qLower.includes('पत्ता') || qLower.includes('इमारत') || qLower.includes('कुठे')) {
+        response = botResponses.campus[currentLang] || botResponses.campus.en;
+      } else if (qLower === 'fees' || qLower.includes('fee') || qLower.includes('scholarship') || qLower.includes('फी') || qLower.includes('शिष्यवृत्ती')) {
+        response = botResponses.fees[currentLang] || botResponses.fees.en;
+      } else if (qLower === 'whatsapp' || qLower.includes('phone') || qLower.includes('call') || qLower.includes('contact') || qLower.includes('संपर्क') || qLower.includes('फोन')) {
+        response = botResponses.whatsapp[currentLang] || botResponses.whatsapp.en;
+      } else {
+        response = currentLang === 'mr'
+          ? "आपल्या प्रश्नाबद्दल धन्यवाद! अधिक सखोल माहिती किंवा थेट प्रवेश समुपदेशनासाठी कृपया आमच्या प्रवेश कक्षाशी व्हॉट्सॲपवर संपर्क साधा:<br><a href='https://wa.me/918805029999?text=Hello%20Admission%20Desk,%20I%20have%20an%20enquiry' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-600 text-white rounded-lg font-bold text-xs mt-2'><i class='fab fa-whatsapp'></i> व्हॉट्सॲपवर चॅट करा</a>"
+          : "Thank you for asking! For comprehensive counseling or document verification, please connect directly with our admission coordinators:<br><a href='https://wa.me/918805029999?text=Hello%20Admission%20Desk,%20I%20have%20an%20enquiry' target='_blank' class='inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-600 text-white rounded-lg font-bold text-xs mt-2'><i class='fab fa-whatsapp'></i> WhatsApp Admission Desk</a>";
+      }
+
+      appendBotMessage(response);
+    }, 300);
+  }
+
+  launcher.addEventListener('click', () => {
+    const isHidden = windowEl.classList.contains('hidden');
+    if (isHidden) {
+      windowEl.classList.remove('hidden');
+      if (!messagesEl.children.length) initChat();
+    } else {
+      windowEl.classList.add('hidden');
+    }
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => windowEl.classList.add('hidden'));
+  }
+
+  if (refreshBtn) {
+    refreshBtn.addEventListener('click', () => initChat());
+  }
+
+  if (form && input) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const val = input.value.trim();
+      if (!val) return;
+      input.value = '';
+      handleUserQuery(val, val);
+    });
+  }
+
+  // Pre-initialize
+  initChat();
+}
+
 // Initialize on DOM Ready
 document.addEventListener('DOMContentLoaded', () => {
   setupMobileMenu();
@@ -927,6 +1107,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupGalleryLightbox();
   setupProspectusModal();
   setupAdminPortal();
+  setupChatbot();
 
   // Language buttons
   const btnEn = document.getElementById('lang-btn-en');
