@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <path id="colTextTopClean" d="M 36,160 A 124,124 0 0,1 284,160" fill="none" />
+    <path id="colTextBottomClean" d="M 52,185 A 124,124 0 0,0 268,185" fill="none" />
+  </defs>
+
+  <!-- Circular Base -->
+  <circle cx="160" cy="160" r="148" fill="#ffffff" stroke="#0E7490" stroke-width="4" />
+  <circle cx="160" cy="160" r="139" fill="#f0f9ff" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,3" />
+
+  <text font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="11" font-weight="800" fill="#0C4A6E" letter-spacing="1.2">
+    <textPath href="#colTextTopClean" startOffset="50%" text-anchor="middle">
+      SHIV SANGAM PUNE CAMPUS
+    </textPath>
+  </text>
+  <text font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10.5" font-weight="700" fill="#B45309" letter-spacing="1.5">
+    <textPath href="#colTextBottomClean" startOffset="50%" text-anchor="middle">
+      PHURSUNGI, PUNE
+    </textPath>
+  </text>
+
+  <!-- Central Crest Area -->
+  <circle cx="160" cy="160" r="82" fill="#ffffff" stroke="#0284C7" stroke-width="2" />
+
+  <!-- Medical Cross + Healing Symbol -->
+  <g transform="translate(160, 160)">
+    <rect x="-9" y="-48" width="18" height="96" rx="5" fill="#E0F2FE" />
+    <rect x="-48" y="-9" width="96" height="18" rx="5" fill="#E0F2FE" />
+
+    <path d="M 0,-42 L 0,42" stroke="#0369A1" stroke-width="4" stroke-linecap="round" />
+    <circle cx="0" cy="-35" r="4.5" fill="#F59E0B" />
+    <circle cx="0" cy="-21" r="5" fill="#0284C7" />
+    <circle cx="0" cy="-7" r="5.5" fill="#0369A1" />
+    <circle cx="0" cy="7" r="5.5" fill="#0369A1" />
+    <circle cx="0" cy="21" r="5" fill="#0284C7" />
+    <circle cx="0" cy="35" r="4.5" fill="#F59E0B" />
+
+    <path d="M -42,-12 C -38,18 -18,36 0,40 C -12,32 -22,16 -22,-4 C -22,-18 -34,-20 -42,-12 Z" fill="#0284C7" opacity="0.9" />
+    <path d="M 42,-12 C 38,18 18,36 0,40 C 12,32 22,16 22,-4 C 22,-18 34,-20 42,-12 Z" fill="#0284C7" opacity="0.9" />
+  </g>
+</svg>
