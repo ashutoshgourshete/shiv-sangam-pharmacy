@@ -1,59 +1,434 @@
 /**
  * Shiv Sangam Pune College of Pharmacy
  * Vivekanand Yuvak Mandal (Latur / Pune) - Reg. No: MAHA/10600/Latur
- * Master Application Script: Bilingual Switcher, Eligibility Calculator,
- * Admission Form & Slip Generator, Lightbox, Prospectus Modal & Admin Portal
+ * Comprehensive Bilingual (English / Marathi) Translation Engine & Application
  */
 
-// Bilingual Dictionaries
 const translations = {
+  en: {
+    // Top Bar
+    top_trust_reg: "Trust Reg.: MAHA/10600/Latur",
+    top_admissions: "Admissions 2026-2027",
+    top_campus: "Campus: Phursungi, Pune",
+    top_whatsapp: "WhatsApp Enquiry",
+    trust_name: "Vivekanand Yuvak Mandal Managed",
+    
+    // Header Banner
+    banner_trust_sub: "Managed by Vivekanand Yuvak Mandal",
+    banner_affil: "Fursungi, Tal. Haveli, Dist. Pune - 412308 | PCI • MSBTE & SPPU • MUHS",
+    banner_campus_badge: "Academic Campus",
+    banner_download_prospectus: "Download Prospectus",
+
+    // Navigation
+    nav_home: "Home",
+    nav_about: "About Us",
+    nav_about_sanstha: "About Sanstha (Latur / Pune)",
+    nav_vision: "Vision, Mission & Values",
+    nav_sec_desk: "Secretary's Desk (Shri Shivling Jevle)",
+    nav_prin_desk: "Principal's Desk",
+    nav_programs: "Courses",
+    nav_dpharm: "D.Pharm (Diploma in Pharmacy)",
+    nav_dpharm_sub: "2-Year Professional Course | MSBTE",
+    nav_bpharm: "B.Pharm (Bachelor of Pharmacy)",
+    nav_bpharm_sub: "4-Year Degree Program | SPPU",
+    nav_sister: "B.P.Th (Physiotherapy Wing)",
+    nav_sister_sub: "4.5-Year Health Sciences Degree | MUHS",
+    nav_admissions: "Admissions 2026-27",
+    nav_facilities: "Laboratories",
+    nav_faculty: "Faculty",
+    nav_gallery: "Gallery",
+    nav_approvals: "Mandatory Disclosures",
+    nav_contact: "Contact",
+    btn_apply: "Apply Now",
+
+    // Ticker
+    ticker_tag: "Updates",
+    ticker_1: "Admissions Open for Academic Year 2026-2027: D.Pharm (2 Years) & B.Pharm (4 Years). Pre-register today!",
+    ticker_2: "Direct Counselling & Helpline: +91 88050 29999 / +91 94224 72393 (Phursungi, Pune Campus)",
+    ticker_3: "State-of-the-Art Formulation, Chemistry, Analysis, and Pharmacognosy Laboratories Ready.",
+    ticker_4: "Instant Admission Guidance available via official WhatsApp Desk.",
+
+    // Hero Section
+    hero_badge: "Admissions Open for Academic Session 2026-2027",
+    hero_headline_1: "Empowering the Future of",
+    hero_headline_highlight: "Pharmaceutical Sciences",
+    hero_desc: "Run by Vivekanand Yuvak Mandal, Latur (Reg. No: MAHA/10600/Latur). Shiv Sangam Pune College of Pharmacy brings cutting-edge formulation laboratories, industry-aligned training, and professional ethics to Phursungi, Pune.",
+    hero_card_dpharm_title: "D.Pharm (Diploma in Pharmacy)",
+    hero_card_dpharm_desc: "2 Years Full-Time | Eligibility: 12th Science (PCB/PCM)",
+    hero_card_dpharm_tag: "Registered Pharmacist & Chemist License",
+    hero_card_bpharm_title: "B.Pharm (Bachelor of Pharmacy)",
+    hero_card_bpharm_desc: "4 Years Professional Degree | Eligibility: 12th + CET/NEET",
+    hero_card_bpharm_tag: "Pharma R&D, QC/QA, Clinical & Drug Inspector",
+    hero_card_labs_title: "6+ Specialized Laboratories",
+    hero_card_labs_desc: "Pharmaceutics, Chemistry, Pharmacology, Pharmacognosy & Machine Room",
+    hero_check_btn: "Check Admission Eligibility",
+
+    // Quick Stats Bar
+    stat_course_badge: "Course Offering",
+    stat_course_title: "D.Pharm & B.Pharm",
+    stat_course_sub: "PCI & MSBTE / SPPU Norms",
+    stat_lab_badge: "Practical Training",
+    stat_lab_title: "Advanced Labs",
+    stat_lab_sub: "Formulation & Machine Room",
+    stat_loc_badge: "Prime Location",
+    stat_loc_title: "Phursungi, Pune",
+    stat_loc_sub: "Hadapsar Industrial Zone",
+    stat_trust_badge: "Sponsoring Body",
+    stat_trust_title: "Vivekanand YM",
+    stat_trust_sub: "Reg: MAHA/10600/Latur",
+
+    // About Sanstha
+    about_trust_badge: "About the Sponsoring Trust",
+    about_trust_title: "Vivekanand Yuvak Mandal (Latur / Pune)",
+    about_trust_reg: "Registration No: MAHA/10600/Latur • Head Office: Shivaji Road, Ganj Golai, Latur - 413512",
+    about_trust_p1: "Vivekanand Yuvak Mandal is a premier educational and social development trust dedicated to public enlightenment, youth empowerment, and excellence in professional higher education. Guided by the visionary ideals and nation-building philosophy of Swami Vivekananda, the trust has expanded into healthcare and pharmaceutical sciences.",
+    about_trust_p2: "Recognizing the vital societal need for high-caliber healthcare professionals, the trust established Shiv Sangam Pune College of Pharmacy at Phursungi (Tal. Haveli, Dist. Pune). Pune, known as the Oxford of the East and a major biopharmaceutical innovation hub, provides our students with exceptional academic, clinical, and industrial advantages.",
+    about_pillar_1_title: "Service & Values",
+    about_pillar_1_desc: "Education firmly grounded in Swami Vivekananda's noble ideals of nation-building.",
+    about_pillar_2_title: "Research & Rigor",
+    about_pillar_2_desc: "State-of-the-art laboratories and hands-on pharmaceutical industrial competencies.",
+    about_sanstha_contact: "<strong>Sanstha Contact:</strong> +91 88050 29999 / 94224 72393 | Email: vivekanandym@gmail.com",
+
+    // Vision & Mission
+    vm_blueprint_badge: "Institutional Blueprint",
+    vm_main_title: "Vision & Mission",
+    vision_title: "Our Vision",
+    vision_desc: "To emerge as a premier pharmacy institution imparting cutting-edge pharmaceutical education, ethical healthcare values, and innovative research capabilities, producing competent pharmacists committed to societal well-being.",
+    mission_title: "Our Mission",
+    mission_p1: "Deliver rigorous classroom and laboratory training strictly conforming to PCI, MSBTE, and university standards.",
+    mission_p2: "Empower students with high-tech formulation laboratories, digital libraries, and modern experimental techniques.",
+    mission_p3: "Foster active collaboration with pharmaceutical industries in Pune and Maharashtra for authentic industrial exposure.",
+    mission_p4: "Provide equitable access to professional healthcare education for deserving students from rural and urban communities.",
+
+    // Courses Section
+    programs_badge: "Academic Courses 2026-2027",
+    programs_title: "Pharmacy Degree & Diploma Programs",
+    programs_sub: "Approved pharmaceutical programs offered at Shiv Sangam Pune Campus, Phursungi, Pune",
+    
+    // D.Pharm
+    dpharm_badge: "Diploma Course (MSBTE & PCI)",
+    dpharm_duration: "2 Years (Annual Pattern)",
+    dpharm_title: "D.Pharm (Diploma in Pharmacy)",
+    dpharm_intake: "Intake: 60 Seats (Proposed) | PCI Education Regulations (ER-2020)",
+    dpharm_desc: "D.Pharm is a 2-year professional diploma program providing rigorous training in pharmaceutics, formulation, dispensing of medicines, prescription handling, and community pharmacy management. Graduates earn official registration as a Registered Pharmacist under the Maharashtra State Pharmacy Council (MSPC).",
+    dpharm_elig_title: "Eligibility Criteria:",
+    dpharm_elig_desc: "• 10+2 / HSC Science Passed with Physics and Chemistry along with Biology or Mathematics.<br>• Minimum aggregate: Open Category - 45%, Reserved Category - 40%.",
+    dpharm_subj_title: "Key Subjects & Practicals:",
+    dpharm_career: "<strong>Career Scope:</strong> Licensed Chemist / Pharmacist (Retail & Wholesale), Hospital Pharmacist, Medical Representative (MR), Direct Second Year B.Pharm Admission.",
+    dpharm_apply_btn: "Apply for D.Pharm",
+
+    // B.Pharm
+    bpharm_badge: "Degree Program (SPPU & PCI)",
+    bpharm_duration: "4 Years (8 Semesters)",
+    bpharm_title: "B.Pharm (Bachelor of Pharmacy)",
+    bpharm_intake: "Intake: 60/100 Seats (Proposed) | Savitribai Phule Pune University (SPPU)",
+    bpharm_desc: "B.Pharm is a 4-year professional undergraduate degree designed to prepare future leaders in pharmaceutical research and development (R&D), formulation technology, clinical research, Quality Control (QC), and Quality Assurance (QA).",
+    bpharm_elig_title: "Eligibility Criteria:",
+    bpharm_elig_desc: "• 10+2 / HSC Science Passed with Physics and Chemistry along with Mathematics or Biology.<br>• Minimum aggregate: Open Category - 45%, Reserved Category - 40%.<br>• Valid non-zero score in MHT-CET or NEET-UG is mandatory.",
+    bpharm_subj_title: "Core Curriculum Domains:",
+    bpharm_career: "<strong>Career Scope:</strong> Pharma R&D Scientist, QC/QA Manager, Production Head, Drug Inspector (MPSC/UPSC), Clinical Research, Higher Studies (M.Pharm, MBA, Ph.D).",
+    bpharm_apply_btn: "Apply for B.Pharm",
+
+    // Sister Institution
+    sister_badge: "Sister Health Sciences Institution",
+    sister_title: "Shiv Sangam Pune College of Physiotherapy (B.P.Th)",
+    sister_desc: "Within the same academic complex, Vivekanand Yuvak Mandal also proposes the Bachelor of Physiotherapy (B.P.Th - 4.5 Years Degree) adhering to Maharashtra University of Health Sciences (MUHS), Nashik guidelines with hospital clinical bedside training and an active rehabilitation OPD.",
+    sister_wa_btn: "Physiotherapy Inquiry",
+    sister_apply_btn: "Apply Pre-Registration",
+
+    // Why Choose Us
+    features_title: "Why Choose Shiv Sangam College of Pharmacy?",
+    features_sub: "Combining academic excellence, cutting-edge laboratories, and real-world industrial exposure.",
+    feat_1_title: "Modern Pilot Machine Room",
+    feat_1_desc: "Hands-on industrial environment equipped with tablet punching, dissolution test apparatus, coating pan, and liquid filling machinery.",
+    feat_2_title: "Prime Pune Location",
+    feat_2_desc: "Phursungi, Tal. Haveli, Dist. Pune. Seamlessly connected via PMPML buses, Saswad Road railway, and the Hadapsar IT & industrial corridor.",
+    feat_3_title: "Analytical & Chemistry Labs",
+    feat_3_desc: "Central instrumentation center featuring UV-Vis spectrophotometers, digital pH meters, centrifuges, and precision analytical balances.",
+    feat_4_title: "Rich Digital Library",
+    feat_4_desc: "Thousands of pharmaceutical reference books, national & international journals, DELNET e-resources, and a peaceful reading hall.",
+    feat_5_title: "Medicinal Plant Garden",
+    feat_5_desc: "On-campus herbal botanical garden featuring over 50 live therapeutic plant species for practical pharmacognosy research.",
+    feat_6_title: "Industry Exposure & TPC",
+    feat_6_desc: "Organized educational visits to leading pharmaceutical manufacturing plants in Pune and Kurkumbh MIDC with placement assistance.",
+
+    // Leadership
+    sec_leadership_title: "From Secretary's Desk",
+    sec_leadership_name: "Shivling Jevle",
+    sec_leadership_role: "Secretary, Vivekanand Yuvak Mandal (Latur / Pune)",
+    sec_desk_p1: "\"On behalf of Vivekanand Yuvak Mandal, we have established the Shiv Sangam Educational Complex in Phursungi, Pune to advance professional healthcare and pharmaceutical education. Fulfilling Swami Vivekananda's unshakeable faith in the youth and his noble dream of nation-building is our highest aspiration.\"",
+    sec_desk_p2: "\"Pharmacy is a dynamic, highly responsible profession directly impacting human health and life. In today's modern world, society needs skilled, conscientious, and compassionate pharmacists. At Shiv Sangam Pune College of Pharmacy, we are committed to providing hands-on laboratory experience, scientific curiosity, and ethical healthcare values. Best wishes to all prospective students and parents!\"",
+    
+    prin_leadership_title: "From Principal's Desk",
+    prin_leadership_name: "Prof. (Dr.) Academic Leadership",
+    prin_leadership_role: "Principal & Head of Institution • Shiv Sangam Pune College of Pharmacy",
+    prin_desk_p1: "\"Welcome to Shiv Sangam Pune College of Pharmacy. Pharmaceutical education is at the crossroads of healthcare innovation, biotechnology, and patient clinical safety. Our institution is dedicated to creating a vibrant academic ecosystem adhering strictly to Pharmacy Council of India (PCI) and university standards.\"",
+    prin_desk_p2: "\"With fully equipped formulation labs, an active medicinal garden, digital learning repositories, and individualized student mentoring, we prepare our students to excel in pharmaceutical industry R&D, quality analysis, hospital pharmacy, and regulatory affairs. I warmly invite aspiring scholars to join our academic family for the 2026-2027 academic session.\"",
+
+    // Laboratories Section
+    lab_section_badge: "Campus Infrastructure",
+    lab_section_title: "State-of-the-Art Pharmacy Laboratories",
+    lab_section_sub: "Equipped in strict accordance with Pharmacy Council of India (PCI) norms and modern safety guidelines",
+    lab_tab_1: "Pharmaceutics & Machine Room",
+    lab_tab_2: "Pharmaceutical Chemistry",
+    lab_tab_3: "Pharmacology & APHE",
+    lab_tab_4: "Pharmacognosy & Herbal Garden",
+    lab_tab_5: "Digital Library & ICT",
+
+    // Faculty
+    faculty_badge: "Mentorship & Academic Team",
+    faculty_title: "Qualified Faculty & Staff",
+    faculty_sub: "Experienced, highly qualified (Ph.D, M.Pharm) and dedicated pharmaceutical educators",
+
+    // Eligibility Checker
+    eligibility_check_title: "Check Your Pharmacy Admission Eligibility",
+    eligibility_check_sub: "Select your course, 12th Science marks, and category to check qualification status as per Maharashtra CET Cell & PCI norms.",
+    btn_check_eligibility: "Evaluate My Eligibility",
+
+    // Gallery
+    gallery_badge: "Campus Glimpses",
+    gallery_title: "Photo Gallery & Campus Infrastructure",
+    gallery_sub: "Shiv Sangam Pune Educational Complex - Laboratories, Classrooms, Library & Botanical Garden",
+
+    // Notices
+    notices_badge: "Official Circulars",
+    notices_title: "News & College Announcements",
+
+    // Approvals
+    approvals_badge: "Statutory Compliance & Governance",
+    approvals_title: "Regulatory Affiliations & Mandatory Disclosures",
+    approvals_sub: "Transparent governance inspired by Swami Vivekananda's principles under Vivekanand Yuvak Mandal",
+
+    // Admissions Form
+    form_badge: "Admissions Desk 2026-2027",
+    form_title: "Admission Enquiry & Pre-Registration 2026-2027",
+    form_sub: "Submit your enquiry for D.Pharm and B.Pharm admissions. Receive immediate counselling and a provisional registration acknowledgment slip.",
+    form_submit_btn: "Submit & Generate Acknowledgment Slip",
+    form_wa_btn: "Send to WhatsApp Desk",
+
+    // Contact
+    contact_badge: "Get in Touch",
+    contact_title: "Contact Shiv Sangam Pune Campus & Sanstha HQ",
+    contact_sub: "Visit our college campus in Pune or trust headquarters in Latur, or reach out to our admission helpdesk",
+    contact_pune_title: "College Campus (Pune)",
+    contact_pune_sub: "Shiv Sangam Educational Complex",
+    contact_pune_addr: "<strong>Address:</strong> Phursungi, Tal. Haveli, Dist. Pune, Maharashtra - 412308.<br>(Adjacent to Hadapsar and Saswad Road corridor, Pune Metropolitan Area)",
+    contact_latur_title: "Trust Head Office (Latur)",
+    contact_latur_sub: "Vivekanand Yuvak Mandal",
+    contact_latur_addr: "<strong>Headquarters:</strong> Shivaji Road, Ganj Golai, Latur - 413512, Maharashtra.<br>(Registration No: MAHA/10600/Latur)"
+  },
+
   mr: {
+    // Top Bar
+    top_trust_reg: "संस्था नोंदणी: MAHA/10600/Latur",
+    top_admissions: "प्रवेश सत्र २०२६-२०२७",
+    top_campus: "कॅम्पस: फुरसुंगी, पुणे",
+    top_whatsapp: "व्हॉट्सॲप चौकशी",
     trust_name: "विवेकानंद युवक मंडळ संचलित",
-    trust_reg: "नोंदणी क्र.: MAHA/10600/Latur",
-    trust_office: "मुख्यालय: शिवाजी रोड, गंज गोलाई, लातूर - ४१३५१२",
+    
+    // Header Banner
+    banner_trust_sub: "विवेकानंद युवक मंडळ संचलित",
+    banner_affil: "फुरसुंगी, ता. हवेली, जि. पुणे - ४१२३०८ | PCI • MSBTE & SPPU • MUHS",
+    banner_campus_badge: "शैक्षणिक संकुल",
+    banner_download_prospectus: "माहिती पुस्तिका डाऊनलोड",
+
+    // Navigation
     nav_home: "मुख्यपृष्ठ",
     nav_about: "संस्थेविषयी",
+    nav_about_sanstha: "संस्थेविषयी माहिती (लातूर / पुणे)",
+    nav_vision: "ध्येय, उद्दिष्टे व मूल्ये",
+    nav_sec_desk: "सचिवांचे मनोगत (शिवलिंग जेवळे)",
+    nav_prin_desk: "प्राचार्यांचे मनोगत",
     nav_programs: "अभ्यासक्रम",
-    nav_facilities: "प्रयोगशाळा व लॅब",
+    nav_dpharm: "D.Pharm (डिप्लोमा इन फार्मसी)",
+    nav_dpharm_sub: "२ वर्षे व्यावसायिक अभ्यासक्रम | MSBTE",
+    nav_bpharm: "B.Pharm (बॅचलर ऑफ फार्मसी)",
+    nav_bpharm_sub: "४ वर्षे पदवी अभ्यासक्रम | SPPU",
+    nav_sister: "B.P.Th (फिजिओथेरपी विभाग)",
+    nav_sister_sub: "४.५ वर्षे आरोग्य विज्ञान पदवी | MUHS",
     nav_admissions: "प्रवेश २०२६-२७",
+    nav_facilities: "प्रयोगशाळा",
+    nav_faculty: "प्राध्यापक वर्ग",
+    nav_gallery: "छायाचित्रे",
+    nav_approvals: "मान्यता व नियम",
     nav_contact: "संपर्क",
     btn_apply: "प्रवेश अर्ज करा",
+
+    // Ticker
+    ticker_tag: "अपडेट्स",
+    ticker_1: "शैक्षणिक वर्ष २०२६-२०२७ करिता प्रवेश प्रक्रिया सुरू: डी.फार्म (२ वर्षे) व बी.फार्म (४ वर्षे). आजच पूर्वनोंदणी करा!",
+    ticker_2: "थेट समुपदेशन व हेल्पलाईन: +91 88050 29999 / +91 94224 72393 (फुरसुंगी, पुणे कॅम्पस)",
+    ticker_3: "अत्याधुनिक फॉर्म्युलेशन, केमिस्ट्री, ॲनालिसिस व फार्माकोग्नोसी लॅबोरेटरीज सज्ज.",
+    ticker_4: "अधिकृत व्हॉट्सॲप प्रवेश कक्षाद्वारे तात्काळ प्रवेश मार्गदर्शन उपलब्ध.",
+
+    // Hero Section
     hero_badge: "शैक्षणिक वर्ष २०२६-२०२७ करिता प्रवेश प्रक्रिया सुरू",
+    hero_headline_1: "औषधनिर्माणशास्त्रातील",
+    hero_headline_highlight: "उत्कृष्टतेचे केंद्र",
     hero_desc: "विवेकानंद युवक मंडळ, लातूर संचलित 'शिव संगम पुणे कॉलेज ऑफ फार्मसी' - अत्याधुनिक प्रयोगशाळा, औद्योगिक मार्गदर्शन व गुणवत्तापूर्ण फार्मसी शिक्षण देणारे फुरसुंगी, पुणे येथील अग्रगण्य महाविद्यालय.",
-    features_title: "महाविद्यालयाची प्रमुख वैशिष्ट्ये",
-    features_sub: "गुणवत्तापूर्ण शिक्षण, आधुनिक लॅब आणि प्रगत फार्मास्युटिकल कौशल्यांचा संगम",
+    hero_card_dpharm_title: "D.Pharm (डिप्लोमा इन फार्मसी)",
+    hero_card_dpharm_desc: "२ वर्षे पूर्णवेळ | पात्रता: १२वी विज्ञान (PCB/PCM)",
+    hero_card_dpharm_tag: "रजिस्टर्ड फार्मासिस्ट व मेडिकल स्टोअर परवाना",
+    hero_card_bpharm_title: "B.Pharm (बॅचलर ऑफ फार्मसी)",
+    hero_card_bpharm_desc: "४ वर्षे व्यावसायिक पदवी | पात्रता: १२वी + CET/NEET",
+    hero_card_bpharm_tag: "फार्मा R&D, QC/QA, क्लिनिकल व ड्रग इन्स्पेक्टर",
+    hero_card_labs_title: "६+ सुसज्ज प्रयोगशाळा",
+    hero_card_labs_desc: "फार्मास्युटिक्स, केमिस्ट्री, फार्माकोलॉजी, फार्माकोग्नोसी व पायलट मशिन रूम",
+    hero_check_btn: "प्रवेश पात्रता तपासा",
+
+    // Quick Stats Bar
+    stat_course_badge: "उपलब्ध अभ्यासक्रम",
+    stat_course_title: "D.Pharm व B.Pharm",
+    stat_course_sub: "PCI व MSBTE / SPPU मानके",
+    stat_lab_badge: "प्रात्यक्षिक प्रशिक्षण",
+    stat_lab_title: "अत्याधुनिक लॅब्स",
+    stat_lab_sub: "फॉर्म्युलेशन व मशिन रूम",
+    stat_loc_badge: "मोक्याचे ठिकाण",
+    stat_loc_title: "फुरसुंगी, पुणे",
+    stat_loc_sub: "हडपसर इंडस्ट्रियल कॉरिडॉर लगत",
+    stat_trust_badge: "संस्था",
+    stat_trust_title: "विवेकानंद युवक मंडळ",
+    stat_trust_sub: "नोंदणी: MAHA/10600/Latur",
+
+    // About Sanstha
+    about_trust_badge: "संस्थेविषयी माहिती",
+    about_trust_title: "विवेकानंद युवक मंडळ (लातूर / पुणे)",
+    about_trust_reg: "नोंदणी क्रमांक: MAHA/10600/Latur • संस्था मुख्य कार्यालय: शिवाजी रोड, गंज गोलाई, लातूर - ४१३५१२",
+    about_trust_p1: "विवेकानंद युवक मंडळ ही समाजप्रबोधन, शैक्षणिक विकास, युवकांचे सक्षमीकरण आणि व्यावसायिक उच्च शिक्षणाच्या प्रसारासाठी अविरत कार्य करणारी एक अग्रगण्य व प्रतिष्ठित शैक्षणिक संस्था आहे. स्वामी विवेकानंदांच्या सेवाभावी विचारसरणी आणि राष्ट्रनिर्मितीच्या तत्त्वांवर विश्वास ठेवून संस्थेने आरोग्य व वैद्यकीय शिक्षणाचा विस्तार केला आहे.",
+    about_trust_p2: "औषधनिर्माणशास्त्र (Pharmacy) व आरोग्य क्षेत्रातील वाढती गरज ओळखून संस्थेने शिव संगम पुणे कॉलेज ऑफ फार्मसी ची स्थापना फुरसुंगी (ता. हवेली, जि. पुणे) येथील शैक्षणिक संकुलात केली आहे. पुणे हे महाराष्ट्राची विद्येचे माहेरघर व बायो-फार्मास्युटिकल हब असल्याने विद्यार्थ्यांच्या सर्वांगीण विकासासाठी हे स्थान अत्यंत मोक्याचे आहे.",
+    about_pillar_1_title: "सेवाभाव व मूल्ये",
+    about_pillar_1_desc: "स्वामी विवेकानंदांच्या राष्ट्रनिर्माणाच्या तत्त्वांवर आधारित शिक्षण.",
+    about_pillar_2_title: "संशोधन व गुणवत्ता",
+    about_pillar_2_desc: "अत्याधुनिक लॅब आणि फार्मा इंडस्ट्रियल कौशल्यांवर भर.",
+    about_sanstha_contact: "<strong>संस्था संपर्क:</strong> +91 88050 29999 / 94224 72393 | Email: vivekanandym@gmail.com",
+
+    // Vision & Mission
+    vm_blueprint_badge: "संस्थेची उद्दिष्टे",
+    vm_main_title: "ध्येय व उद्दिष्टे (Vision & Mission)",
+    vision_title: "आमचे ध्येय (Our Vision)",
+    vision_desc: "औषधनिर्माणशास्त्र (Pharmaceutical Sciences) शिक्षणात उत्कृष्टता प्राप्त करून समाजहितासाठी समर्पित, व्यावसायिकदृष्ट्या सक्षम, नैतिक व संशोधनाभिमुख फार्मासिस्ट तयार करणारी अग्रगण्य शिक्षण संस्था म्हणून नावारूपास येणे.",
+    mission_title: "आमची उद्दिष्टे (Our Mission)",
+    mission_p1: "पीसीआय (PCI) व विद्यापीठ मानकांनुसार दर्जेदार औषधनिर्माणशास्त्र शिक्षण व प्रात्यक्षिक कौशल्ये प्रदान करणे.",
+    mission_p2: "अत्याधुनिक प्रयोगशाळा, डिजिटल लायब्ररी आणि आधुनिक तंत्रज्ञानाद्वारे विद्यार्थ्यांना स्वावलंबी बनवणे.",
+    mission_p3: "पुणे व पिंपरी-चिंचवड परिसरातील फार्मास्युटिकल उद्योगांशी थेट संवाद साधून प्रत्यक्ष औद्योगिक अनुभव देणे.",
+    mission_p4: "ग्रामीण व शहरी भागातील हुशार विद्यार्थ्यांना औषधनिर्माण व आरोग्य क्षेत्रात करिअरच्या समान संधी उपलब्ध करून देणे.",
+
+    // Courses Section
+    programs_badge: "शैक्षणिक अभ्यासक्रम २०२६-२०२७",
+    programs_title: "फार्मसी पदवी व पदविका अभ्यासक्रम",
+    programs_sub: "शिव संगम पुणे कॉलेज ऑफ फार्मसी, फुरसुंगी, पुणे येथील अधिकृत औषधनिर्माणशास्त्र अभ्यासक्रम",
+
+    // D.Pharm
+    dpharm_badge: "डिप्लोमा अभ्यासक्रम (MSBTE व PCI)",
+    dpharm_duration: "२ वर्षे (वार्षिक पॅटर्न)",
+    dpharm_title: "D.Pharm (डिप्लोमा इन फार्मसी)",
+    dpharm_intake: "प्रवेश क्षमता: ६० जागा (प्रस्तावित) | पीसीआय शैक्षणिक नियम (ER-2020)",
+    dpharm_desc: "डी.फार्म हा २ वर्षांचा व्यावसायिक डिप्लोमा अभ्यासक्रम असून याद्वारे विद्यार्थ्यांना औषधनिर्माण, औषधांचे वितरण, प्रिस्क्रिप्शन हँडलिंग आणि मेडिकल स्टोअर व्यवस्थापनाचे सखोल प्रात्यक्षिक ज्ञान दिले जाते. उत्तीर्ण विद्यार्थ्यांना महाराष्ट्र राज्य फार्मसी कौन्सिल (MSPC) अंतर्गत Registered Pharmacist चा अधिकृत परवाना मिळतो.",
+    dpharm_elig_title: "प्रवेश पात्रता (Eligibility Criteria):",
+    dpharm_elig_desc: "• १२वी विज्ञान (HSC Science) उत्तीर्ण: भौतिकशास्त्र (Physics), रसायनशास्त्र (Chemistry) सह जीवशास्त्र (Biology) किंवा गणित (Mathematics).<br>• किमान गुण: खुला वर्ग (Open) - ४५%, राखीव वर्ग (Reserved) - ४०%.",
+    dpharm_subj_title: "प्रमुख विषय व प्रात्यक्षिके:",
+    dpharm_career: "<strong>करिअर संधी:</strong> स्वतःचे मेडिकल स्टोअर (Retail / Wholesale Chemist), हॉस्पिटल फार्मासिस्ट, मेडिकल रिप्रेझेंटेटिव्ह (MR), बी.फार्म द्वितीय वर्ष थेट प्रवेश (Direct Second Year B.Pharm).",
+    dpharm_apply_btn: "D.Pharm अर्ज करा",
+
+    // B.Pharm
+    bpharm_badge: "पदवी अभ्यासक्रम (SPPU व PCI)",
+    bpharm_duration: "४ वर्षे (८ सेमिस्टर्स)",
+    bpharm_title: "B.Pharm (बॅचलर ऑफ फार्मसी)",
+    bpharm_intake: "प्रवेश क्षमता: ६०/१०० जागा (प्रस्तावित) | सावित्रीबाई फुले पुणे विद्यापीठ (SPPU)",
+    bpharm_desc: "बी.फार्म ही ४ वर्षांची व्यावसायिक पदवी असून औषध संशोधन (R&D), फॉर्म्युलेशन विकास, क्लिनिकल रिसर्च, क्वालिटी कंट्रोल (QC) व क्वालिटी अशुरन्स (QA) क्षेत्रातील नेतृत्व घडवण्यासाठी डिझाइन केली आहे.",
+    bpharm_elig_title: "प्रवेश पात्रता (Eligibility Criteria):",
+    bpharm_elig_desc: "• १२वी विज्ञान (HSC Science) उत्तीर्ण: Physics व Chemistry सह Mathematics किंवा Biology.<br>• किमान गुण: Open वर्ग - ४५%, मागासवर्गीय वर्ग - ४०%.<br>• राज्य सीईटी (MHT-CET) किंवा नीट (NEET-UG) परीक्षेत वैध नॉन-झिरो स्कोअर आवश्यक.",
+    bpharm_subj_title: "प्रमुख अभ्यास शाखा:",
+    bpharm_career: "<strong>करिअर संधी:</strong> फार्मा R&D सायंटिस्ट, QC/QA मॅनेजर, प्रॉडक्शन हेड, ड्रग इन्स्पेक्टर (MPSC/UPSC), क्लिनिकल डेटा मॅनेजर, फार्माकोविजिलन्स, उच्च शिक्षण (M.Pharm, MBA Pharma, Ph.D).",
+    bpharm_apply_btn: "B.Pharm अर्ज करा",
+
+    // Sister Institution
+    sister_badge: "संलग्नित आरोग्य विज्ञान महाविद्यालय",
+    sister_title: "शिव संगम पुणे कॉलेज ऑफ फिजियोथेरपी (B.P.Th)",
+    sister_desc: "विवेकानंद युवक मंडळ संचलित याच शैक्षणिक संकुलात बॅचलर ऑफ फिजियोथेरपी (B.P.Th - ४.५ वर्षे पदवी) महाविद्यालय प्रस्तावित असून महाराष्ट्र आरोग्य विज्ञान विद्यापीठ (MUHS), नाशिक अंतर्गत संलग्नित आहे. रुग्णालयाशी थेट संलग्नित क्लिनिकल ट्रेनिंग व रिहॅब ओपीडी सुविधा उपलब्ध.",
+    sister_wa_btn: "फिजिओथेरपी माहिती",
+    sister_apply_btn: "पूर्वनोंदणी अर्ज",
+
+    // Why Choose Us
+    features_title: "शिव संगम फार्मसी कॉलेज का निवडावे?",
+    features_sub: "गुणवत्तापूर्ण शिक्षण, आधुनिक लॅब आणि प्रगत फार्मास्युटिकल कौशल्यांचा संगम.",
+    feat_1_title: "मॉडर्न पायलट मशिन रूम",
+    feat_1_desc: "टॅब्लेट पंचिंग, डिसोल्युशन टेस्ट अपॅरेटस, कोटिंग पॅन, डिसइंटीग्रेशन टेस्ट युनिट्स आणि लिक्विड फिलिंग मशिनरीसह प्रत्यक्ष औद्योगिक वातावरण.",
+    feat_2_title: "मोक्याचे पुणे लोकेशन",
+    feat_2_desc: "फुरसुंगी (हडपसर लगत), ता. हवेली, जि. पुणे. पुणे शहराच्या मध्यवर्ती भागातून थेट पीएमपीएमएल बस, सासवड रोड रेल्वे आणि मेट्रो कनेक्टिव्हिटी.",
+    feat_3_title: "ॲनालिटिकल व केमिस्ट्री लॅब",
+    feat_3_desc: "स्पेक्ट्रोफोटोमीटर, डिजिटल पीएच मीटर्स, सेंट्रीफ्यूज, व आधुनिक वेईंग बॅलन्सने सुसज्ज असलेली सेंट्रल इन्स्ट्रुमेंटेशन लॅब.",
+    feat_4_title: "समृद्ध डिजिटल ग्रंथालय",
+    feat_4_desc: "हजारो फार्मास्युटिकल संदर्भ ग्रंथ, इंडियन व इंटरनॅशनल जर्नल्स, डेलनेट (Delnet) ई-रिसोर्सेस व शांत वातानुकूलित अभ्यासिका.",
+    feat_5_title: "औषधी वनस्पती उद्यान",
+    feat_5_desc: "फार्माकोग्नोसी अभ्यासासाठी कॅम्पसमध्ये ५० हून अधिक दुर्मिळ व उपयुक्त वनौषधी वनस्पतींची लागवड असलेली सुसज्ज हर्बल गार्डन.",
+    feat_6_title: "इंडस्ट्री एक्सपोजर व टीपीसी",
+    feat_6_desc: "पुणे व कुरकुंभ एमआयडीसीतील आघाडीच्या फार्मास्युटिकल मॅन्युफॅक्चरिंग प्लांट्सना शैक्षणिक भेटी आणि करिअर प्लेसमेंट मार्गदर्शन कक्ष.",
+
+    // Leadership
     sec_leadership_title: "सचिवांचे मनोगत",
     sec_leadership_name: "शिवलिंग जेवळे (Shivling Jevle)",
     sec_leadership_role: "सचिव, विवेकानंद युवक मंडळ, लातूर / पुणे",
+    sec_desk_p1: "\"विवेकानंद युवक मंडळाच्या वतीने उच्च शिक्षण आणि आरोग्य सेवेचा वसा घेऊन आम्ही फुरसुंगी, पुणे येथे शिव संगम शैक्षणिक संकुलाची उभारणी केली आहे. स्वामी विवेकानंदांचा युवकांवरील अतूट विश्वास आणि राष्ट्रनिर्मितीचे स्वप्न साकार करणे हेच आमच्या संस्थेचे सर्वोच्च उद्दिष्ट आहे.\"",
+    sec_desk_p2: "\"औषधनिर्माणशास्त्र (Pharmacy) हे मानवी जीवनाशी थेट निगडित असलेले एक अत्यंत जबाबदार व गतिमान क्षेत्र आहे. आजच्या आधुनिक युगात कुशल आणि मूल्यनिष्ठ फार्मासिस्टची देशाला नितांत गरज आहे. शिव संगम पुणे कॉलेज ऑफ फार्मसीच्या माध्यमातून आम्ही विद्यार्थ्यांना केवळ पुस्तकी ज्ञान न देता प्रत्यक्ष प्रयोगशाळा प्रशिक्षण, संशोधन वृत्ती आणि रुग्णसेवेचे संस्कार देण्यास कटिबद्ध आहोत. सर्व भावी विद्यार्थ्यांना आणि पालकांना माझ्याकडून मनःपूर्वक शुभेच्छा!\"",
+
+    prin_leadership_title: "प्राचार्यांचे मनोगत",
+    prin_leadership_name: "प्राचार्य व संस्था प्रमुख",
+    prin_leadership_role: "प्राचार्य • शिव संगम पुणे कॉलेज ऑफ फार्मसी",
+    prin_desk_p1: "\"शिव संगम पुणे कॉलेज ऑफ फार्मसीमध्ये आपले सहर्ष स्वागत. औषधनिर्माणशास्त्र शिक्षण हे आरोग्य नवकल्पना, बायोटेक्नॉलॉजी आणि रुग्ण सुरक्षिततेचा केंद्रबिंदू आहे. आमची संस्था पीसीआय (PCI) आणि विद्यापीठ मानकांनुसार दर्जेदार शैक्षणिक वातावरण निर्माण करण्यास कटिबद्ध आहे.\"",
+    prin_desk_p2: "\"सुसज्ज फॉर्म्युलेशन लॅब्स, हर्बल मेडिसिनल गार्डन, डिजिटल लायब्ररी आणि वैयक्तिक विद्यार्थी मार्गदर्शनाद्वारे आम्ही विद्यार्थ्यांना फार्मा R&D, क्वालिटी ॲनालिसिस, हॉस्पिटल फार्मसी आणि नियामक कार्यात आघाडीवर राहण्यासाठी घडवतो. २०२६-२७ शैक्षणिक सत्रात आमच्या परिवारात सामील होण्यासाठी मी सर्व विद्यार्थ्यांना आमंत्रित करतो.\"",
+
+    // Laboratories Section
+    lab_section_badge: "कॅम्पस सुविधा व प्रयोगशाळा",
+    lab_section_title: "अत्याधुनिक औषधनिर्माण प्रयोगशाळा",
+    lab_section_sub: "पीसीआय (PCI New Delhi) मानकांनुसार सुसज्ज प्रयोगशाळा, मशिन रूम व अत्याधुनिक उपकरणे",
+    lab_tab_1: "फार्मास्युटिक्स व मशिन रूम",
+    lab_tab_2: "फार्मास्युटिकल केमिस्ट्री",
+    lab_tab_3: "फार्माकोलॉजी व एपीएचई",
+    lab_tab_4: "फार्माकोग्नोसी व हर्बल गार्डन",
+    lab_tab_5: "डिजिटल ग्रंथालय व आयसीटी",
+
+    // Faculty
+    faculty_badge: "मार्गदर्शक व प्राध्यापक वृंद",
+    faculty_title: "अनुभवी व उच्चशिक्षित प्राध्यापक वर्ग",
+    faculty_sub: "औषधनिर्माणशास्त्रातील अनुभवी, उच्चशिक्षित (Ph.D, M.Pharm) व समर्पित प्राध्यापक वर्ग",
+
+    // Eligibility Checker
     eligibility_check_title: "प्रवेश पात्रता तपासा (Eligibility Checker)",
+    eligibility_check_sub: "आपला अभ्यासक्रम, १२वी विज्ञान गुण व प्रवर्ग निवडून महाराष्ट्र सीईटी सेल व पीसीआय नियमांनुसार पात्रता तपासा.",
     btn_check_eligibility: "पात्रता तपासा",
+
+    // Gallery
+    gallery_badge: "कॅम्पस छायाचित्रे",
+    gallery_title: "कॅम्पस व प्रयोगशाळा गॅलरी",
+    gallery_sub: "शिव संगम पुणे शैक्षणिक संकुल - लॅबोरेटरीज, वर्गखोल्या, लायब्ररी व हर्बल गार्डन",
+
+    // Notices
+    notices_badge: "अधिकृत सूचना",
+    notices_title: "महाविद्यालयीन सूचना व घडामोडी",
+
+    // Approvals
+    approvals_badge: "मान्यता व नियम",
+    approvals_title: "नियामक संलग्नता व पारदर्शक कारभार",
+    approvals_sub: "स्वामी विवेकानंदांच्या तत्त्वांवर आधारलेल्या विवेकानंद युवक मंडळाचा पारदर्शक शैक्षणिक कारभार",
+
+    // Admissions Form
+    form_badge: "प्रवेश कक्ष २०२६-२०२७",
     form_title: "प्रवेश पूर्वनोंदणी व माहिती फॉर्म २०२६-२०२७",
+    form_sub: "डी.फार्म व बी.फार्म प्रवेशासाठी ऑनलाइन माहिती नोंदवा. प्रवेश कक्षाकडून थेट मार्गदर्शन व तात्पुरती नोंदणी पावती मिळवा.",
+    form_submit_btn: "नोंदणी करा व तात्पुरती पावती मिळवा",
+    form_wa_btn: "थेट व्हॉट्सॲपवर पाठवा",
+
+    // Contact
+    contact_badge: "संपर्क साधा",
+    contact_title: "महाविद्यालय परिसर (पुणे) व संस्था मुख्यालय (लातूर)",
+    contact_sub: "महाविद्यालय परिसर (पुणे) किंवा संस्था मुख्यालय (लातूर) येथे प्रत्यक्ष भेट द्या अथवा संपर्क साधा",
     contact_pune_title: "महाविद्यालय परिसर (पुणे)",
+    contact_pune_sub: "शिव संगम शैक्षणिक संकुल",
+    contact_pune_addr: "<strong>पत्ता:</strong> फुरसुंगी (Phursungi), ता. हवेली, जि. पुणे, महाराष्ट्र - ४१२३०८.<br>(हडपसर व सासवड रोड नजीक, पुणे शहर परिसर)",
     contact_latur_title: "संस्था मुख्यालय (लातूर)",
-  },
-  en: {
-    trust_name: "Vivekanand Yuvak Mandal Managed",
-    trust_reg: "Reg. No.: MAHA/10600/Latur",
-    trust_office: "HQ: Shivaji Road, Ganj Golai, Latur - 413512",
-    nav_home: "Home",
-    nav_about: "About Us",
-    nav_programs: "Courses",
-    nav_facilities: "Laboratories",
-    nav_admissions: "Admissions 2026-27",
-    nav_contact: "Contact",
-    btn_apply: "Apply Now",
-    hero_badge: "Admissions Open for Academic Session 2026-2027",
-    hero_desc: "Run by Vivekanand Yuvak Mandal, Latur (Reg. No: MAHA/10600/Latur). Shiv Sangam Pune College of Pharmacy brings cutting-edge formulation laboratories, industry-aligned training, and professional ethics to Phursungi, Pune.",
-    features_title: "Why Choose Shiv Sangam College of Pharmacy?",
-    features_sub: "Quality pharmaceutical education, state-of-the-art pilot labs, and industry mentorship.",
-    sec_leadership_title: "From Secretary's Desk",
-    sec_leadership_name: "Shivling Jevle",
-    sec_leadership_role: "Secretary, Vivekanand Yuvak Mandal, Latur / Pune",
-    eligibility_check_title: "Check Your Pharmacy Admission Eligibility",
-    btn_check_eligibility: "Evaluate My Eligibility",
-    form_title: "Admission Enquiry & Pre-Registration 2026-2027",
-    contact_pune_title: "College Campus (Pune)",
-    contact_latur_title: "Trust Head Office (Latur)",
+    contact_latur_sub: "विवेकानंद युवक मंडळ",
+    contact_latur_addr: "<strong>मुख्यालय:</strong> शिवाजी रोड, गंज गोलाई, लातूर - ४१३५१२, महाराष्ट्र.<br>(नोंदणी क्रमांक: MAHA/10600/Latur)"
   }
 };
 
@@ -70,13 +445,19 @@ function setLanguage(lang) {
     document.body.classList.remove('marathi-mode');
   }
 
+  // Update all elements with data-i18n
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (translations[lang] && translations[lang][key]) {
-      el.textContent = translations[lang][key];
+    if (translations[lang] && translations[lang][key] !== undefined) {
+      if (el.getAttribute('data-i18n-html') === 'true' || translations[lang][key].includes('<')) {
+        el.innerHTML = translations[lang][key];
+      } else {
+        el.textContent = translations[lang][key];
+      }
     }
   });
 
+  // Update buttons
   const btnEn = document.getElementById('lang-btn-en');
   const btnMr = document.getElementById('lang-btn-mr');
   if (btnEn && btnMr) {
@@ -161,12 +542,8 @@ function setupEligibilityChecker() {
       const isMarksEligible = marks >= minMarks;
       
       let isEntranceOk = true;
-      let courseName = "D.Pharm (Diploma in Pharmacy)";
-      if (course === 'bpharm') {
-        courseName = "B.Pharm (Bachelor of Pharmacy)";
-        isEntranceOk = (neet === 'yes' || neet === 'appearing');
-      } else if (course === 'bpth') {
-        courseName = "B.P.Th (Physiotherapy)";
+      let courseName = (course === 'bpharm') ? "B.Pharm (Bachelor of Pharmacy)" : (course === 'bpth' ? "B.P.Th (Physiotherapy)" : "D.Pharm (Diploma in Pharmacy)");
+      if (course === 'bpharm' || course === 'bpth') {
         isEntranceOk = (neet === 'yes' || neet === 'appearing');
       }
 
@@ -223,7 +600,6 @@ function setupAdmissionForm() {
   const whatsappShareBtn = document.getElementById('whatsapp-share-receipt-btn');
   const directWaBtn = document.getElementById('form-whatsapp-direct');
 
-  // Direct WhatsApp from form before submitting
   if (directWaBtn) {
     directWaBtn.addEventListener('click', () => {
       const name = document.getElementById('app-name').value.trim() || 'Student';
@@ -252,7 +628,6 @@ function setupAdmissionForm() {
       const regId = 'SSPCP-2026-' + Math.floor(100000 + Math.random() * 900000);
       const timestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
 
-      // Save inquiry to localStorage for Admin
       const newLead = {
         regId,
         fullName,
@@ -272,10 +647,8 @@ function setupAdmissionForm() {
       existingLeads.unshift(newLead);
       localStorage.setItem('sspcp_admission_leads', JSON.stringify(existingLeads));
 
-      // Refresh admin table if open
       renderAdminLeads();
 
-      // Populate Receipt Modal
       if (receiptDetails) {
         receiptDetails.innerHTML = `
           <div class="border-b border-slate-200 pb-4 mb-4 text-center">
@@ -345,7 +718,6 @@ function setupGalleryLightbox() {
   const descEl = document.getElementById('lightbox-desc');
   const filterBtns = document.querySelectorAll('.gallery-filter-btn');
 
-  // Filter functionality
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const filter = btn.getAttribute('data-filter');
@@ -367,7 +739,6 @@ function setupGalleryLightbox() {
     });
   });
 
-  // Lightbox click
   items.forEach(item => {
     item.addEventListener('click', () => {
       const title = item.getAttribute('data-title');
@@ -410,7 +781,7 @@ function setupProspectusModal() {
   }
 }
 
-// Admin Portal Logic (Authentication, Lead Table, CSV Export, Notice Ticker)
+// Admin Portal Logic
 function setupAdminPortal() {
   const openBtn = document.getElementById('open-admin-btn');
   const mobileOpenBtn = document.getElementById('mobile-open-admin-btn');
@@ -449,12 +820,10 @@ function setupAdminPortal() {
     closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
   }
 
-  // Check PIN/password
   if (loginForm) {
     loginForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const pass = document.getElementById('admin-pass').value.trim();
-      // Safe default PIN for college administrative staff
       if (pass === '1234' || pass === 'shivsangam2026') {
         sessionStorage.setItem('sspcp_admin_auth', 'true');
         if (loginErr) loginErr.classList.add('hidden');
@@ -467,7 +836,6 @@ function setupAdminPortal() {
     });
   }
 
-  // Logout
   if (logoutBtn) {
     logoutBtn.addEventListener('click', () => {
       sessionStorage.removeItem('sspcp_admin_auth');
@@ -476,12 +844,8 @@ function setupAdminPortal() {
     });
   }
 
-  // Export CSV
-  if (exportBtn) {
-    exportBtn.addEventListener('click', exportLeadsToCSV);
-  }
+  if (exportBtn) exportBtn.addEventListener('click', exportLeadsToCSV);
 
-  // Clear leads
   if (clearBtn) {
     clearBtn.addEventListener('click', () => {
       if (confirm('Are you sure you want to clear all student admission enquiries?')) {
@@ -491,7 +855,6 @@ function setupAdminPortal() {
     });
   }
 
-  // Add Notice
   if (noticeForm) {
     noticeForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -548,7 +911,7 @@ function renderAdminLeads() {
     return;
   }
 
-  tbody.innerHTML = leads.map((item, index) => `
+  tbody.innerHTML = leads.map((item) => `
     <tr class="hover:bg-slate-50 transition-colors">
       <td class="px-3 py-2 font-mono text-[11px] font-bold text-amber-700">${item.regId || 'N/A'}</td>
       <td class="px-3 py-2 font-bold text-slate-900">${item.fullName || 'N/A'}</td>
@@ -612,11 +975,12 @@ document.addEventListener('DOMContentLoaded', () => {
   setupProspectusModal();
   setupAdminPortal();
 
-  // Language toggles
+  // Language buttons
   const btnEn = document.getElementById('lang-btn-en');
   const btnMr = document.getElementById('lang-btn-mr');
   if (btnEn) btnEn.addEventListener('click', () => setLanguage('en'));
   if (btnMr) btnMr.addEventListener('click', () => setLanguage('mr'));
 
+  // Initialize saved or default language
   setLanguage(currentLang);
 });
