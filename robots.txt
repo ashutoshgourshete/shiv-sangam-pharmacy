@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /admin
 
-Sitemap: https://shivsangampune.edu.in/sitemap.xml
+Sitemap: https://shivsangamphysio.in/sitemap.xml
