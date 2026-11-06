@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/college-logo.png">
-  <link rel="apple-touch-icon" href="assets/college-logo.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kranti Sangam Foundation's OM SS PUNE COLLEGE OF PHYSIOTHERAPY, Urali Kanchan, Dist. Pune. College Code: 06413. B.P.T. Admissions Open 2025-26." data-id="th-modified">
-  <meta name="keywords" content="OM SS Pune College of Physiotherapy, Kranti Sangam Foundation, BPT Pune, Urali Kanchan Physiotherapy, College Code 06413, MUHS Physiotherapy Admissions">
-  <title data-id="th-modified">OM SS Pune College of Physiotherapy | Kranti Sangam Foundation (Code: 06413)</title>
+  <meta name="description" content="Vivekanand Yuvak Mandal's SHIV SANGAM PUNE COLLEGE OF PHYSIOTHERAPY, Phursungi, Tal. Haveli, Dist. Pune. College Code: 0000. Admissions Open 2026-27 for Bachelor of Physiotherapy (B.P.Th).">
+  <meta name="keywords" content="Shiv Sangam Pune College of Physiotherapy, Vivekanand Yuvak Mandal, BPTh Pune, BPT Physiotherapy, Phursungi Pune College, College Code 0000, Raghunath Patil, Shivling Jevle, MUHS Nashik">
+  <title>Shiv Sangam Pune College of Physiotherapy | Vivekanand Yuvak Mandal (Code: 0000)</title>
 
-  <!-- Google Fonts -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/trust-logo.svg">
+  <link rel="apple-touch-icon" href="assets/trust-logo.svg">
+
+  <!-- Google Fonts: Inter & Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome 6.5.1 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Custom CSS -->
   <style>
-/* Official Stylesheet */
-
 /* ==========================================================================
-   Kranti Sangam Foundation's
-   OM SS PUNE COLLEGE OF PHYSIOTHERAPY, URALI KANCHAN, PUNE
-   College Code: 06413 | Affiliated to MUHS, Nashik
-   Official Website Stylesheet
+   Vivekanand Yuvak Mandal's
+   SHIV SANGAM PUNE COLLEGE OF PHYSIOTHERAPY, PHURSUNGI, PUNE
+   College Code: 0000 | Reg. No: MAHA/10600/Latur
+   Official Stylesheet (Premium Design Reference)
    ========================================================================== */
 
 :root {
@@ -49,7 +47,7 @@
   --radius-lg: 20px;
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --transition: all 0.3s ease;
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 * {
@@ -92,12 +90,12 @@ img {
 }
 
 /* ==========================================================================
-   Top Alert / Notification Bar
+   Top Notice / Notification Bar
    ========================================================================== */
 .top-notice-bar {
-  background: linear-gradient(90deg, #0f2b48, #028090);
+  background: linear-gradient(90deg, #0f2b48 0%, #028090 100%);
   color: #f1f5f9;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   padding: 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -113,7 +111,7 @@ img {
 .top-contact-pills {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   flex-wrap: wrap;
 }
 
@@ -122,6 +120,7 @@ img {
   align-items: center;
   gap: 6px;
   color: #e2e8f0;
+  font-weight: 500;
 }
 
 .top-contact-pills a:hover {
@@ -131,9 +130,9 @@ img {
 .top-code-badge {
   background: #fdf0d5;
   color: #780000;
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 4px;
+  font-weight: 800;
+  padding: 3px 12px;
+  border-radius: 50px;
   font-size: 0.8rem;
   display: inline-flex;
   align-items: center;
@@ -155,579 +154,502 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .brand-main {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
 }
 
 .college-logo-img {
-  width: 90px;
-  height: 90px;
+  width: 72px;
+  height: 72px;
   object-fit: contain;
-  border-radius: 50%;
-  box-shadow: var(--shadow-sm);
-  background: #fff;
-  padding: 2px;
-  border: 2px solid #e2e8f0;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.08));
 }
 
-.college-titles {
-  display: flex;
-  flex-direction: column;
-}
-
-.trust-name {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--secondary-teal);
-  text-transform: uppercase;
+.college-titles .trust-name {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #b45309;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
-.college-name {
+.college-titles .college-name {
   font-family: var(--font-heading);
-  font-size: 1.65rem;
-  font-weight: 800;
+  font-size: 1.55rem;
+  font-weight: 900;
   color: var(--primary-navy);
   line-height: 1.2;
+  margin: 2px 0;
 }
 
-.college-sub-location {
-  font-size: 0.95rem;
+.college-titles .college-sub-location {
+  font-size: 0.85rem;
   color: var(--muted-text);
-  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-top: 3px;
+  font-weight: 500;
 }
 
 .header-meta-box {
   display: flex;
-  gap: 15px;
   align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
 .header-badge-card {
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
   text-align: right;
-  border-left: 2px solid #e2e8f0;
-  padding-left: 15px;
+  min-width: 140px;
 }
 
 .header-badge-card small {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--muted-text);
-  text-transform: uppercase;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .header-badge-card strong {
-  font-size: 0.92rem;
+  display: block;
+  font-size: 0.88rem;
   color: var(--primary-navy);
+  font-weight: 800;
 }
 
 /* ==========================================================================
    Navigation Bar
    ========================================================================== */
-.main-navbar {
+.main-navigation-bar {
   background: var(--primary-navy);
   position: sticky;
   top: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  z-index: 999;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.nav-wrapper {
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-menu {
+.nav-menu-list {
   display: flex;
   align-items: center;
+  gap: 4px;
 }
 
-.nav-item {
-  position: relative;
-}
-
-.nav-link {
-  display: block;
-  color: #ffffff;
-  font-size: 0.92rem;
-  font-weight: 500;
-  padding: 16px 16px;
-  transition: var(--transition);
-}
-
-.nav-link:hover,
-.nav-item.active .nav-link {
-  color: var(--accent-gold);
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.dropdown-box {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 240px;
-  background: #ffffff;
-  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
-  box-shadow: var(--shadow-lg);
-  display: none;
-  border-top: 3px solid var(--secondary-teal);
-  z-index: 100;
-}
-
-.dropdown-box li a {
-  display: block;
-  padding: 11px 18px;
-  color: var(--dark-text);
+.nav-menu-list > li > a {
+  display: inline-block;
+  padding: 14px 14px;
+  color: #e2e8f0;
   font-size: 0.88rem;
-  border-bottom: 1px solid #f1f5f9;
-}
-
-.dropdown-box li a:hover {
-  background: #f0fdfa;
-  color: var(--secondary-teal);
-  padding-left: 22px;
-}
-
-.nav-item:hover .dropdown-box {
-  display: block;
-  animation: fadeInDown 0.2s ease;
-}
-
-.nav-cta-group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.btn-nav-admission {
-  background: linear-gradient(135deg, #d90429, #ef233c);
-  color: #ffffff !important;
   font-weight: 600;
-  padding: 9px 18px;
-  border-radius: 30px;
-  font-size: 0.85rem;
+  letter-spacing: 0.2px;
+}
+
+.nav-menu-list > li > a:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+.nav-cta-btn {
+  background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  padding: 9px 18px !important;
+  border-radius: 50px !important;
+  box-shadow: 0 4px 12px rgba(244, 162, 97, 0.35);
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  box-shadow: 0 4px 12px rgba(217, 4, 41, 0.35);
-  animation: pulseButton 2s infinite;
+  gap: 6px;
+  font-size: 0.84rem !important;
 }
 
-@keyframes pulseButton {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.03); }
-  100% { transform: scale(1); }
+.nav-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(244, 162, 97, 0.45);
 }
 
-.mobile-toggle-btn {
+.mobile-menu-btn {
   display: none;
-  background: none;
+  background: transparent;
   border: none;
   color: #ffffff;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   cursor: pointer;
+  padding: 10px;
 }
 
 /* ==========================================================================
-   Hero Section
+   Hero Banner Section
    ========================================================================== */
 .hero-banner-section {
-  position: relative;
-  background: linear-gradient(rgba(15, 43, 72, 0.88), rgba(2, 128, 144, 0.82)),
-              url('../images/college-building.jpg') center/cover no-repeat;
+  background: linear-gradient(135deg, #0A192F 0%, #0f2b48 50%, #028090 100%);
   color: #ffffff;
-  padding: 90px 0 110px 0;
+  padding: 56px 0 64px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner-section::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(244, 162, 97, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 36px;
   align-items: center;
-}
-
-.hero-text-content {
-  max-width: 650px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-pill-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(244, 162, 97, 0.25);
-  border: 1px solid var(--accent-gold);
-  color: var(--accent-gold);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 6px 16px;
-  border-radius: 30px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 20px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  color: var(--accent-gold);
+  font-weight: 700;
+  margin-bottom: 18px;
 }
 
 .hero-main-title {
   font-family: var(--font-heading);
-  font-size: 2.7rem;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 900;
   line-height: 1.2;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .hero-main-title span {
-  color: var(--accent-gold);
+  background: linear-gradient(90deg, #f4a261, #ffd166);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-desc {
-  font-size: 1.1rem;
-  color: #e2e8f0;
+  font-size: 1.05rem;
+  color: #cbd5e1;
   line-height: 1.7;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
+  max-width: 640px;
 }
 
 .hero-btn-row {
   display: flex;
-  gap: 15px;
+  align-items: center;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
 .btn-hero-primary {
-  background: var(--accent-gold);
-  color: #0f2b48;
-  font-weight: 700;
-  padding: 14px 28px;
-  border-radius: 30px;
-  font-size: 0.95rem;
+  background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+  color: #0f172a;
+  font-weight: 800;
+  padding: 13px 26px;
+  border-radius: var(--radius-md);
+  font-size: 0.92rem;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  box-shadow: 0 10px 20px rgba(244, 162, 97, 0.35);
+  gap: 8px;
+  box-shadow: 0 8px 20px rgba(231, 111, 81, 0.35);
 }
 
 .btn-hero-primary:hover {
-  background: #ffffff;
-  color: var(--primary-navy);
   transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(231, 111, 81, 0.45);
 }
 
 .btn-hero-outline {
-  border: 2px solid #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #ffffff;
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 30px;
-  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 13px 22px;
+  border-radius: var(--radius-md);
+  font-size: 0.92rem;
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
 
 .btn-hero-outline:hover {
-  background: #ffffff;
-  color: var(--primary-navy);
+  background: rgba(255, 255, 255, 0.18);
 }
 
-/* Quick Admission Card in Hero */
+/* Hero Right Admission Card */
 .hero-admission-card {
-  background: #ffffff;
-  color: var(--dark-text);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
   border-radius: var(--radius-lg);
-  padding: 30px;
+  padding: 24px 28px;
+  color: var(--dark-text);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
-  border-top: 5px solid #d90429;
-  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .hero-card-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #f1f5f9;
+  align-items: center;
+  border-bottom: 2px solid #f1f5f9;
   padding-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .hero-card-header h3 {
-  font-size: 1.35rem;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
   font-weight: 800;
-  color: #d90429;
-  text-transform: uppercase;
+  color: var(--primary-navy);
 }
 
-.hero-card-header .code-tag {
-  background: #0f2b48;
-  color: #fff;
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: 6px;
+.code-tag {
+  background: #fdf0d5;
+  color: #b45309;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 4px;
 }
 
 .hero-card-course {
-  background: #f0fdfa;
-  border: 1px dashed var(--secondary-teal);
+  background: #f8fafc;
+  border-left: 4px solid var(--secondary-teal);
   padding: 10px 14px;
-  border-radius: var(--radius-sm);
-  margin-bottom: 15px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  font-size: 0.88rem;
 }
 
 .hero-card-course strong {
-  color: var(--secondary-teal);
   display: block;
-  font-size: 1.05rem;
-}
-
-.hero-card-course span {
-  font-size: 0.85rem;
-  color: #475569;
-}
-
-/* Stray Vacancy Timeline List */
-.admission-timeline {
-  margin-bottom: 20px;
-}
-
-.timeline-step {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-.timeline-step:last-child {
-  margin-bottom: 0;
-}
-
-.timeline-bullet {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: rgba(2, 128, 144, 0.15);
-  color: var(--secondary-teal);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 700;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.timeline-text strong {
-  display: block;
-  font-size: 0.9rem;
-  color: var(--dark-text);
-}
-
-.timeline-text span {
-  font-size: 0.82rem;
-  color: #d90429;
-  font-weight: 600;
-}
-
-.btn-card-apply {
-  width: 100%;
-  background: linear-gradient(135deg, var(--secondary-teal), var(--primary-navy));
-  color: #ffffff;
-  font-weight: 700;
-  padding: 12px;
-  border-radius: var(--radius-sm);
-  text-align: center;
-  display: block;
-  font-size: 0.95rem;
-  border: none;
-  cursor: pointer;
-}
-
-.btn-card-apply:hover {
-  filter: brightness(1.1);
-}
-
-/* ==========================================================================
-   Campus Highlights Counter Bar
-   ========================================================================== */
-.counter-bar-wrapper {
-  margin-top: -40px;
-  position: relative;
-  z-index: 10;
-}
-
-.counter-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background: #ffffff;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
-  border: 1px solid #edf2f7;
-  overflow: hidden;
-}
-
-.counter-box {
-  padding: 25px 20px;
-  text-align: center;
-  border-right: 1px solid #edf2f7;
-}
-
-.counter-box:last-child {
-  border-right: none;
-}
-
-.counter-icon {
-  font-size: 1.8rem;
-  color: var(--secondary-teal);
-  margin-bottom: 8px;
-}
-
-.counter-number {
-  font-size: 2rem;
-  font-weight: 800;
   color: var(--primary-navy);
-  font-family: var(--font-heading);
+  font-size: 0.95rem;
 }
 
-.counter-label {
-  font-size: 0.85rem;
-  color: var(--muted-text);
-  font-weight: 500;
+.hero-schedule-mini {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  margin-bottom: 16px;
+}
+
+.hero-schedule-mini td {
+  padding: 7px 6px;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.hero-schedule-mini td.date-col {
+  text-align: right;
+  font-weight: 700;
+  color: var(--secondary-teal);
 }
 
 /* ==========================================================================
-   Section General
+   Sections Common Styling
    ========================================================================== */
 .site-section {
-  padding: 75px 0;
+  padding: 70px 0;
+}
+
+.course-section-bg {
+  background-color: #f8fafc;
 }
 
 .section-title-wrap {
   text-align: center;
-  max-width: 700px;
-  margin: 0 auto 50px auto;
+  max-width: 760px;
+  margin: 0 auto 48px auto;
 }
 
 .section-tagline {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 800;
   color: var(--secondary-teal);
-  font-size: 0.85rem;
-  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
-  display: block;
-  margin-bottom: 6px;
+  letter-spacing: 1px;
+  background: #e0f2fe;
+  padding: 4px 14px;
+  border-radius: 50px;
+  margin-bottom: 10px;
 }
 
 .section-main-heading {
   font-family: var(--font-heading);
-  font-size: 2.1rem;
-  font-weight: 700;
+  font-size: 2.2rem;
+  font-weight: 900;
   color: var(--primary-navy);
+  line-height: 1.25;
 }
 
 .section-subtext {
-  color: var(--muted-text);
   font-size: 0.95rem;
-  margin-top: 8px;
+  color: var(--muted-text);
+  margin-top: 10px;
 }
 
 /* ==========================================================================
-   About College & Trust Section
+   About Institution & Enhanced Building Photo Section
    ========================================================================== */
 .about-college-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.15fr 0.95fr;
   gap: 40px;
   align-items: center;
 }
 
-.about-text-column h3 {
-  font-size: 1.6rem;
-  font-family: var(--font-heading);
-  color: var(--primary-navy);
-  margin-bottom: 15px;
-}
-
 .about-text-column p {
   color: #475569;
-  font-size: 0.96rem;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
   line-height: 1.7;
-  margin-bottom: 15px;
 }
 
 .about-highlights-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-  margin-top: 20px;
+  margin: 24px 0;
 }
 
 .about-pill-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: var(--light-bg);
+  background: #f1f5f9;
   padding: 10px 14px;
   border-radius: var(--radius-sm);
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   font-weight: 600;
-  color: var(--dark-text);
-  border: 1px solid #edf2f7;
+  color: var(--primary-navy);
 }
 
 .about-pill-item i {
   color: var(--secondary-teal);
+  font-size: 1.1rem;
 }
 
-.about-img-column {
-  position: relative;
+/* Leadership Presentation Cards */
+.leadership-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
 }
 
-.building-display-card {
+.leader-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+  border-top: 3px solid var(--secondary-teal);
+}
+
+.leader-role {
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  display: block;
+}
+
+.leader-name {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--primary-navy);
+  margin: 2px 0 6px 0;
+}
+
+.leader-desc {
+  font-size: 0.8rem;
+  color: var(--muted-text);
+  line-height: 1.5;
+}
+
+/* Enhanced Building Photo Frame */
+.building-display-card {
+  position: relative;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   border: 4px solid #ffffff;
+  background: #0f172a;
 }
 
 .building-display-card img {
   width: 100%;
-  height: 320px;
+  height: 490px;
   object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
 }
 
-.building-caption {
-  background: var(--primary-navy);
-  color: #fff;
-  padding: 12px 20px;
-  font-size: 0.9rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.building-display-card:hover img {
+  transform: scale(1.03);
 }
 
-.building-caption span {
-  color: var(--accent-gold);
-  font-weight: 600;
+.building-caption-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.95) 75%);
+  color: #ffffff;
+  padding: 30px 20px 18px 20px;
+}
+
+.building-caption-overlay h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.building-caption-overlay p {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  margin-top: 2px;
 }
 
 /* ==========================================================================
-   B.P.T. Course Details Section
+   Bachelor of Physiotherapy (B.P.Th) Section
    ========================================================================== */
-.course-section-bg {
-  background: var(--light-bg);
-}
-
 .course-detail-card {
   background: #ffffff;
-  border-radius: var(--radius-md);
-  padding: 40px;
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  border: 1px solid var(--border-color);
   box-shadow: var(--shadow-md);
-  border: 1px solid #edf2f7;
+  border-top: 5px solid var(--secondary-teal);
 }
 
 .course-header-row {
@@ -735,15 +657,16 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 16px;
   border-bottom: 2px solid #f1f5f9;
-  padding-bottom: 25px;
-  margin-bottom: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .course-title-group h3 {
-  font-size: 1.8rem;
   font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 900;
   color: var(--primary-navy);
 }
 
@@ -754,437 +677,368 @@ img {
 }
 
 .course-tag {
-  background: rgba(2, 128, 144, 0.1);
-  color: var(--secondary-teal);
+  background: #e0f2fe;
+  color: var(--medical-blue);
+  font-weight: 700;
+  font-size: 0.82rem;
   padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .course-info-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-bottom: 35px;
+  gap: 24px;
+  margin-bottom: 30px;
 }
 
 .course-info-box {
-  background: var(--light-bg);
+  background: #f8fafc;
   padding: 20px;
-  border-radius: var(--radius-sm);
-  border-left: 4px solid var(--secondary-teal);
+  border-radius: var(--radius-md);
+  border: 1px solid #e2e8f0;
 }
 
-.course-info-box h4 {
-  font-size: 1.05rem;
+.course-info-box h5 {
+  font-size: 0.95rem;
+  font-weight: 800;
   color: var(--primary-navy);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .course-info-box p {
-  font-size: 0.9rem;
-  color: var(--muted-text);
-  line-height: 1.5;
+  font-size: 0.84rem;
+  color: #475569;
+  line-height: 1.6;
 }
 
-/* Departments / Specializations */
-.departments-grid {
+/* Core Departments Grid */
+.departments-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 36px;
 }
 
-.department-card {
+.dept-card {
   background: #ffffff;
-  padding: 25px 20px;
-  border-radius: var(--radius-sm);
-  border: 1px solid #e2e8f0;
-  transition: var(--transition);
-  text-align: left;
-}
-
-.department-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--secondary-teal);
+  padding: 22px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: var(--transition);
 }
 
-.dept-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 10px;
+.dept-card:hover {
+  border-color: var(--secondary-teal);
+  transform: translateY(-4px);
+}
+
+.dept-icon-circle {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 12px auto;
+  border-radius: 50%;
   background: #f0fdfa;
   color: var(--secondary-teal);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  margin-bottom: 15px;
+  font-size: 1.3rem;
 }
 
-.department-card h5 {
-  font-size: 1.05rem;
+.dept-card h4 {
+  font-size: 1rem;
+  font-weight: 800;
   color: var(--primary-navy);
-  margin-bottom: 8px;
-  font-weight: 700;
+  margin-bottom: 6px;
 }
 
-.department-card p {
-  font-size: 0.85rem;
+.dept-card p {
+  font-size: 0.8rem;
   color: var(--muted-text);
+  line-height: 1.5;
 }
 
 /* ==========================================================================
-   Stray Vacancy & Admission Schedule Table Section
+   Admission Schedule Table
    ========================================================================== */
 .schedule-table-wrap {
   background: #ffffff;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid #edf2f7;
-  max-width: 900px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  max-width: 960px;
   margin: 0 auto;
 }
 
 .schedule-header {
-  background: linear-gradient(90deg, #d90429, #ef233c);
+  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-teal) 100%);
   color: #ffffff;
-  padding: 20px 30px;
+  padding: 18px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
 .schedule-header h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.schedule-header .year-badge {
-  background: #fff;
-  color: #d90429;
-  font-weight: 700;
+.year-badge {
+  background: rgba(255, 255, 255, 0.2);
   padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 700;
 }
 
 .official-table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 0.9rem;
 }
 
 .official-table th {
-  background: #f8fafc;
+  background: #f1f5f9;
   color: var(--primary-navy);
+  padding: 12px 18px;
+  font-weight: 800;
   text-align: left;
-  padding: 14px 25px;
-  font-size: 0.9rem;
-  font-weight: 700;
-  border-bottom: 2px solid #e2e8f0;
+  border-bottom: 2px solid var(--border-color);
 }
 
 .official-table td {
-  padding: 16px 25px;
-  border-bottom: 1px solid #f1f5f9;
-  font-size: 0.92rem;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--dark-text);
 }
 
 .official-table tr:hover {
   background: #f8fafc;
 }
 
-.table-step-name {
-  font-weight: 600;
-  color: var(--dark-text);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.table-step-name i {
-  color: var(--secondary-teal);
-}
-
-.table-date-badge {
-  background: #fef2f2;
-  color: #d90429;
-  font-weight: 700;
-  padding: 6px 14px;
-  border-radius: 6px;
-  font-size: 0.88rem;
-  display: inline-block;
-  border: 1px solid #fee2e2;
-}
-
 /* ==========================================================================
-   Poster Modal & Action Bar
-   ========================================================================== */
-.poster-action-box {
-  background: #fdf0d5;
-  border: 1px solid #fed9b7;
-  padding: 20px;
-  border-radius: var(--radius-sm);
-  margin-top: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.poster-action-box p {
-  color: #780000;
-  font-weight: 600;
-  font-size: 0.95rem;
-  margin: 0;
-}
-
-.btn-download-poster {
-  background: #780000;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 0.85rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.btn-download-poster:hover {
-  background: #000;
-}
-
-/* ==========================================================================
-   Facilities Section
+   Facilities & Infrastructure
    ========================================================================== */
 .facilities-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .facility-card-item {
   background: #ffffff;
-  padding: 30px 25px;
+  padding: 26px 22px;
   border-radius: var(--radius-md);
-  border: 1px solid #edf2f7;
-  text-align: center;
+  border: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
 }
 
 .facility-card-item:hover {
-  transform: translateY(-5px);
-  border-color: var(--secondary-teal);
   box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
 }
 
 .fac-icon-circle {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  background: rgba(2, 128, 144, 0.1);
-  color: var(--secondary-teal);
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: #e0f2fe;
+  color: var(--medical-blue);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
-  margin: 0 auto 18px auto;
+  font-size: 1.3rem;
+  margin-bottom: 14px;
 }
 
 .facility-card-item h4 {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
+  font-weight: 800;
   color: var(--primary-navy);
   margin-bottom: 8px;
 }
 
 .facility-card-item p {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--muted-text);
   line-height: 1.6;
 }
 
 /* ==========================================================================
-   Contact & Location Grid
+   Contact Section & Admission Form
    ========================================================================== */
 .contact-section-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 36px;
 }
 
 .contact-info-card {
-  background: #ffffff;
-  padding: 35px;
-  border-radius: var(--radius-md);
+  background: var(--primary-navy);
+  color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 34px 28px;
   box-shadow: var(--shadow-md);
-  border: 1px solid #edf2f7;
 }
 
 .contact-info-card h4 {
-  font-size: 1.35rem;
-  color: var(--primary-navy);
-  margin-bottom: 25px;
   font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #ffffff;
 }
 
 .contact-detail-row {
   display: flex;
-  gap: 16px;
-  margin-bottom: 22px;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 20px;
 }
 
 .contact-icon-bubble {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: rgba(2, 128, 144, 0.12);
-  color: var(--secondary-teal);
+  background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
+  color: var(--accent-gold);
   flex-shrink: 0;
 }
 
 .contact-detail-row strong {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  color: #94a3b8;
   text-transform: uppercase;
-  color: var(--muted-text);
-  margin-bottom: 2px;
 }
 
 .contact-detail-row p, .contact-detail-row a {
-  font-size: 1rem;
-  color: var(--dark-text);
-  font-weight: 500;
+  font-size: 0.95rem;
+  color: #f1f5f9;
 }
 
-.contact-detail-row a:hover {
-  color: var(--secondary-teal);
-}
-
-/* Contact Form Box */
 .contact-form-card {
   background: #ffffff;
-  padding: 35px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
+  padding: 34px 30px;
+  border: 1px solid var(--border-color);
   box-shadow: var(--shadow-md);
-  border: 1px solid #edf2f7;
 }
 
 .contact-form-card h4 {
+  font-family: var(--font-heading);
   font-size: 1.35rem;
+  font-weight: 800;
   color: var(--primary-navy);
   margin-bottom: 20px;
-  font-family: var(--font-heading);
 }
 
 .form-field {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .form-field label {
   display: block;
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.82rem;
+  font-weight: 700;
   color: var(--dark-text);
   margin-bottom: 6px;
 }
 
 .form-input {
   width: 100%;
-  padding: 11px 14px;
-  border: 1px solid #cbd5e1;
+  padding: 10px 14px;
   border-radius: var(--radius-sm);
-  font-size: 0.92rem;
-  outline: none;
-  font-family: inherit;
+  border: 1px solid #cbd5e1;
+  font-size: 0.9rem;
+  font-family: var(--font-body);
   transition: var(--transition);
 }
 
 .form-input:focus {
+  outline: none;
   border-color: var(--secondary-teal);
   box-shadow: 0 0 0 3px rgba(2, 128, 144, 0.15);
 }
 
-.btn-submit-inquiry {
+.btn-form-submit {
   width: 100%;
-  background: linear-gradient(135deg, var(--secondary-teal), var(--primary-navy));
+  background: linear-gradient(135deg, #028090 0%, #0077b6 100%);
   color: #ffffff;
-  font-weight: 700;
-  padding: 13px;
-  border-radius: var(--radius-sm);
   border: none;
+  padding: 12px;
+  border-radius: var(--radius-sm);
   font-size: 0.95rem;
+  font-weight: 800;
   cursor: pointer;
+  box-shadow: 0 4px 14px rgba(2, 128, 144, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
-.btn-submit-inquiry:hover {
-  filter: brightness(1.1);
+.btn-form-submit:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
 }
 
 /* ==========================================================================
    Footer
    ========================================================================== */
-.college-footer {
-  background: #091a2c;
+.site-footer {
+  background: #091c30;
   color: #94a3b8;
-  padding: 60px 0 25px 0;
-  font-size: 0.9rem;
+  padding: 56px 0 24px 0;
+  font-size: 0.88rem;
 }
 
-.footer-columns {
+.footer-columns-grid {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
-  gap: 40px;
+  grid-template-columns: 1.4fr 0.9fr 0.9fr 1fr;
+  gap: 36px;
   margin-bottom: 40px;
 }
 
 .footer-col h5 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
   color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 18px;
-  position: relative;
-  padding-bottom: 8px;
+  margin-bottom: 16px;
 }
 
-.footer-col h5::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 35px;
-  height: 2px;
-  background: var(--accent-gold);
+.footer-col p {
+  line-height: 1.6;
+  font-size: 0.85rem;
 }
 
-.footer-links li {
+.footer-links-list li {
   margin-bottom: 10px;
 }
 
-.footer-links a {
-  color: #94a3b8;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer-links a:hover {
+.footer-links-list a:hover {
   color: var(--accent-gold);
-  padding-left: 4px;
 }
 
 .footer-bottom-bar {
@@ -1195,204 +1049,157 @@ img {
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
-  font-size: 0.85rem;
-}
-
-/* Floating WhatsApp / Call Button */
-.floating-call-btn {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #25d366;
-  color: #fff;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
-  z-index: 999;
-  transition: var(--transition);
-}
-
-.floating-call-btn:hover {
-  transform: scale(1.1);
+  font-size: 0.8rem;
 }
 
 /* ==========================================================================
-   Header Google Search Bar (English)
+   Admission Modal
    ========================================================================== */
-.mobile-search-item {
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(6px);
+  z-index: 10000;
   display: none;
-}
-
-.nav-google-search-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.nav-search-form {
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  border: 1.5px solid #cbd5e1;
-  border-radius: 25px;
-  padding: 3px 6px 3px 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: var(--transition);
-}
-
-.nav-search-form:focus-within {
-  border-color: var(--secondary-teal);
-  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
-}
-
-.nav-search-form .google-icon {
-  color: #4285f4;
-  font-size: 1rem;
-  margin-right: 8px;
-}
-
-.nav-search-input {
-  border: none;
-  outline: none;
-  font-size: 0.85rem;
-  font-family: inherit;
-  color: var(--text-dark);
-  width: 165px;
-  background: transparent;
-  transition: width 0.25s ease;
-}
-
-.nav-search-input:focus {
-  width: 210px;
-}
-
-.nav-search-input::placeholder {
-  color: #94a3b8;
-  font-size: 0.8rem;
-}
-
-.nav-search-btn {
-  background: var(--secondary-teal);
-  color: #ffffff;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
-  cursor: pointer;
-  transition: var(--transition);
+  padding: 20px;
 }
 
-.nav-search-btn:hover {
-  background: var(--primary-navy);
-  transform: scale(1.05);
+.modal-overlay.active {
+  display: flex;
 }
 
-/* ==========================================================================
-   Floating AI Chatbot (ChatGPT Style)
-   ========================================================================== */
-.floating-ai-btn {
-  position: fixed;
-  bottom: 95px;
-  right: 25px;
-  background: linear-gradient(135deg, #0ea5e9, #0d9488);
+.modal-window {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+  border: 1px solid var(--border-color);
+}
+
+.modal-header {
+  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-teal) 100%);
   color: #ffffff;
-  height: 54px;
-  border-radius: 30px;
-  padding: 0 18px 0 14px;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h4 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.close-modal-btn {
+  background: transparent;
   border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
   cursor: pointer;
-  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.45);
-  z-index: 998;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  font-family: inherit;
+  line-height: 1;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+/* ==========================================================================
+   Floating Widgets: WhatsApp & AI Chatbot
+   ========================================================================== */
+.floating-widgets-bar {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9998;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.floating-whatsapp-btn {
+  background: #25d366;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+}
+
+.floating-whatsapp-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.55);
+}
+
+.floating-ai-btn {
+  background: linear-gradient(135deg, #0f2b48 0%, #028090 100%);
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(15, 43, 72, 0.4);
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: var(--transition);
 }
 
 .floating-ai-btn:hover {
-  transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 12px 28px rgba(14, 165, 233, 0.55);
-}
-
-.ai-pulse-ring {
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  border-radius: 34px;
-  border: 2px solid rgba(14, 165, 233, 0.6);
-  animation: aiPulse 2s infinite ease-out;
-  pointer-events: none;
-}
-
-@keyframes aiPulse {
-  0% { transform: scale(0.96); opacity: 1; }
-  100% { transform: scale(1.15); opacity: 0; }
-}
-
-.ai-btn-icon {
-  font-size: 1.25rem;
-  display: flex;
-  align-items: center;
-}
-
-.ai-badge-label {
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  white-space: nowrap;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(2, 128, 144, 0.5);
 }
 
 /* AI Chat Window */
 .ai-chat-window {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 400px;
+  bottom: 140px;
+  right: 24px;
+  width: 380px;
   max-width: calc(100vw - 32px);
-  height: 600px;
-  max-height: calc(100vh - 60px);
+  height: 520px;
+  max-height: calc(100vh - 160px);
   background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.25);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 50px -10px rgba(15, 43, 72, 0.35);
+  border: 1px solid var(--border-color);
   z-index: 10001;
-  display: flex;
+  display: none;
   flex-direction: column;
   overflow: hidden;
-  border: 1px solid rgba(226, 232, 240, 0.9);
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.92) translateY(20px);
-  transform-origin: bottom right;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .ai-chat-window.active {
-  opacity: 1;
-  pointer-events: auto;
-  transform: scale(1) translateY(0);
+  display: flex;
 }
 
-/* AI Header */
 .ai-chat-header {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: linear-gradient(135deg, #0f2b48 0%, #028090 100%);
   color: #ffffff;
-  padding: 14px 16px;
+  padding: 14px 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .ai-header-profile {
@@ -1402,942 +1209,261 @@ img {
 }
 
 .ai-avatar-box {
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0ea5e9, #0d9488);
+  background: rgba(255, 255, 255, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  font-size: 1.1rem;
-  position: relative;
-}
-
-.online-indicator {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 10px;
-  height: 10px;
-  background: #22c55e;
-  border: 2px solid #0f172a;
-  border-radius: 50%;
+  font-size: 1rem;
+  color: var(--accent-gold);
 }
 
 .ai-header-info h5 {
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.ai-gpt-pill {
-  background: rgba(16, 185, 129, 0.2);
-  color: #34d399;
-  border: 1px solid rgba(16, 185, 129, 0.4);
-  font-size: 0.65rem;
-  font-weight: 600;
-  padding: 2px 6px;
-  border-radius: 12px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 .ai-status-text {
-  font-size: 0.73rem;
-  color: #94a3b8;
-  display: block;
+  font-size: 0.7rem;
+  color: #a7f3d0;
 }
 
-.ai-header-actions {
-  display: flex;
-  gap: 6px;
-}
-
-.ai-action-btn {
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  color: #cbd5e1;
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.88rem;
-  transition: var(--transition);
-}
-
-.ai-action-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-}
-
-/* AI Mode Bar */
-.ai-mode-bar {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 12px;
-  background: #f8fafc;
-  border-bottom: 1px solid #e2e8f0;
-  overflow-x: auto;
-}
-
-.ai-mode-item {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #0f172a;
-  padding: 4px 9px;
-  border-radius: 14px;
-  background: #e2e8f0;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  white-space: nowrap;
-}
-
-.ai-mode-item.active {
-  background: #0d9488;
-  color: #ffffff;
-}
-
-.ai-mode-quick-btn {
-  font-size: 0.73rem;
-  font-weight: 600;
-  background: #ffffff;
-  color: #475569;
-  border: 1px solid #cbd5e1;
-  padding: 4px 9px;
-  border-radius: 14px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  white-space: nowrap;
-  transition: var(--transition);
-}
-
-.ai-mode-quick-btn:hover {
-  background: #f1f5f9;
-  color: #0f172a;
-  border-color: #94a3b8;
-}
-
-/* AI Chat Body */
 .ai-chat-body {
   flex: 1;
+  padding: 16px;
   overflow-y: auto;
-  padding: 14px;
+  background: #f8fafc;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  background: #fafafa;
 }
 
-.ai-message {
-  display: flex;
-  flex-direction: column;
+.ai-bubble-bot {
+  background: #f1f5f9;
+  color: var(--dark-text);
+  border-radius: 16px 16px 16px 4px;
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  line-height: 1.5;
   max-width: 88%;
 }
 
-.ai-message.bot-msg {
-  align-self: flex-start;
-}
-
-.ai-message.user-msg {
+.ai-bubble-user {
+  background: var(--secondary-teal);
+  color: #ffffff;
+  border-radius: 16px 16px 4px 16px;
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  max-width: 88%;
   align-self: flex-end;
 }
 
-.ai-bubble {
-  padding: 10px 14px;
-  border-radius: 14px;
-  font-size: 0.88rem;
-  line-height: 1.5;
-  word-break: break-word;
-}
-
-.bot-msg .ai-bubble {
-  background: #ffffff;
-  color: #1e293b;
-  border: 1px solid #e2e8f0;
-  border-top-left-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-}
-
-.bot-msg .ai-bubble p {
-  margin: 0 0 6px 0;
-}
-
-.bot-msg .ai-bubble p:last-child {
-  margin-bottom: 0;
-}
-
-.bot-msg .ai-bubble ul {
-  margin: 6px 0;
-  padding-left: 18px;
-}
-
-.bot-msg .ai-bubble li {
-  margin-bottom: 4px;
-}
-
-.user-msg .ai-bubble {
-  background: linear-gradient(135deg, #0d9488, #0f766e);
-  color: #ffffff;
-  border-top-right-radius: 4px;
-  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.25);
-}
-
-.msg-timestamp {
-  font-size: 0.68rem;
-  color: #94a3b8;
-  margin-top: 3px;
-  padding: 0 4px;
-}
-
-.user-msg .msg-timestamp {
-  text-align: right;
-}
-
-/* Quick Topic Chips */
-.ai-quick-topics {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 10px;
-}
-
-.quick-chip {
-  background: #f1f5f9;
-  color: #334155;
-  border: 1px solid #cbd5e1;
-  font-size: 0.74rem;
-  font-weight: 500;
-  padding: 4px 9px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.quick-chip:hover {
-  background: #0d9488;
-  color: #ffffff;
-  border-color: #0d9488;
-  transform: translateY(-1px);
-}
-
-/* Message Action Buttons inside bot reply */
-.msg-actions-row {
-  display: flex;
-  gap: 6px;
-  margin-top: 8px;
-  flex-wrap: wrap;
-}
-
-.msg-action-chip {
-  font-size: 0.72rem;
-  background: #f8fafc;
-  border: 1px solid #cbd5e1;
-  color: #334155;
-  border-radius: 10px;
-  padding: 3px 8px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.msg-action-chip:hover {
-  background: #e2e8f0;
-  color: #0f172a;
-}
-
-/* Typing animation */
-.ai-typing-indicator {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
+.ai-chips-bar {
   padding: 8px 12px;
   background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 14px;
-  border-top-left-radius: 4px;
-  width: fit-content;
-}
-
-.ai-typing-indicator span {
-  width: 7px;
-  height: 7px;
-  background: #94a3b8;
-  border-radius: 50%;
-  animation: typingBounce 1.4s infinite ease-in-out both;
-}
-
-.ai-typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
-.ai-typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
-
-@keyframes typingBounce {
-  0%, 80%, 100% { transform: scale(0); }
-  40% { transform: scale(1); }
-}
-
-/* AI Chat Footer */
-.ai-chat-footer {
-  padding: 10px 12px;
-  background: #ffffff;
-  border-top: 1px solid #e2e8f0;
-}
-
-.ai-input-form {
+  border-top: 1px solid var(--border-color);
   display: flex;
-  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+}
+
+.ai-chip-btn {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ai-chip-btn:hover {
+  background: var(--primary-navy);
+  color: #ffffff;
+  border-color: var(--primary-navy);
+}
+
+.ai-chat-footer {
+  padding: 10px 14px;
+  background: #ffffff;
+  border-top: 1px solid var(--border-color);
+  display: flex;
   gap: 8px;
 }
 
-.ai-input-wrapper {
+.ai-chat-input {
   flex: 1;
-  display: flex;
-  align-items: center;
-  background: #f1f5f9;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
   border: 1px solid #cbd5e1;
-  border-radius: 22px;
-  padding: 4px 6px 4px 14px;
-  transition: var(--transition);
+  font-size: 0.84rem;
 }
 
-.ai-input-wrapper:focus-within {
-  border-color: #0d9488;
-  background: #ffffff;
-  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.15);
-}
-
-.ai-input-wrapper input {
-  flex: 1;
-  border: none;
-  outline: none;
-  background: transparent;
-  font-size: 0.85rem;
-  font-family: inherit;
-  color: #0f172a;
-}
-
-.ai-sub-btn {
-  background: transparent;
-  border: none;
-  color: #64748b;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.82rem;
-  transition: var(--transition);
-}
-
-.ai-sub-btn:hover {
-  background: #e2e8f0;
-  color: #0f172a;
-}
-
-.ai-send-btn {
-  background: linear-gradient(135deg, #0ea5e9, #0d9488);
+.ai-chat-send {
+  background: var(--primary-navy);
   color: #ffffff;
   border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  font-size: 0.9rem;
-  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
-  transition: var(--transition);
-}
-
-.ai-send-btn:hover {
-  transform: scale(1.06);
-}
-
-.ai-footer-note {
-  text-align: center;
-  font-size: 0.68rem;
-  color: #94a3b8;
-  margin-top: 6px;
 }
 
 /* ==========================================================================
-   Responsive
+   Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 992px) {
-  .hero-grid {
+  .hero-grid, .about-college-grid, .contact-section-grid, .course-info-grid {
     grid-template-columns: 1fr;
   }
-  .about-college-grid {
-    grid-template-columns: 1fr;
-  }
-  .course-info-grid {
-    grid-template-columns: 1fr;
-  }
-  .contact-section-grid {
-    grid-template-columns: 1fr;
-  }
-  .counter-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .footer-columns {
+  .departments-cards-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .facilities-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-columns-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .brand-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-badge-card {
+    text-align: left;
   }
 }
 
 @media (max-width: 768px) {
-  /* Top Notice Bar - Compact & Useful */
-  .top-notice-bar {
+  .mobile-menu-btn {
     display: block;
-    padding: 5px 0;
-    font-size: 0.75rem;
   }
-  .top-notice-inner {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-    padding: 0 10px;
-  }
-  .top-contact-pills {
-    gap: 8px;
-  }
-  .top-contact-pills a:nth-child(2),
-  .top-contact-pills a:nth-child(3),
-  .top-contact-pills span {
+  .nav-menu-list {
     display: none;
-  }
-  .top-code-badge {
-    font-size: 0.72rem;
-    padding: 2px 7px;
-  }
-
-  /* College Brand Header - Mobile Layout */
-  .college-brand-header {
-    padding: 12px 0 10px;
-  }
-  .brand-row {
     flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-  .brand-main {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    gap: 12px;
     width: 100%;
+    padding: 10px 0;
   }
-  .college-logo-img {
-    width: 60px;
-    height: 60px;
-    flex-shrink: 0;
-  }
-  .trust-name {
-    font-size: 0.74rem;
-  }
-  .college-name {
-    font-size: 1.08rem;
-    line-height: 1.25;
-    margin: 2px 0;
-  }
-  .college-sub-location {
-    font-size: 0.78rem;
-  }
-  .header-meta-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-    width: 100%;
-    border-top: 1px dashed #e2e8f0;
-    padding-top: 8px;
-  }
-  .header-badge-card {
-    text-align: center;
-    border-left: none;
-    padding: 4px 8px;
-    background: #f8fafc;
-    border-radius: 6px;
-    border: 1px solid #e2e8f0;
-    flex: 1 1 auto;
-    min-width: 95px;
-  }
-  .header-badge-card small {
-    font-size: 0.64rem;
-  }
-  .header-badge-card strong {
-    font-size: 0.8rem;
-  }
-
-  /* Navigation Bar & Mobile Drawer */
-  .main-navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  .nav-wrapper {
-    padding: 6px 0;
-  }
-  .mobile-toggle-btn {
-    display: block;
-    width: 38px;
-    height: 38px;
-    font-size: 1.1rem;
-    background: rgba(255, 255, 255, 0.12);
-    border-radius: 8px;
-  }
-  .nav-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: var(--primary-navy);
-    flex-direction: column;
-    padding: 10px 0 16px;
-    border-radius: 0 0 16px 16px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  }
-  .nav-menu.active {
+  .nav-menu-list.active {
     display: flex;
   }
-  .nav-item {
+  .nav-menu-list > li > a {
     width: 100%;
+    padding: 10px 16px;
   }
-  .nav-link {
-    padding: 11px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    font-size: 0.9rem;
+  .departments-cards-grid, .facilities-cards-grid, .about-highlights-list, .leadership-cards-grid {
+    grid-template-columns: 1fr;
   }
-
-  /* Mobile Search Bar inside Menu */
-  .mobile-search-item {
-    display: block;
-    padding: 8px 16px 12px;
-  }
-  .mobile-search-form {
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    border-radius: 25px;
-    padding: 4px 6px 4px 14px;
-    border: 1px solid #cbd5e1;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  }
-  .mobile-search-form .google-icon {
-    color: #4285f4;
-    margin-right: 8px;
-    font-size: 0.95rem;
-  }
-  .mobile-search-input {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-size: 0.88rem;
-    background: transparent;
-    color: #0f172a;
-    font-family: inherit;
-  }
-  .mobile-search-btn {
-    background: var(--secondary-teal);
-    color: #ffffff;
-    border: none;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 0.82rem;
-  }
-
-  /* Header CTA */
-  .nav-google-search-container {
-    display: none; /* In header it's hidden; available in mobile menu & AI window */
-  }
-  .nav-cta-group {
-    gap: 8px;
-  }
-  .btn-nav-admission {
-    padding: 7px 12px;
-    font-size: 0.78rem;
-    gap: 5px;
-  }
-
-  /* Hero Section */
-  .hero-banner-section {
-    padding: 24px 0 32px;
-  }
-  .hero-grid {
-    gap: 22px;
-  }
-  .hero-pill-badge {
-    font-size: 0.74rem;
-    padding: 4px 10px;
-    margin-bottom: 12px;
+  .footer-columns-grid {
+    grid-template-columns: 1fr;
   }
   .hero-main-title {
-    font-size: 1.5rem;
-    line-height: 1.25;
-    margin-bottom: 12px;
-  }
-  .hero-desc {
-    font-size: 0.88rem;
-    line-height: 1.55;
-    margin-bottom: 18px;
-  }
-  .hero-btn-row {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .hero-btn-row .btn-hero-primary,
-  .hero-btn-row .btn-hero-outline {
-    width: 100%;
-    justify-content: center;
-    padding: 12px 16px;
-    font-size: 0.92rem;
-    text-align: center;
-  }
-  .hero-admission-card {
-    padding: 16px 14px;
-    border-radius: 14px;
-  }
-  .hero-card-course {
-    padding: 10px 12px;
-    font-size: 0.82rem;
-  }
-  .timeline-step {
-    gap: 10px;
-  }
-  .timeline-text strong {
-    font-size: 0.85rem;
-  }
-  .timeline-text span {
-    font-size: 0.78rem;
-  }
-
-  /* Stat Counters - 2x2 grid */
-  .counter-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  .counter-card {
-    padding: 14px 10px;
-  }
-  .counter-number {
-    font-size: 1.45rem;
-  }
-  .counter-card p {
-    font-size: 0.74rem;
-  }
-
-  /* Schedule Table - Scrollable */
-  .schedule-table-wrap {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    border-radius: 12px;
-  }
-  .schedule-header {
-    padding: 12px 14px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-  .official-table th, .official-table td {
-    padding: 10px 12px;
-    font-size: 0.82rem;
-    white-space: nowrap;
-  }
-
-  /* Site Sections */
-  .site-section {
-    padding: 38px 0;
-  }
-  .section-title {
-    font-size: 1.45rem;
-    line-height: 1.25;
-  }
-  .section-subtitle {
-    font-size: 0.85rem;
-    margin-bottom: 22px;
-  }
-
-  /* Ergonomic Floating Buttons on Mobile:
-     - AI Assistant on bottom-left
-     - WhatsApp on bottom-right
-     They never overlap or block each other! */
-  .floating-call-btn {
-    bottom: 18px;
-    right: 16px;
-    width: 48px;
-    height: 48px;
-    font-size: 1.45rem;
-    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
-  }
-  .floating-ai-btn {
-    bottom: 18px;
-    left: 16px;
-    right: auto;
-    height: 44px;
-    padding: 0 14px 0 12px;
-    font-size: 0.8rem;
-    border-radius: 22px;
-    box-shadow: 0 6px 18px rgba(14, 165, 233, 0.45);
-  }
-  .ai-btn-icon {
-    font-size: 1.05rem;
-  }
-  .ai-badge-label {
-    font-size: 0.78rem;
-  }
-
-  /* Mobile Full-Screen Style AI Chat Window */
-  .ai-chat-window {
-    top: 10px;
-    bottom: 10px;
-    left: 8px;
-    right: 8px;
-    width: auto;
-    max-width: none;
-    height: calc(100vh - 20px);
-    max-height: none;
-    border-radius: 18px;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
-    z-index: 100000;
-  }
-  .ai-chat-header {
-    padding: 12px 14px;
-  }
-  .ai-avatar-box {
-    width: 34px;
-    height: 34px;
-    font-size: 0.95rem;
-  }
-  .ai-header-info h5 {
-    font-size: 0.88rem;
-  }
-  .ai-status-text {
-    font-size: 0.68rem;
-  }
-  .ai-action-btn {
-    width: 32px;
-    height: 32px;
-  }
-  .ai-mode-bar {
-    padding: 6px 10px;
-    gap: 5px;
-  }
-  .ai-mode-item, .ai-mode-quick-btn {
-    font-size: 0.72rem;
-    padding: 3px 8px;
-  }
-  .ai-chat-body {
-    padding: 12px 10px;
-    gap: 10px;
-  }
-  .ai-message {
-    max-width: 92%;
-  }
-  .ai-bubble {
-    font-size: 0.85rem;
-    padding: 9px 12px;
-  }
-  .quick-chip {
-    font-size: 0.72rem;
-    padding: 4px 8px;
-  }
-  .ai-chat-footer {
-    padding: 8px 10px;
-  }
-  .ai-input-wrapper {
-    padding: 3px 6px 3px 12px;
-  }
-  .ai-input-wrapper input {
-    font-size: 16px; /* Prevents auto zoom on mobile */
-  }
-  .ai-sub-btn {
-    width: 26px;
-    height: 26px;
-    font-size: 0.75rem;
-  }
-  .ai-send-btn {
-    width: 38px;
-    height: 38px;
-    font-size: 0.85rem;
-  }
-
-  /* Modal Windows */
-  .modal-window {
-    width: 95vw;
-    max-height: 92vh;
-    border-radius: 16px;
-  }
-  .modal-header {
-    padding: 12px 15px;
-  }
-  .modal-body {
-    padding: 14px;
-  }
-  .form-input {
-    font-size: 16px; /* Prevents auto zoom */
-  }
-
-  /* Footer */
-  .footer-columns {
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
-  .footer-bottom-bar {
-    flex-direction: column;
-    text-align: center;
-    gap: 6px;
-    font-size: 0.78rem;
+    font-size: 2rem;
   }
 }
-
-</style>
-<meta property="og:title" content="OM SS Pune College of Physiotherapy | Kranti Sangam Foundation (Code: 06413)" data-id="th-modified" ><meta property="og:description" content="Kranti Sangam Foundation's OM SS PUNE COLLEGE OF PHYSIOTHERAPY, Urali Kanchan, Dist. Pune. College Code: 06413. B.P.T. Admissions Open 2025-26." data-id="th-modified" ><meta property="og:image" content="https://tiiny.host/assets/logo-purple-bg.png" data-id="th-modified" ><meta property="og:image:width" content="1501" data-id="th-modified" ><meta property="og:image:height" content="1501" data-id="th-modified" ><meta property="og:image:type" content="image/png" data-id="th-modified" ><meta property="og:url" content="https://teal-jsandye-1.tiiny.site/" data-id="th-modified" ><meta property="og:type" content="website" data-id="th-modified" ><script defer data-domain="teal-jsandye-1.tiiny.site" src="https://analytics.tiiny.net/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script></head>
+  </style>
+</head>
 <body>
 
-  <!-- Top Announcement Bar -->
+  <!-- ================= TOP NOTICE BAR ================= -->
   <div class="top-notice-bar">
     <div class="container top-notice-inner">
       <div class="top-contact-pills">
-        <a href="tel:9422472939"><i class="fa-solid fa-phone"></i> +91 9422472939</a>
-        <a href="tel:8805029999"><i class="fa-solid fa-phone"></i> +91 8805029999</a>
-        <a href="mailto:krantisangamfoundation@gmail.com"><i class="fa-solid fa-envelope"></i> krantisangamfoundation@gmail.com</a>
-        <span><i class="fa-solid fa-location-dot"></i> Urali Kanchan, Dist. Pune</span>
+        <a href="tel:8805029999"><i class="fa-solid fa-phone"></i> +91 88050 29999</a>
+        <a href="tel:9422472393"><i class="fa-solid fa-phone"></i> +91 94224 72393</a>
+        <a href="mailto:vivekanandym@gmail.com"><i class="fa-solid fa-envelope"></i> vivekanandym@gmail.com</a>
+        <span><i class="fa-solid fa-location-dot"></i> Phursungi, Tal. Haveli, Dist. Pune - 412308</span>
       </div>
-      <div style="display: flex; align-items: center; gap: 12px;">
-        <span class="top-code-badge"><i class="fa-solid fa-id-card"></i> College Code: <strong>06413</strong></span>
-        <a href="#admissionSchedule" class="top-code-badge" style="background:#fee2e2; color:#d90429; text-decoration:none;">
-          <i class="fa-solid fa-bullhorn"></i> Stray Vacancy Round 1 Live
-        </a>
+      <div class="top-code-badge">
+        <i class="fa-solid fa-award"></i> College Code: 0000 • Admissions Open 2026-2027
       </div>
     </div>
   </div>
 
-  <!-- Branding & Header -->
+  <!-- ================= COLLEGE BRANDING HEADER ================= -->
   <header class="college-brand-header">
     <div class="container brand-row">
       <div class="brand-main">
-        <img src="assets/college-logo.png" alt="OM SS Pune College of Physiotherapy Logo" class="college-logo-img">
+        <img src="assets/trust-logo.svg" alt="Vivekanand Yuvak Mandal Logo" class="college-logo-img">
         <div class="college-titles">
-          <span class="trust-name">Kranti Sangam Foundation's</span>
-          <h1 class="college-name">OM SS PUNE COLLEGE OF PHYSIOTHERAPY</h1>
+          <span class="trust-name">Managed by Vivekanand Yuvak Mandal (Reg. No: MAHA/10600/Latur)</span>
+          <h1 class="college-name">SHIV SANGAM PUNE COLLEGE OF PHYSIOTHERAPY</h1>
           <div class="college-sub-location">
-            <i class="fa-solid fa-map-pin" style="color: var(--secondary-teal);"></i> Urali Kanchan, Dist. Pune, Maharashtra
+            <i class="fa-solid fa-map-pin" style="color: var(--secondary-teal);"></i>
+            Phursungi, Tal. Haveli, Dist. Pune, Maharashtra - 412308
           </div>
         </div>
       </div>
       <div class="header-meta-box">
         <div class="header-badge-card">
-          <small>MUHS Affiliation</small>
-          <strong>Affiliated to MUHS, Nashik</strong>
+          <small>Trust President</small>
+          <strong>Hon. Shri Raghunath Patil</strong>
         </div>
         <div class="header-badge-card">
-          <small>Recognized By</small>
-          <strong>Govt. of Maharashtra / MSOTPTC</strong>
+          <small>Trust Secretary</small>
+          <strong>Hon. Shri Shivling Jevle</strong>
         </div>
         <div class="header-badge-card">
-          <small>CET / NEET Code</small>
-          <strong style="color: #d90429; font-size: 1.15rem;">06413</strong>
+          <small>College Code</small>
+          <strong style="color: var(--alert-red); font-size: 1.15rem;">0000</strong>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Navigation Bar -->
-  <nav class="main-navbar">
-    <div class="container nav-wrapper">
-      <ul class="nav-menu" id="navMenu">
-        <!-- Mobile In-Menu Google Search -->
-        <li class="nav-item mobile-search-item">
-          <form id="mobileGoogleSearchForm" class="mobile-search-form" role="search">
-            <i class="fa-brands fa-google google-icon"></i>
-            <input type="text" id="mobileGoogleSearchInput" class="mobile-search-input" placeholder="Google Search in English..." autocomplete="off" aria-label="Search on Google in English">
-            <button type="submit" class="mobile-search-btn" title="Search Google">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
-        </li>
-        <li class="nav-item active"><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li class="nav-item"><a href="#aboutSection" class="nav-link">About College</a></li>
-        <li class="nav-item">
-          <a href="#courseSection" class="nav-link">B.P.T. Course <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i></a>
-          <ul class="dropdown-box">
-            <li><a href="#courseSection">Course Overview &amp; Eligibility</a></li>
-            <li><a href="#departments">Physiotherapy Departments</a></li>
-            <li><a href="#clinicalHospital">Clinical Postings &amp; OPD</a></li>
-            <li><a href="#syllabus">Syllabus &amp; Internship</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a href="#admissionSchedule" class="nav-link">Admissions 2025-26</a></li>
-        <li class="nav-item"><a href="#facilitiesSection" class="nav-link">Facilities &amp; Labs</a></li>
-        <li class="nav-item"><a href="#admissionFlyer" class="nav-link">Admission Flyer</a></li>
-        <li class="nav-item"><a href="#contactSection" class="nav-link">Contact Us</a></li>
+  <!-- ================= NAVIGATION BAR ================= -->
+  <nav class="main-navigation-bar">
+    <div class="container nav-container">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu-list" id="navMenuList">
+        <li><a href="#homeSection"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#aboutSection">About Us</a></li>
+        <li><a href="#leadershipSection">Leadership</a></li>
+        <li><a href="#courseSection">B.P.Th Program</a></li>
+        <li><a href="#departments">Clinical Departments</a></li>
+        <li><a href="#facilitiesSection">Hospital &amp; Labs</a></li>
+        <li><a href="#admissionSchedule">Admissions</a></li>
+        <li><a href="#contactSection">Contact</a></li>
       </ul>
 
-      <div class="nav-cta-group">
-        <!-- Google Search Bar (English) -->
-        <div class="nav-google-search-container">
-          <form id="navGoogleSearchForm" class="nav-search-form" role="search">
-            <i class="fa-brands fa-google google-icon"></i>
-            <input type="text" id="navGoogleSearchInput" class="nav-search-input" placeholder="Google Search (English)..." autocomplete="off" aria-label="Search on Google in English">
-            <button type="submit" class="nav-search-btn" title="Search on Google (English)">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
-        </div>
-
-        <a href="#admissionModal" class="btn-nav-admission btn-open-modal">
-          <i class="fa-solid fa-graduation-cap"></i> Admission Open 2025-26
-        </a>
-        <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
+      <a href="#admissionModal" class="nav-cta-btn btn-open-modal">
+        <i class="fa-solid fa-file-signature"></i> Apply for B.P.Th (Code: 0000)
+      </a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-banner-section">
+  <!-- ================= HERO BANNER SECTION ================= -->
+  <section class="hero-banner-section" id="homeSection">
     <div class="container hero-grid">
       
       <!-- Left Content -->
       <div class="hero-text-content">
         <div class="hero-pill-badge">
-          <i class="fa-solid fa-certificate"></i> Legacy of Learning • Healing for Future
+          <i class="fa-solid fa-heart-pulse"></i> Vivekanand Yuvak Mandal • College Code: 0000
         </div>
         <h2 class="hero-main-title">
-          Build a Rewarding Career in <span>Healthcare &amp; Physiotherapy</span>
+          Build a Rewarding Career in <span>Physiotherapy &amp; Rehabilitation</span>
         </h2>
         <p class="hero-desc">
-          Empowering future healthcare professionals with advanced clinical training, modern electrotherapy &amp; exercise labs, and extensive patient-care experience at Urali Kanchan, Pune.
+          Run by Vivekanand Yuvak Mandal, <strong>Shiv Sangam Pune College of Physiotherapy</strong> at Phursungi, Pune provides world-class clinical rehabilitation, attached multi-specialty hospital bedside training, and advanced movement therapy instruction.
         </p>
         <div class="hero-btn-row">
           <a href="#admissionModal" class="btn-hero-primary btn-open-modal">
-            <i class="fa-solid fa-file-signature"></i> Apply for B.P.T. Admission
+            <i class="fa-solid fa-file-signature"></i> Apply for B.P.Th Admission
           </a>
-          <a href="#admissionSchedule" class="btn-hero-outline">
-            <i class="fa-solid fa-calendar-days"></i> Stray Vacancy Round
+          <a href="#courseSection" class="btn-hero-outline">
+            <i class="fa-solid fa-graduation-cap"></i> Course Details &amp; Eligibility
           </a>
         </div>
       </div>
@@ -2346,76 +1472,47 @@ img {
       <div class="hero-admission-card">
         <div class="hero-card-header">
           <div>
-            <h3>Admission Open</h3>
-            <span style="font-size: 0.85rem; color: #64748b;">Academic Year 2025-26</span>
+            <h3>Admissions Open 2026-27</h3>
+            <span style="font-size: 0.85rem; color: #64748b;">Phursungi, Tal. Haveli, Dist. Pune</span>
           </div>
-          <span class="code-tag">CODE: 06413</span>
+          <span class="code-tag">CODE: 0000</span>
         </div>
 
         <div class="hero-card-course">
-          <strong>B.P.T. (Bachelor of Physiotherapy)</strong>
-          <span>5 Years Professional Degree Course (4.5 Yrs + 6 Months Internship)</span>
+          <strong>Bachelor of Physiotherapy (B.P.Th)</strong>
+          <span style="font-size: 0.82rem; color: #64748b;">5 Years Professional Degree Course (4.5 Academic Years + 6 Months Internship)</span>
         </div>
 
-        <div class="admission-timeline">
-          <div class="timeline-step">
-            <div class="timeline-bullet"><i class="fa-solid fa-pencil"></i></div>
-            <div class="timeline-text">
-              <strong>Online Filling of Preference Form</strong>
-              <span>12 - Dec to 14 - Dec - 2025</span>
-            </div>
-          </div>
-          <div class="timeline-step">
-            <div class="timeline-bullet"><i class="fa-solid fa-list-check"></i></div>
-            <div class="timeline-text">
-              <strong>Selection List of Stray Vacancy Round 1</strong>
-              <span>16 - Dec - 2025</span>
-            </div>
-          </div>
-          <div class="timeline-step">
-            <div class="timeline-bullet"><i class="fa-solid fa-building-user"></i></div>
-            <div class="timeline-text">
-              <strong>Physical Joining &amp; Status Retention</strong>
-              <span>17 - Dec to 19 - Dec - 2025</span>
-            </div>
-          </div>
-        </div>
+        <table class="hero-schedule-mini">
+          <tbody>
+            <tr>
+              <td><strong>Affiliation Standards:</strong> MUHS Nashik Norms</td>
+              <td class="date-col">Health Sciences</td>
+            </tr>
+            <tr>
+              <td><strong>Eligibility:</strong> 12th PCB (50% Open / 40% Reserved)</td>
+              <td class="date-col">NEET-UG</td>
+            </tr>
+            <tr>
+              <td><strong>Campus:</strong> Phursungi, Pune - 412308</td>
+              <td class="date-col">Code: 0000</td>
+            </tr>
+            <tr>
+              <td><strong>Attached Hospital:</strong> Live OPD, Bedside &amp; ICU Postings</td>
+              <td class="date-col">Multi-Specialty</td>
+            </tr>
+          </tbody>
+        </table>
 
-        <button type="button" class="btn-card-apply btn-open-modal">
-          <i class="fa-solid fa-paper-plane"></i> Quick Admission Enquiry
+        <button type="button" class="btn-form-submit btn-open-modal">
+          <i class="fa-solid fa-pen-to-square"></i> Submit Admission Enquiry
         </button>
       </div>
 
     </div>
   </section>
 
-  <!-- Key Statistics Counter Bar -->
-  <div class="container counter-bar-wrapper">
-    <div class="counter-grid">
-      <div class="counter-box">
-        <div class="counter-icon"><i class="fa-solid fa-award"></i></div>
-        <div class="counter-number">06413</div>
-        <div class="counter-label">CET Cell College Code</div>
-      </div>
-      <div class="counter-box">
-        <div class="counter-icon"><i class="fa-solid fa-user-doctor"></i></div>
-        <div class="counter-number">5 Yrs</div>
-        <div class="counter-label">Comprehensive B.P.T. Program</div>
-      </div>
-      <div class="counter-box">
-        <div class="counter-icon"><i class="fa-solid fa-hospital"></i></div>
-        <div class="counter-number">100+</div>
-        <div class="counter-label">Hospital Bed Training &amp; OPDs</div>
-      </div>
-      <div class="counter-box">
-        <div class="counter-icon"><i class="fa-solid fa-stethoscope"></i></div>
-        <div class="counter-number">100%</div>
-        <div class="counter-label">Hands-on Clinical Exposure</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- About College Section -->
+  <!-- ================= ABOUT INSTITUTION & ENHANCED BUILDING PHOTO ================= -->
   <section class="site-section" id="aboutSection">
     <div class="container">
       <div class="about-college-grid">
@@ -2423,45 +1520,57 @@ img {
         <div class="about-text-column">
           <span class="section-tagline">About Our Institution</span>
           <h3 class="section-main-heading" style="text-align: left; font-size: 2rem;">
-            Kranti Sangam Foundation's <br>
-            <span style="color: var(--secondary-teal);">OM SS Pune College of Physiotherapy</span>
+            Managed by Vivekanand Yuvak Mandal <br>
+            <span style="color: var(--secondary-teal);">Shiv Sangam Pune College of Physiotherapy</span>
           </h3>
           <p>
-            Established under the visionary aegis of <strong>Kranti Sangam Foundation</strong>, OM SS Pune College of Physiotherapy is dedicated to shaping skilled, compassionate, and globally competent physiotherapists. Situated in the serene and well-connected educational hub of <strong>Urali Kanchan, Pune</strong>, our campus blends academic rigor with clinical excellence.
+            Vivekanand Yuvak Mandal (Latur / Pune - Registration No: MAHA/10600/Latur) is a premier educational and social development trust dedicated to public enlightenment, youth empowerment, and excellence in professional healthcare education. Guided by the nation-building philosophy of Swami Vivekananda, the trust established <strong>Shiv Sangam Pune College of Physiotherapy</strong> at Phursungi, Pune.
           </p>
           <p>
-            Physiotherapy is an essential pillar of modern medical recovery, rehabilitation, and preventive health. Our institution offers state-of-the-art anatomy dissection halls, physiology labs, kinesiotherapy wards, electrotherapy units, and direct clinical postings with multi-speciality hospitals across the Pune region.
+            The institution features state-of-the-art electrotherapy suites, a full-scale kinesiotherapy gymnasium, dedicated orthopedic, neuro-rehab, pediatric and sports therapy wings, and attached multi-specialty hospital clinical postings providing students with extensive hands-on bedside patient care experience.
           </p>
 
           <div class="about-highlights-list">
             <div class="about-pill-item">
               <i class="fa-solid fa-circle-check"></i>
-              <span>Affiliated to MUHS, Nashik</span>
+              <span>Vivekanand Yuvak Mandal</span>
             </div>
             <div class="about-pill-item">
               <i class="fa-solid fa-circle-check"></i>
-              <span>Govt. of Maharashtra Approved</span>
+              <span>College Code: 0000</span>
             </div>
             <div class="about-pill-item">
               <i class="fa-solid fa-circle-check"></i>
-              <span>Experienced Clinical Faculty</span>
+              <span>Phursungi, Pune Campus Complex</span>
             </div>
             <div class="about-pill-item">
               <i class="fa-solid fa-circle-check"></i>
-              <span>Own Dedicated OPD Setup</span>
+              <span>Attached Multi-Specialty Hospital</span>
+            </div>
+          </div>
+
+          <!-- Leadership Highlights -->
+          <div class="leadership-cards-grid" id="leadershipSection">
+            <div class="leader-card">
+              <span class="leader-role">President's Desk</span>
+              <h5 class="leader-name">Hon. Shri Raghunath Patil</h5>
+              <p class="leader-desc">Dedicated to empowering youth with ethical values, modern health sciences infrastructure, and professional excellence.</p>
+            </div>
+            <div class="leader-card">
+              <span class="leader-role">Secretary's Desk</span>
+              <h5 class="leader-name">Hon. Shri Shivling Jevle</h5>
+              <p class="leader-desc">Committed to clinical rigor, advanced laboratory equipment, attached hospital postings, and comprehensive student mentorship.</p>
             </div>
           </div>
         </div>
 
-        <div class="about-img-column">
+        <!-- Enhanced Building Photo (Pre-school banner removed, official nameboard added) -->
+        <div class="about-image-column">
           <div class="building-display-card">
-            <img src="assets/campus-building.jpg" alt="OM SS Pune College of Physiotherapy Campus Building">
-            <div class="building-caption">
-              <div>
-                <strong>OM SS Pune College of Physiotherapy</strong>
-                <div style="font-size: 0.78rem; opacity: 0.85;">Main Academic &amp; Clinical Block, Urali Kanchan</div>
-              </div>
-              <span>Code: 06413</span>
+            <img src="assets/campus-building.jpg" alt="Shiv Sangam Pune College of Physiotherapy Campus Building, Phursungi, Pune (Code: 0000)">
+            <div class="building-caption-overlay">
+              <h4>Shiv Sangam Pune College of Physiotherapy</h4>
+              <p><i class="fa-solid fa-location-dot" style="color:var(--accent-gold);"></i> Phursungi, Tal. Haveli, Dist. Pune - 412308 (College Code: 0000)</p>
             </div>
           </div>
         </div>
@@ -2470,65 +1579,78 @@ img {
     </div>
   </section>
 
-  <!-- B.P.T. Course & Curriculum Section -->
+  <!-- ================= BACHELOR OF PHYSIOTHERAPY (B.P.TH) SECTION ================= -->
   <section class="site-section course-section-bg" id="courseSection">
     <div class="container">
       <div class="section-title-wrap">
         <span class="section-tagline">Academic Program</span>
-        <h3 class="section-main-heading">Bachelor of Physiotherapy (B.P.T.)</h3>
-        <p class="section-subtext">A premier 5-year undergraduate medical degree in physical medicine and rehabilitation</p>
+        <h3 class="section-main-heading">Bachelor of Physiotherapy (B.P.Th)</h3>
+        <p class="section-subtext">Comprehensive 5-Year Professional Degree Program in Physical Medicine &amp; Rehabilitation</p>
       </div>
 
       <div class="course-detail-card">
         <div class="course-header-row">
           <div class="course-title-group">
-            <h3>B.P.T. (Bachelor of Physiotherapy)</h3>
-            <p style="color: #64748b; font-size: 0.95rem;">Affiliated to Maharashtra University of Health Sciences (MUHS), Nashik</p>
+            <h3>B.P.Th (Bachelor of Physiotherapy)</h3>
+            <p style="color: #64748b; font-size: 0.95rem;">Affiliated to MUHS Nashik Norms | DMER Maharashtra Standards</p>
           </div>
           <div class="course-meta-tags">
-            <span class="course-tag"><i class="fa-solid fa-clock"></i> 4.5 Years + 6 Months Internship</span>
-            <span class="course-tag"><i class="fa-solid fa-graduation-cap"></i> Undergraduate Medical Degree</span>
-            <span class="course-tag" style="background:#fee2e2; color:#d90429;"><i class="fa-solid fa-id-badge"></i> Code: 06413</span>
+            <span class="course-tag"><i class="fa-solid fa-clock"></i> 5 Years (4.5 Yrs + 6 Months Internship)</span>
+            <span class="course-tag"><i class="fa-solid fa-user-doctor"></i> Undergraduate Health Sciences</span>
+            <span class="code-tag">CODE: 0000</span>
           </div>
         </div>
 
         <div class="course-info-grid">
           <div class="course-info-box">
-            <h4><i class="fa-solid fa-user-check" style="color: var(--secondary-teal);"></i> Eligibility Criteria</h4>
-            <p>12th Science (HSC) passed with Physics, Chemistry, Biology (PCB) and English with valid NEET-UG score as prescribed by State CET Cell Maharashtra.</p>
+            <h5><i class="fa-solid fa-clipboard-check" style="color:var(--secondary-teal);"></i> Eligibility Criteria</h5>
+            <p>
+              • 12th Science (HSC) passed with Physics, Chemistry, Biology (PCB) and English.<br>
+              • Minimum PCB Aggregate: <strong>50% for Open Category</strong>, <strong>40% for Reserved Category</strong>.<br>
+              • Valid non-zero score in <strong>NEET-UG</strong> entrance examination.
+            </p>
           </div>
           <div class="course-info-box">
-            <h4><i class="fa-solid fa-hand-holding-medical" style="color: var(--secondary-teal);"></i> Career Scope</h4>
-            <p>Opportunities in Multi-speciality Hospitals, Sports Medicine &amp; Fitness, Orthopedic &amp; Neuro Rehab Clinics, Defense Forces, Research, and Private Practice.</p>
+            <h5><i class="fa-solid fa-briefcase-medical" style="color:var(--medical-blue);"></i> Career Scope</h5>
+            <p>
+              • Multi-Specialty Hospital Physiotherapist.<br>
+              • Sports Rehabilitation Consultant (IPL, Sports Teams, Fitness Centers).<br>
+              • Neuro-Rehab &amp; Orthopedic Therapy Centers.<br>
+              • Private Physical Therapy Clinic Consultant.<br>
+              • Higher Education (M.P.Th, Ph.D) in India &amp; Overseas.
+            </p>
           </div>
           <div class="course-info-box">
-            <h4><i class="fa-solid fa-building-columns" style="color: var(--secondary-teal);"></i> Admission Quota</h4>
-            <p>Admissions through State Common Entrance Test Cell (CET Cell) Maharashtra CAP Rounds, Institutional Quota &amp; Stray Vacancy Rounds.</p>
+            <h5><i class="fa-solid fa-building-circle-check" style="color:#16a34a;"></i> Admission Process</h5>
+            <p>
+              • State CET Cell Maharashtra CAP Rounds.<br>
+              • Institutional Level Quota &amp; Stray Vacancy Counseling.<br>
+              • All Government Scholarships (EBC, SC, ST, OBC, VJNT, SEBC, Minority) strictly applicable.
+            </p>
           </div>
         </div>
 
-        <!-- Specialization Departments -->
-        <h4 style="font-size: 1.3rem; color: var(--primary-navy); margin-bottom: 5px;" id="departments">Core Departments &amp; Training Wings</h4>
-        <div class="departments-grid">
-          <div class="department-card">
-            <div class="dept-icon"><i class="fa-solid fa-bone"></i></div>
-            <h5>Musculoskeletal &amp; Orthopedic</h5>
-            <p>Specialized rehabilitation for fractures, joint replacements, spinal disorders, sports injuries, and arthritis.</p>
+        <!-- Core Clinical Departments -->
+        <div id="departments" class="departments-cards-grid">
+          <div class="dept-card">
+            <div class="dept-icon-circle"><i class="fa-solid fa-bone"></i></div>
+            <h4>Musculoskeletal &amp; Orthopedic</h4>
+            <p>Rehabilitation for bone fractures, total joint replacements, spinal disorders, sports injuries, and arthritis.</p>
           </div>
-          <div class="department-card">
-            <div class="dept-icon"><i class="fa-solid fa-brain"></i></div>
-            <h5>Neuro-Physiotherapy</h5>
-            <p>Restoring motor function in patients with Stroke (Paralysis), Parkinson's disease, Cerebral Palsy, and Spinal cord trauma.</p>
+          <div class="dept-card">
+            <div class="dept-icon-circle"><i class="fa-solid fa-brain"></i></div>
+            <h4>Neuro-Physiotherapy</h4>
+            <p>Motor recovery for Stroke (Paralysis), Parkinson's disease, Cerebral Palsy, and spinal cord injuries.</p>
           </div>
-          <div class="department-card">
-            <div class="dept-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-            <h5>Cardio-Respiratory Rehab</h5>
-            <p>Critical ICU chest physiotherapy, post-cardiac surgery recovery, and pulmonary rehabilitation for asthma/COPD patients.</p>
+          <div class="dept-card">
+            <div class="dept-icon-circle"><i class="fa-solid fa-lungs"></i></div>
+            <h4>Cardio-Respiratory &amp; ICU</h4>
+            <p>Intensive care chest therapy, post-cardiac surgery mobilization, and pulmonary rehabilitation for COPD/Asthma.</p>
           </div>
-          <div class="department-card">
-            <div class="dept-icon"><i class="fa-solid fa-person-walking"></i></div>
-            <h5>Kinesiotherapy &amp; Biomechanics</h5>
-            <p>Scientific motion study, therapeutic exercises, gait analysis, ergonomic corrections, and muscle re-education.</p>
+          <div class="dept-card">
+            <div class="dept-icon-circle"><i class="fa-solid fa-dumbbell"></i></div>
+            <h4>Kinesiotherapy &amp; Sports</h4>
+            <p>Movement biomechanics, therapeutic exercise gymnasium, posture retraining, and athletic conditioning.</p>
           </div>
         </div>
 
@@ -2536,19 +1658,19 @@ img {
     </div>
   </section>
 
-  <!-- Admission Schedule / Stray Vacancy Table (As per Flyer) -->
+  <!-- ================= ADMISSION SCHEDULE & PROCESS ================= -->
   <section class="site-section" id="admissionSchedule">
     <div class="container">
       <div class="section-title-wrap">
         <span class="section-tagline">Important Notification</span>
-        <h3 class="section-main-heading">Admissions 2025-26: Stray Vacancy Round 1</h3>
-        <p class="section-subtext">Official schedule for B.P.T. Admissions at OM SS Pune College of Physiotherapy (Code: 06413)</p>
+        <h3 class="section-main-heading">Admissions 2026-27: Registration &amp; Quota Counseling</h3>
+        <p class="section-subtext">Official admission guidance for B.P.Th Admissions at Shiv Sangam Pune College of Physiotherapy (Code: 0000)</p>
       </div>
 
       <div class="schedule-table-wrap">
         <div class="schedule-header">
-          <h3><i class="fa-solid fa-bullhorn"></i> Stray Vacancy Round 1 Schedule</h3>
-          <span class="year-badge">Academic Year 2025-26</span>
+          <h3><i class="fa-solid fa-bullhorn"></i> Admission Schedule &amp; Counseling Stages</h3>
+          <span class="year-badge">Academic Session 2026-27</span>
         </div>
 
         <table class="official-table">
@@ -2556,117 +1678,95 @@ img {
             <tr>
               <th>Sr. No.</th>
               <th>Admission Activity / Stage</th>
-              <th>Prescribed Schedule Dates</th>
+              <th>Prescribed Schedule</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><strong>01</strong></td>
-              <td>
-                <div class="table-step-name">
-                  <i class="fa-solid fa-file-pen"></i> Online Filling of Preference Form
-                </div>
-              </td>
-              <td><span class="table-date-badge">12 - Dec to 14 - Dec - 2025</span></td>
+              <td>Online Pre-Registration &amp; Eligibility Verification</td>
+              <td>Ongoing (Register Today)</td>
             </tr>
             <tr>
               <td><strong>02</strong></td>
-              <td>
-                <div class="table-step-name">
-                  <i class="fa-solid fa-clipboard-check"></i> Selection List of Stray Vacancy Round 1
-                </div>
-              </td>
-              <td><span class="table-date-badge">16 - Dec - 2025</span></td>
+              <td>CAP Preference Form Filling (State CET Cell Maharashtra)</td>
+              <td>As per State CET Cell Schedule</td>
             </tr>
             <tr>
               <td><strong>03</strong></td>
-              <td>
-                <div class="table-step-name">
-                  <i class="fa-solid fa-user-check"></i> Physical Joining and Status Retention
-                </div>
-              </td>
-              <td><span class="table-date-badge">17 - Dec to 19 - Dec - 2025</span></td>
+              <td>Institutional Quota &amp; Stray Vacancy Counseling</td>
+              <td>Direct Admission Desk (Phursungi Campus)</td>
+            </tr>
+            <tr>
+              <td><strong>04</strong></td>
+              <td>Physical Document Verification &amp; Fee Submission</td>
+              <td>Daily 9:30 AM to 5:30 PM</td>
             </tr>
           </tbody>
         </table>
 
-        <!-- Download Flyer Action Strip -->
-        <div class="poster-action-box">
-          <p><i class="fa-solid fa-circle-exclamation"></i> Candidates seeking admission must report with original documents and required DD before the deadline.</p>
-          <a href="assets/admission-flyer.jpg" target="_blank" class="btn-download-poster">
-            <i class="fa-solid fa-file-image"></i> View Official Admission Notice
-          </a>
+        <div style="padding: 16px 20px; background: #f8fafc; border-top: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <span style="font-size: 0.85rem; color: #475569;">
+            <i class="fa-solid fa-circle-info" style="color:var(--secondary-teal);"></i> Candidates must bring original 10th and 12th marksheets, NEET score card, leaving certificate, and category documents.
+          </span>
+          <button type="button" class="btn-form-submit btn-open-modal" style="width: auto; padding: 8px 18px; font-size: 0.85rem;">
+            <i class="fa-solid fa-phone"></i> Contact Admission Officer
+          </button>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- Facilities & Infrastructure Section -->
+  <!-- ================= FACILITIES & CLINICAL INFRASTRUCTURE ================= -->
   <section class="site-section course-section-bg" id="facilitiesSection">
     <div class="container">
       <div class="section-title-wrap">
         <span class="section-tagline">Campus Amenities</span>
         <h3 class="section-main-heading">World-Class Healthcare &amp; Learning Infrastructure</h3>
-        <p class="section-subtext">Providing an environment where students gain both theoretical mastery and clinical confidence</p>
+        <p class="section-subtext">Providing an environment where students gain both theoretical mastery and clinical bedside confidence</p>
       </div>
 
       <div class="facilities-cards-grid">
         <div class="facility-card-item">
           <div class="fac-icon-circle"><i class="fa-solid fa-bolt"></i></div>
           <h4>Electrotherapy OPD Unit</h4>
-          <p>Equipped with advanced IFT, Ultrasound, TENS, Traction, Shortwave Diathermy (SWD), and Laser therapy modalities.</p>
+          <p>Equipped with advanced IFT, Ultrasound, TENS, computerized Traction, Shortwave Diathermy (SWD), and Laser therapy modalities.</p>
         </div>
         <div class="facility-card-item">
           <div class="fac-icon-circle"><i class="fa-solid fa-dumbbell"></i></div>
-          <h4>Exercise Therapy Gymnasium</h4>
+          <h4>Kinesiotherapy Gymnasium</h4>
           <p>Full-scale rehabilitation gym featuring parallel bars, quadriceps chairs, shoulder wheels, suspension therapy, and tilt tables.</p>
         </div>
         <div class="facility-card-item">
           <div class="fac-icon-circle"><i class="fa-solid fa-hospital-user"></i></div>
-          <h4>Attached Multi-Speciality Hospital</h4>
-          <p>Direct exposure to in-patient (IPD), out-patient (OPD), and Intensive Care Units (ICU) under specialist guidance.</p>
+          <h4>Attached Multi-Specialty Hospital</h4>
+          <p>Direct exposure to in-patient (IPD), out-patient (OPD), ICU mobilization, and post-surgical care under specialist doctors.</p>
         </div>
         <div class="facility-card-item">
           <div class="fac-icon-circle"><i class="fa-solid fa-book-medical"></i></div>
           <h4>Medical &amp; Physical Therapy Library</h4>
-          <p>Comprehensive repository of standard medical textbooks, international physiotherapy journals, and digital e-library access.</p>
+          <p>Comprehensive repository of standard medical textbooks, international physiotherapy journals, Delnet e-resources, and study hall.</p>
         </div>
         <div class="facility-card-item">
-          <div class="fac-icon-circle"><i class="fa-solid fa-bed"></i></div>
-          <h4>Hostel &amp; Accommodation</h4>
-          <p>Comfortable, secure residential facilities for boys and girls with hygienic mess, 24/7 security, and study areas.</p>
+          <div class="fac-icon-circle"><i class="fa-solid fa-building-user"></i></div>
+          <h4>Hostel &amp; Student Amenities</h4>
+          <p>Comfortable, secure residential facilities for boys and girls with hygienic mess, 24/7 security, and peaceful study atmosphere.</p>
         </div>
         <div class="facility-card-item">
-          <div class="fac-icon-circle"><i class="fa-solid fa-bus-simple"></i></div>
-          <h4>Transport Connectivity</h4>
-          <p>Well connected along Pune-Solapur Highway with regular transport services from Hadapsar, Loni Kalbhor, and Pune Station.</p>
+          <div class="fac-icon-circle"><i class="fa-solid fa-bus"></i></div>
+          <h4>Prime Pune Transport Connectivity</h4>
+          <p>Situated at Phursungi along the Hadapsar-Saswad road with regular PMPML bus services, auto stands, and easy highway access.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Official Admission Poster Display Section -->
-  <section class="site-section" id="admissionFlyer">
-    <div class="container">
-      <div class="section-title-wrap">
-        <span class="section-tagline">Official Notice</span>
-        <h3 class="section-main-heading">Official Admission Notice &amp; Flyer</h3>
-        <p class="section-subtext">B.P.T. Stray Vacancy Round 1 Notification issued by Kranti Sangam Foundation</p>
-      </div>
-
-      <div style="max-width: 600px; margin: 0 auto; box-shadow: var(--shadow-lg); border-radius: var(--radius-md); overflow: hidden; border: 4px solid #fff;">
-        <img src="assets/admission-flyer.jpg" alt="OM SS Pune College of Physiotherapy Admission Flyer" style="width: 100%; display: block;">
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact & Enquiry Section -->
-  <section class="site-section course-section-bg" id="contactSection">
+  <!-- ================= CONTACT & ADMISSION ENQUIRY SECTION ================= -->
+  <section class="site-section" id="contactSection">
     <div class="container">
       <div class="section-title-wrap">
         <span class="section-tagline">Get In Touch</span>
-        <h3 class="section-main-heading">Contact Admission Cell</h3>
+        <h3 class="section-main-heading">Contact Admission Cell &amp; Campus</h3>
         <p class="section-subtext">Reach out to our admission counselors for eligibility guidance, fee details, and campus visit</p>
       </div>
 
@@ -2674,21 +1774,21 @@ img {
         
         <!-- Contact Details -->
         <div class="contact-info-card">
-          <h4>College Address &amp; Helplines</h4>
+          <h4>Campus Address &amp; Helplines</h4>
 
           <div class="contact-detail-row">
             <div class="contact-icon-bubble"><i class="fa-solid fa-building-columns"></i></div>
             <div>
-              <strong>Institution:</strong>
-              <p>Kranti Sangam Foundation's<br>OM SS PUNE COLLEGE OF PHYSIOTHERAPY</p>
+              <strong>College Campus (Pune):</strong>
+              <p>Shiv Sangam Pune College of Physiotherapy<br>Phursungi, Tal. Haveli, Dist. Pune, Maharashtra - 412308<br>(Hadapsar-Saswad Road Corridor, Pune Metropolitan Area)</p>
             </div>
           </div>
 
           <div class="contact-detail-row">
-            <div class="contact-icon-bubble"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="contact-icon-bubble"><i class="fa-solid fa-landmark"></i></div>
             <div>
-              <strong>Campus Location:</strong>
-              <p>Urali Kanchan, Tal. Haveli, Dist. Pune, Maharashtra - 412202</p>
+              <strong>Trust Head Office (Latur):</strong>
+              <p>Vivekanand Yuvak Mandal<br>Shivaji Road, Ganj Golai, Latur - 413512, Maharashtra<br>(Registration No: MAHA/10600/Latur)</p>
             </div>
           </div>
 
@@ -2696,55 +1796,48 @@ img {
             <div class="contact-icon-bubble"><i class="fa-solid fa-phone-volume"></i></div>
             <div>
               <strong>Admission Helplines:</strong>
-              <p>
-                <a href="tel:9422472939">+91 9422472939</a> &nbsp;|&nbsp; 
-                <a href="tel:8805029999">+91 8805029999</a>
-              </p>
+              <p><a href="tel:8805029999">+91 88050 29999</a> &nbsp;|&nbsp; <a href="tel:9422472393">+91 94224 72393</a></p>
             </div>
           </div>
 
           <div class="contact-detail-row">
-            <div class="contact-icon-bubble"><i class="fa-solid fa-envelope-open-text"></i></div>
+            <div class="contact-icon-bubble"><i class="fa-solid fa-envelope"></i></div>
             <div>
               <strong>Official Email:</strong>
-              <p><a href="mailto:krantisangamfoundation@gmail.com">krantisangamfoundation@gmail.com</a></p>
-            </div>
-          </div>
-
-          <div class="contact-detail-row">
-            <div class="contact-icon-bubble"><i class="fa-solid fa-globe"></i></div>
-            <div>
-              <strong>Official Website:</strong>
-              <p><a href="http://ksf.org.in" target="_blank">ksf.org.in</a></p>
+              <p><a href="mailto:vivekanandym@gmail.com">vivekanandym@gmail.com</a></p>
             </div>
           </div>
         </div>
 
-        <!-- Admission Quick Form -->
+        <!-- Contact Page Form -->
         <div class="contact-form-card">
-          <h4>Online Admission Enquiry 2025-26</h4>
+          <h4>Online Admission Enquiry 2026-27</h4>
           <form id="contactPageForm">
             <div class="form-field">
-              <label for="contactFullName">Student's Full Name *</label>
-              <input type="text" id="contactFullName" class="form-input" placeholder="e.g. Rahul Patil" required>
+              <label>Student's Full Name *</label>
+              <input type="text" id="contactFullName" class="form-input" placeholder="Enter student's full name" required>
             </div>
             <div class="form-field">
-              <label for="contactMobile">Mobile Number (WhatsApp) *</label>
-              <input type="tel" id="contactMobile" class="form-input" placeholder="e.g. 9876543210" required>
+              <label>Mobile Number (WhatsApp) *</label>
+              <input type="tel" id="contactMobile" class="form-input" placeholder="10-digit mobile number" required pattern="[0-9]{10}">
             </div>
             <div class="form-field">
-              <label for="contactEmail">Email Address</label>
-              <input type="email" id="contactEmail" class="form-input" placeholder="e.g. rahul@gmail.com">
+              <label>Program *</label>
+              <input type="text" id="contactCourse" class="form-input" value="B.P.Th (Bachelor of Physiotherapy - 5 Years)" readonly style="background:#f1f5f9; font-weight:700;">
             </div>
             <div class="form-field">
-              <label for="contactNeetScore">NEET-UG Score / PCB Marks</label>
-              <input type="text" id="contactNeetScore" class="form-input" placeholder="e.g. NEET Score 250 / PCB 65%">
+              <label>12th Science PCB Marks (%)</label>
+              <input type="text" id="contactMarks" class="form-input" placeholder="e.g. 68% PCB">
             </div>
             <div class="form-field">
-              <label for="contactCity">Your City / District</label>
-              <input type="text" id="contactCity" class="form-input" placeholder="e.g. Pune / Satara / Solapur / Ahmednagar">
+              <label>NEET-UG Score / Status</label>
+              <input type="text" id="contactNeet" class="form-input" placeholder="e.g. Appeared / Score">
             </div>
-            <button type="submit" class="btn-submit-inquiry">
+            <div class="form-field">
+              <label>City / Native District</label>
+              <input type="text" id="contactCity" class="form-input" placeholder="e.g. Pune, Latur, Baramati...">
+            </div>
+            <button type="submit" class="btn-form-submit">
               <i class="fa-solid fa-paper-plane"></i> Submit Admission Enquiry
             </button>
           </form>
@@ -2754,155 +1847,81 @@ img {
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="college-footer">
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-columns">
+      <div class="footer-columns-grid">
         
         <div class="footer-col">
-          <h5>OM SS Pune College of Physiotherapy</h5>
+          <h5>Shiv Sangam College of Physiotherapy</h5>
           <p>
-            Run by <strong>Kranti Sangam Foundation</strong>. Offering premier education in physiotherapy to nurture competent healthcare champions.
+            Managed by Vivekanand Yuvak Mandal (Reg. No: MAHA/10600/Latur). Premier physiotherapy health sciences institution committed to excellence in clinical rehabilitation, patient empathy, and healthcare education.
           </p>
-          <p style="color: var(--accent-gold); font-weight: 600;">
-            <i class="fa-solid fa-id-card"></i> College Code: 06413
+          <p style="margin-top: 12px; font-size: 0.82rem; color: #cbd5e1;">
+            <strong>College Code:</strong> 0000<br>
+            <strong>President:</strong> Hon. Shri Raghunath Patil<br>
+            <strong>Secretary:</strong> Hon. Shri Shivling Jevle
           </p>
         </div>
 
         <div class="footer-col">
-          <h5>Quick Links</h5>
-          <ul class="footer-links">
-            <li><a href="#aboutSection"><i class="fa-solid fa-angle-right"></i> About College</a></li>
-            <li><a href="#courseSection"><i class="fa-solid fa-angle-right"></i> B.P.T. Course</a></li>
-            <li><a href="#admissionSchedule"><i class="fa-solid fa-angle-right"></i> Stray Vacancy Round</a></li>
-            <li><a href="#facilitiesSection"><i class="fa-solid fa-angle-right"></i> Clinical Infrastructure</a></li>
-            <li><a href="assets/admission-flyer.jpg" target="_blank"><i class="fa-solid fa-angle-right"></i> Admission Flyer</a></li>
+          <h5>Quick Navigation</h5>
+          <ul class="footer-links-list">
+            <li><a href="#homeSection">Home</a></li>
+            <li><a href="#aboutSection">About Us</a></li>
+            <li><a href="#leadershipSection">President &amp; Secretary Desk</a></li>
+            <li><a href="#courseSection">B.P.Th Program (Code: 0000)</a></li>
+            <li><a href="#departments">Core Clinical OPDs</a></li>
+            <li><a href="#facilitiesSection">Hospital Facilities</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h5>Regulatory Bodies</h5>
-          <ul class="footer-links">
-            <li><a href="#"><i class="fa-solid fa-angle-right"></i> MUHS, Nashik</a></li>
-            <li><a href="#"><i class="fa-solid fa-angle-right"></i> MSOTPTC, Mumbai</a></li>
-            <li><a href="#"><i class="fa-solid fa-angle-right"></i> DMER Maharashtra</a></li>
-            <li><a href="#"><i class="fa-solid fa-angle-right"></i> State CET Cell</a></li>
-            <li><a href="#"><i class="fa-solid fa-angle-right"></i> Anti-Ragging Cell</a></li>
+          <h5>Clinical Wings</h5>
+          <ul class="footer-links-list">
+            <li><a href="#courseSection">Musculoskeletal &amp; Ortho</a></li>
+            <li><a href="#courseSection">Neuro-Physiotherapy</a></li>
+            <li><a href="#courseSection">Cardio-Pulmonary Rehab</a></li>
+            <li><a href="#courseSection">Kinesiotherapy Gymnasium</a></li>
+            <li><a href="#courseSection">Electrotherapy Lab</a></li>
+            <li><a href="#contactSection">Admission Helpdesk</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h5>Contact Information</h5>
-          <p><i class="fa-solid fa-location-dot" style="color: var(--accent-gold);"></i> Urali Kanchan, Dist. Pune - 412202</p>
-          <p><i class="fa-solid fa-phone" style="color: var(--accent-gold);"></i> +91 9422472939 / 8805029999</p>
-          <p><i class="fa-solid fa-envelope" style="color: var(--accent-gold);"></i> krantisangamfoundation@gmail.com</p>
-          <p><i class="fa-solid fa-globe" style="color: var(--accent-gold);"></i> ksf.org.in</p>
+          <p>
+            <strong>Campus:</strong> Phursungi, Tal. Haveli, Dist. Pune - 412308.<br>
+            <strong>Head Office:</strong> Shivaji Road, Ganj Golai, Latur - 413512.<br>
+            <strong>Helplines:</strong> +91 88050 29999 / 94224 72393<br>
+            <strong>Email:</strong> vivekanandym@gmail.com
+          </p>
         </div>
 
       </div>
 
       <div class="footer-bottom-bar">
-        <p>© 2026 Kranti Sangam Foundation's OM SS Pune College of Physiotherapy. All Rights Reserved.</p>
-        <p>College Code: <strong>06413</strong> | Website: <strong>ksf.org.in</strong></p>
+        <div>
+          © 2026 <strong>Shiv Sangam Pune College of Physiotherapy</strong>. Managed by <strong>Vivekanand Yuvak Mandal</strong>. All Rights Reserved.
+        </div>
+        <div>
+          College Code: 0000 • Phursungi, Pune • Reg: MAHA/10600/Latur
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Floating Call / WhatsApp Button -->
-  <a href="https://wa.me/919422472939?text=Hello%20OM%20SS%20Pune%20College%20of%20Physiotherapy%20I%20want%20information%20about%20BPT%20Admission" class="floating-call-btn" target="_blank" aria-label="WhatsApp Contact">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <!-- Floating AI Assistant Button (ChatGPT style) -->
-  <button class="floating-ai-btn" id="floatingAiBtn" aria-label="Ask College AI & ChatGPT" title="Ask AI / ChatGPT">
-    <span class="ai-pulse-ring"></span>
-    <span class="ai-btn-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
-    <span class="ai-badge-label">Ask AI / GPT</span>
-  </button>
-
-  <!-- AI Chatbot Window (ChatGPT style) -->
-  <div class="ai-chat-window" id="aiChatWindow" aria-hidden="true">
-    <!-- Chat Header -->
-    <div class="ai-chat-header">
-      <div class="ai-header-profile">
-        <div class="ai-avatar-box">
-          <i class="fa-solid fa-robot"></i>
-          <span class="online-indicator"></span>
-        </div>
-        <div class="ai-header-info">
-          <h5>OM SS College AI <span class="ai-gpt-pill">ChatGPT Mode</span></h5>
-          <span class="ai-status-text"><i class="fa-solid fa-circle" style="color:#22c55e; font-size:0.55rem;"></i> Online • English &amp; Marathi</span>
-        </div>
-      </div>
-      <div class="ai-header-actions">
-        <button class="ai-action-btn" id="aiResetBtn" title="Clear Chat"><i class="fa-solid fa-rotate-right"></i></button>
-        <button class="ai-action-btn" id="aiCloseBtn" title="Close AI Assistant"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-    </div>
-
-    <!-- Quick Mode Bar -->
-    <div class="ai-mode-bar">
-      <span class="ai-mode-item active"><i class="fa-solid fa-brain"></i> College AI</span>
-      <button type="button" class="ai-mode-quick-btn" id="aiQuickGoogleBtn" title="Search on Google in English">
-        <i class="fa-brands fa-google"></i> Google Search (EN)
-      </button>
-      <button type="button" class="ai-mode-quick-btn" id="aiQuickGptBtn" title="Open in ChatGPT">
-        <i class="fa-solid fa-arrow-up-right-from-square"></i> ChatGPT Web
-      </button>
-    </div>
-
-    <!-- Chat Messages Body -->
-    <div class="ai-chat-body" id="aiChatBody">
-      <!-- Welcome Message -->
-      <div class="ai-message bot-msg">
-        <div class="ai-bubble">
-          <p><strong>Namaskar! Welcome to OM SS Pune College of Physiotherapy AI Assistant.</strong></p>
-          <p>You can ask me anything about B.P.T Admissions 2025-26, College Code <strong>06413</strong>, Stray Vacancy Rounds, Eligibility, Hostel, or general queries in English and Marathi!</p>
-          <div class="ai-quick-topics">
-            <span class="quick-chip" data-query="How to apply for B.P.T Admission 2025-26?">🎓 B.P.T Admission</span>
-            <span class="quick-chip" data-query="What is the College Code and Location?">📍 Code &amp; Location</span>
-            <span class="quick-chip" data-query="What is the Eligibility criteria for B.P.T?">📋 Eligibility &amp; NEET</span>
-            <span class="quick-chip" data-query="What is Stray Vacancy Round 1 schedule?">📅 Stray Vacancy Dates</span>
-            <span class="quick-chip" data-query="Admission helpline phone numbers">📞 Helplines</span>
-          </div>
-        </div>
-        <span class="msg-timestamp">Just now</span>
-      </div>
-    </div>
-
-    <!-- Chat Input Area -->
-    <div class="ai-chat-footer">
-      <form id="aiChatForm" class="ai-input-form">
-        <div class="ai-input-wrapper">
-          <input type="text" id="aiUserInput" placeholder="Ask AI anything in English or Marathi..." autocomplete="off">
-          <button type="button" class="ai-sub-btn" id="aiSearchGoogleInside" title="Search on Google in English">
-            <i class="fa-brands fa-google"></i>
-          </button>
-          <button type="button" class="ai-sub-btn" id="aiSearchGptInside" title="Ask directly on ChatGPT">
-            <i class="fa-solid fa-bolt"></i>
-          </button>
-        </div>
-        <button type="submit" class="ai-send-btn" id="aiSendBtn" aria-label="Send message">
-          <i class="fa-solid fa-paper-plane"></i>
-        </button>
-      </form>
-      <div class="ai-footer-note">
-        <span><i class="fa-solid fa-shield-halved"></i> Instant Answers • Connects with Google &amp; ChatGPT</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Admission Modal Form -->
+  <!-- ================= ADMISSION MODAL ================= -->
   <div class="modal-overlay" id="admissionModal">
     <div class="modal-window">
       <div class="modal-header">
-        <h4><i class="fa-solid fa-user-graduate"></i> B.P.T. Admission Enquiry 2025-26</h4>
+        <h4><i class="fa-solid fa-graduation-cap"></i> B.P.Th Admission Enquiry 2026-27</h4>
         <button class="close-modal-btn" id="modalCloseBtn">&times;</button>
       </div>
       <div class="modal-body">
-        <div style="background: #f0fdfa; border-left: 4px solid var(--secondary-teal); padding: 10px 14px; margin-bottom: 15px; font-size: 0.88rem;">
-          <strong>College Code: 06413</strong> | Urali Kanchan, Dist. Pune<br>
-          <span style="color:#d90429; font-weight:600;">Stray Vacancy Round 1 Open</span>
+        <div style="background: #f0fdfa; border-left: 4px solid var(--secondary-teal); padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem;">
+          <strong>Shiv Sangam Pune College of Physiotherapy</strong><br>
+          <span style="color:#b45309; font-weight:600;">College Code: 0000 | B.P.Th Admissions Open (2026-27)</span>
         </div>
         <form id="modalAdmissionForm">
           <div class="form-field">
@@ -2911,710 +1930,254 @@ img {
           </div>
           <div class="form-field">
             <label>Mobile Number (WhatsApp) *</label>
-            <input type="tel" id="modalStudentPhone" class="form-input" placeholder="e.g. 9422xxxxxx" required>
+            <input type="tel" id="modalStudentMobile" class="form-input" placeholder="10-digit mobile number" required pattern="[0-9]{10}">
           </div>
           <div class="form-field">
-            <label>Course Name</label>
-            <input type="text" class="form-input" value="B.P.T. (Bachelor of Physiotherapy - 5 Years)" readonly style="background: #f1f5f9; font-weight: 600;">
+            <label>Program *</label>
+            <input type="text" id="modalCourseSelect" class="form-input" value="B.P.Th (Bachelor of Physiotherapy - 5 Years)" readonly style="background:#f1f5f9; font-weight:700;">
           </div>
           <div class="form-field">
-            <label>NEET-UG Score / PCB %</label>
-            <input type="text" id="modalNeetScore" class="form-input" placeholder="e.g. NEET Score 280 / PCB 70%">
+            <label>12th Science PCB Marks (%)</label>
+            <input type="text" id="modalMarks" class="form-input" placeholder="e.g. 72% PCB">
           </div>
           <div class="form-field">
-            <label>Native Place / City</label>
-            <input type="text" id="modalStudentCity" class="form-input" placeholder="e.g. Pune, Baramati, Shirur, etc.">
+            <label>NEET-UG Score / Status</label>
+            <input type="text" id="modalNeet" class="form-input" placeholder="e.g. Appeared / Score">
           </div>
-          <button type="submit" class="btn-submit-inquiry" style="margin-top: 10px;">
-            <i class="fa-solid fa-paper-plane"></i> Submit Enquiry
+          <div class="form-field">
+            <label>City / Native District</label>
+            <input type="text" id="modalCity" class="form-input" placeholder="e.g. Pune, Latur...">
+          </div>
+          <button type="submit" class="btn-form-submit">
+            <i class="fa-solid fa-paper-plane"></i> Submit &amp; Connect with Admission Officer
           </button>
         </form>
       </div>
     </div>
   </div>
 
-  <!-- Custom JavaScript -->
+  <!-- ================= FLOATING WIDGETS (WHATSAPP & AI CHATBOT) ================= -->
+  <div class="floating-widgets-bar">
+    <div class="floating-ai-btn" id="floatingAiBtn">
+      <i class="fa-solid fa-robot" style="color:var(--accent-gold);"></i>
+      <span>Admission AI Assistant</span>
+    </div>
+    <a href="https://wa.me/918805029999?text=Hello%20Shiv%20Sangam%20College%20of%20Physiotherapy,%20I%20am%20inquiring%20about%20BPTh%20Admissions%20(Code:%200000)" target="_blank" class="floating-whatsapp-btn">
+      <i class="fa-brands fa-whatsapp" style="font-size:1.1rem;"></i>
+      <span>WhatsApp Helpdesk</span>
+    </a>
+  </div>
+
+  <!-- ================= AI CHAT WINDOW ================= -->
+  <div class="ai-chat-window" id="aiChatWindow" aria-hidden="true">
+    <div class="ai-chat-header">
+      <div class="ai-header-profile">
+        <div class="ai-avatar-box">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+        <div class="ai-header-info">
+          <h5>Shiv Sangam Admission Assistant</h5>
+          <span class="ai-status-text">● Online • B.P.Th (Code: 0000)</span>
+        </div>
+      </div>
+      <button class="close-modal-btn" id="aiCloseBtn" style="font-size:1.2rem;">&times;</button>
+    </div>
+
+    <div class="ai-chat-body" id="aiChatBody">
+      <div class="ai-bubble-bot">
+        👋 <strong>Hello &amp; Welcome!</strong> I am your Virtual Admission Assistant for <strong>Shiv Sangam Pune College of Physiotherapy (College Code: 0000)</strong>. How can I assist you with course details, eligibility, hospital postings, or campus visits?
+      </div>
+    </div>
+
+    <div class="ai-chips-bar">
+      <button type="button" class="ai-chip-btn" data-query="bpth">🎓 B.P.Th Course Details</button>
+      <button type="button" class="ai-chip-btn" data-query="code">🔢 College Code 0000</button>
+      <button type="button" class="ai-chip-btn" data-query="eligibility">📋 Eligibility &amp; NEET</button>
+      <button type="button" class="ai-chip-btn" data-query="leadership">🏛️ Leadership</button>
+      <button type="button" class="ai-chip-btn" data-query="hospital">🏥 Hospital Training</button>
+      <button type="button" class="ai-chip-btn" data-query="address">🏢 Campus Location</button>
+      <button type="button" class="ai-chip-btn" data-query="whatsapp">💬 Chat on WhatsApp</button>
+    </div>
+
+    <form class="ai-chat-footer" id="aiChatForm">
+      <input type="text" id="aiUserInput" class="ai-chat-input" placeholder="Type your inquiry here..." autocomplete="off">
+      <button type="submit" class="ai-chat-send"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- ================= JAVASCRIPT APPLICATION ================= -->
   <script>
-
-// Auto-remove Tiiny.host "Shared with tiiny.host | Upload for free" banner
-(function() {
-  function purgeTiinyBanner() {
-    // 1. Target any element with links to tiiny.host
-    const tiinyLinks = document.querySelectorAll('a[href*="tiiny.host"]');
-    tiinyLinks.forEach(link => {
-      let container = link;
-      while (container && container.parentElement && container.parentElement !== document.body && container.parentElement !== document.documentElement) {
-        container = container.parentElement;
-      }
-      if (container && container !== document.body && container !== document.documentElement) {
-        container.remove();
-      } else if (link.parentElement) {
-        link.parentElement.remove();
-      }
-    });
-
-    // 2. Target any container containing "Upload for free" text
-    document.querySelectorAll('div, footer, section').forEach(el => {
-      if (el !== document.body && el !== document.documentElement && !el.classList.contains('ai-chat-window')) {
-        if (el.innerText && el.innerText.includes('Upload for free') && (el.innerText.includes('tiiny.host') || el.innerText.includes('Shared with'))) {
-          el.remove();
-        }
-      }
-    });
-
-    // 3. Remove any purple fixed banner at bottom
-    document.querySelectorAll('body > div, body > footer').forEach(el => {
-      if (!el.classList.contains('ai-chat-window') && !el.classList.contains('modal-overlay')) {
-        const style = window.getComputedStyle(el);
-        if (style.position === 'fixed' && (style.bottom === '0px' || parseInt(style.bottom) <= 0)) {
-          if (el.innerText && (el.innerText.includes('tiiny') || el.innerText.includes('Upload for free'))) {
-            el.remove();
-          }
-        }
-      }
-    });
-  }
-
-  purgeTiinyBanner();
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', purgeTiinyBanner);
-  }
-  window.addEventListener('load', purgeTiinyBanner);
-  const interval = setInterval(purgeTiinyBanner, 150);
-  setTimeout(() => clearInterval(interval), 10000);
-
-  const observer = new MutationObserver(purgeTiinyBanner);
-  observer.observe(document.documentElement, { childList: true, subtree: true });
-})();
-
-// OM SS Pune College of Physiotherapy - Main JS
-
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Mobile Menu Toggle
-  const mobileToggleBtn = document.getElementById("mobileToggleBtn");
-  const navMenu = document.getElementById("navMenu");
-
-  if (mobileToggleBtn && navMenu) {
-    mobileToggleBtn.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
-      const icon = mobileToggleBtn.querySelector("i");
-      if (icon) {
-        if (navMenu.classList.contains("active")) {
-          icon.classList.remove("fa-bars");
-          icon.classList.add("fa-xmark");
-        } else {
-          icon.classList.remove("fa-xmark");
-          icon.classList.add("fa-bars");
-        }
-      }
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const navMenuList = document.getElementById("navMenuList");
+  if (mobileMenuBtn && navMenuList) {
+    mobileMenuBtn.addEventListener("click", () => {
+      navMenuList.classList.toggle("active");
     });
-
-    // Close menu when clicking a link on mobile
-    navMenu.querySelectorAll("a").forEach((link) => {
+    navMenuList.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
-        navMenu.classList.remove("active");
-        const icon = mobileToggleBtn.querySelector("i");
-        if (icon) {
-          icon.classList.remove("fa-xmark");
-          icon.classList.add("fa-bars");
-        }
+        navMenuList.classList.remove("active");
       });
     });
   }
 
-  // 2. Admission Modal Controls
-  const admissionModal = document.getElementById("admissionModal");
-  const openModalBtns = document.querySelectorAll(".btn-open-modal");
+  // 2. Admission Modal Trigger
+  const modal = document.getElementById("admissionModal");
   const modalCloseBtn = document.getElementById("modalCloseBtn");
+  const openModalBtns = document.querySelectorAll(".btn-open-modal");
 
-  const openModal = (e) => {
-    if (e) e.preventDefault();
-    if (admissionModal) {
-      admissionModal.classList.add("active");
-      document.body.style.overflow = "hidden";
-    }
+  const openModal = () => {
+    if (modal) modal.classList.add("active");
   };
-
   const closeModal = () => {
-    if (admissionModal) {
-      admissionModal.classList.remove("active");
-      document.body.style.overflow = "auto";
-    }
+    if (modal) modal.classList.remove("active");
   };
 
-  openModalBtns.forEach((btn) => {
-    btn.addEventListener("click", openModal);
+  openModalBtns.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      openModal();
+    });
   });
 
-  if (modalCloseBtn) {
-    modalCloseBtn.addEventListener("click", closeModal);
-  }
-
-  if (admissionModal) {
-    admissionModal.addEventListener("click", (e) => {
-      if (e.target === admissionModal) {
-        closeModal();
-      }
+  if (modalCloseBtn) modalCloseBtn.addEventListener("click", closeModal);
+  if (modal) {
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeModal();
     });
   }
 
   // 3. Modal Form Submission
-  const modalAdmissionForm = document.getElementById("modalAdmissionForm");
-  if (modalAdmissionForm) {
-    modalAdmissionForm.addEventListener("submit", (e) => {
+  const modalForm = document.getElementById("modalAdmissionForm");
+  if (modalForm) {
+    modalForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      const studentName = document.getElementById("modalStudentName")?.value || "Student";
-      const studentPhone = document.getElementById("modalStudentPhone")?.value || "";
+      const name = document.getElementById("modalStudentName")?.value || "Student";
+      const mobile = document.getElementById("modalStudentMobile")?.value || "";
+      const marks = document.getElementById("modalMarks")?.value || "";
+      const neet = document.getElementById("modalNeet")?.value || "";
+      const city = document.getElementById("modalCity")?.value || "";
 
-      alert(`Thank you, ${studentName}!\n\nYour B.P.T. Admission Enquiry for OM SS Pune College of Physiotherapy (College Code: 06413) has been registered successfully.\n\nOur admission counselor will contact you shortly on ${studentPhone}.\nHelplines: 9422472939 / 8805029999`);
-      modalAdmissionForm.reset();
+      const waMsg = encodeURIComponent(`Hello Admission Officer, I want to apply for B.P.Th (College Code: 0000) at Shiv Sangam Pune College of Physiotherapy, Phursungi.\nName: ${name}\nMobile: ${mobile}\n12th PCB Marks: ${marks}\nNEET Status: ${neet}\nCity: ${city}`);
+      alert(`Thank you, ${name}!\n\nYour application for B.P.Th (College Code: 0000) has been received by Shiv Sangam Pune College of Physiotherapy (Phursungi, Pune).\nOur admission counseling cell will contact you shortly at ${mobile}.`);
+      modalForm.reset();
       closeModal();
+      window.open(`https://wa.me/918805029999?text=${waMsg}`, '_blank');
     });
   }
 
   // 4. Contact Page Form Submission
-  const contactPageForm = document.getElementById("contactPageForm");
-  if (contactPageForm) {
-    contactPageForm.addEventListener("submit", (e) => {
+  const contactForm = document.getElementById("contactPageForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      const studentName = document.getElementById("contactFullName")?.value || "Student";
-      const studentPhone = document.getElementById("contactMobile")?.value || "";
+      const name = document.getElementById("contactFullName")?.value || "Student";
+      const mobile = document.getElementById("contactMobile")?.value || "";
+      const marks = document.getElementById("contactMarks")?.value || "";
+      const neet = document.getElementById("contactNeet")?.value || "";
+      const city = document.getElementById("contactCity")?.value || "";
 
-      alert(`Thank you, ${studentName}!\n\nYour enquiry has been received. Our team from OM SS Pune College of Physiotherapy, Urali Kanchan will get in touch with you at ${studentPhone}.`);
-      contactPageForm.reset();
+      const waMsg = encodeURIComponent(`Hello Shiv Sangam College of Physiotherapy, I have submitted an admission enquiry:\nName: ${name}\nMobile: ${mobile}\nProgram: B.P.Th (College Code: 0000)\n12th PCB Marks: ${marks}\nNEET Status: ${neet}\nCity: ${city}`);
+      alert(`Thank you, ${name}!\n\nYour enquiry has been received. Our admission counseling desk from Phursungi Pune campus will connect with you at ${mobile}.`);
+      contactForm.reset();
+      window.open(`https://wa.me/918805029999?text=${waMsg}`, '_blank');
     });
   }
 
-  // =========================================================================
-  // 5. Header Google Search Bar (English)
-  // =========================================================================
-  const navGoogleSearchForm = document.getElementById("navGoogleSearchForm");
-  const navGoogleSearchInput = document.getElementById("navGoogleSearchInput");
-
-  const searchGoogleInEnglish = (query) => {
-    const q = (query || "").trim();
-    if (!q) {
-      window.open("https://www.google.com/?hl=en", "_blank");
-      return;
-    }
-    const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(q)}&hl=en&lr=lang_en`;
-    window.open(searchUrl, "_blank");
-  };
-
-  const openChatGPT = (query) => {
-    const q = (query || "").trim();
-    if (!q) {
-      window.open("https://chatgpt.com/", "_blank");
-    } else {
-      window.open(`https://chatgpt.com/?q=${encodeURIComponent(q)}`, "_blank");
-    }
-  };
-
-  if (navGoogleSearchForm && navGoogleSearchInput) {
-    navGoogleSearchForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const query = navGoogleSearchInput.value.trim();
-      if (query) {
-        searchGoogleInEnglish(query);
-      } else {
-        navGoogleSearchInput.focus();
-      }
-    });
-  }
-
-  // Mobile Menu Search
-  const mobileGoogleSearchForm = document.getElementById("mobileGoogleSearchForm");
-  const mobileGoogleSearchInput = document.getElementById("mobileGoogleSearchInput");
-  if (mobileGoogleSearchForm && mobileGoogleSearchInput) {
-    mobileGoogleSearchForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const query = mobileGoogleSearchInput.value.trim();
-      if (query) {
-        searchGoogleInEnglish(query);
-      } else {
-        mobileGoogleSearchInput.focus();
-      }
-    });
-  }
-
-  // =========================================================================
-  // 6. Floating AI Assistant (ChatGPT Style)
-  // =========================================================================
-  const floatingAiBtn = document.getElementById("floatingAiBtn");
+  // 5. AI Chatbot Widget Logic
   const aiChatWindow = document.getElementById("aiChatWindow");
+  const floatingAiBtn = document.getElementById("floatingAiBtn");
   const aiCloseBtn = document.getElementById("aiCloseBtn");
-  const aiResetBtn = document.getElementById("aiResetBtn");
   const aiChatBody = document.getElementById("aiChatBody");
   const aiChatForm = document.getElementById("aiChatForm");
   const aiUserInput = document.getElementById("aiUserInput");
-  const aiQuickGoogleBtn = document.getElementById("aiQuickGoogleBtn");
-  const aiQuickGptBtn = document.getElementById("aiQuickGptBtn");
-  const aiSearchGoogleInside = document.getElementById("aiSearchGoogleInside");
-  const aiSearchGptInside = document.getElementById("aiSearchGptInside");
 
-  // Toggle Chat Window
-  const toggleAiWindow = () => {
-    if (!aiChatWindow) return;
-    const isActive = aiChatWindow.classList.contains("active");
-    if (isActive) {
-      aiChatWindow.classList.remove("active");
-      aiChatWindow.setAttribute("aria-hidden", "true");
-    } else {
-      aiChatWindow.classList.add("active");
-      aiChatWindow.setAttribute("aria-hidden", "false");
-      setTimeout(() => {
-        if (aiUserInput) aiUserInput.focus();
-      }, 200);
-    }
-  };
-
-  if (floatingAiBtn) {
-    floatingAiBtn.addEventListener("click", toggleAiWindow);
+  if (floatingAiBtn && aiChatWindow) {
+    floatingAiBtn.addEventListener("click", () => {
+      aiChatWindow.classList.toggle("active");
+    });
   }
-
-  if (aiCloseBtn) {
+  if (aiCloseBtn && aiChatWindow) {
     aiCloseBtn.addEventListener("click", () => {
-      if (aiChatWindow) {
-        aiChatWindow.classList.remove("active");
-        aiChatWindow.setAttribute("aria-hidden", "true");
-      }
+      aiChatWindow.classList.remove("active");
     });
   }
 
-  // Header quick buttons
-  if (aiQuickGoogleBtn) {
-    aiQuickGoogleBtn.addEventListener("click", () => {
-      const currentInput = aiUserInput ? aiUserInput.value.trim() : "";
-      if (currentInput) {
-        searchGoogleInEnglish(currentInput);
-      } else {
-        const query = prompt("Enter topic to search on Google in English:", "OM SS Pune College of Physiotherapy BPT Admission");
-        if (query) searchGoogleInEnglish(query);
-      }
-    });
-  }
-
-  if (aiQuickGptBtn) {
-    aiQuickGptBtn.addEventListener("click", () => {
-      const currentInput = aiUserInput ? aiUserInput.value.trim() : "";
-      openChatGPT(currentInput || "Explain Bachelor of Physiotherapy (BPT) scope, admission and career opportunities");
-    });
-  }
-
-  // Inside input shortcuts
-  if (aiSearchGoogleInside) {
-    aiSearchGoogleInside.addEventListener("click", () => {
-      const text = aiUserInput ? aiUserInput.value.trim() : "";
-      searchGoogleInEnglish(text || "OM SS Pune College of Physiotherapy 06413");
-    });
-  }
-
-  if (aiSearchGptInside) {
-    aiSearchGptInside.addEventListener("click", () => {
-      const text = aiUserInput ? aiUserInput.value.trim() : "";
-      openChatGPT(text || "Explain Bachelor of Physiotherapy BPT career and syllabus");
-    });
-  }
-
-  // Reset conversation to initial state
-  const resetAiChat = () => {
+  const appendBotMsg = (html) => {
     if (!aiChatBody) return;
-    aiChatBody.innerHTML = `
-      <div class="ai-message bot-msg">
-        <div class="ai-bubble">
-          <p><strong>Namaskar! Welcome to OM SS Pune College of Physiotherapy AI Assistant.</strong></p>
-          <p>You can ask me anything about B.P.T Admissions 2025-26, College Code <strong>06413</strong>, Stray Vacancy Rounds, Eligibility, Hostel, or general queries in English and Marathi!</p>
-          <div class="ai-quick-topics">
-            <span class="quick-chip" data-query="How to apply for B.P.T Admission 2025-26?">🎓 B.P.T Admission</span>
-            <span class="quick-chip" data-query="What is the College Code and Location?">📍 Code &amp; Location</span>
-            <span class="quick-chip" data-query="What is the Eligibility criteria for B.P.T?">📋 Eligibility &amp; NEET</span>
-            <span class="quick-chip" data-query="What is Stray Vacancy Round 1 schedule?">📅 Stray Vacancy Dates</span>
-            <span class="quick-chip" data-query="Admission helpline phone numbers">📞 Helplines</span>
-          </div>
-        </div>
-        <span class="msg-timestamp">Just now</span>
-      </div>
-    `;
-    attachChipListeners();
+    const div = document.createElement("div");
+    div.className = "ai-bubble-bot";
+    div.innerHTML = html;
+    aiChatBody.appendChild(div);
+    aiChatBody.scrollTop = aiChatBody.scrollHeight;
   };
 
-  if (aiResetBtn) {
-    aiResetBtn.addEventListener("click", resetAiChat);
-  }
-
-  // Knowledge Base & AI Engine
-  const generateAIResponse = (userText) => {
-    const raw = (userText || "").toLowerCase().trim();
-
-    // 1. College Code
-    if (raw.includes("code") || raw.includes("cet code") || raw.includes("neet code") || raw.includes("06413")) {
-      return {
-        reply: `
-          <p>📌 <strong>College Code: 06413</strong></p>
-          <p>OM SS Pune College of Physiotherapy (Kranti Sangam Foundation), Urali Kanchan, Dist. Pune.</p>
-          <ul>
-            <li><strong>State CET Cell / NEET Code:</strong> 06413</li>
-            <li><strong>Course:</strong> B.P.T. (Bachelor of Physiotherapy)</li>
-            <li><strong>Affiliation:</strong> MUHS, Nashik (Maharashtra)</li>
-          </ul>
-        `,
-        actions: [
-          { text: "Apply Now", action: "applyModal" },
-          { text: "Helpline: 9422472939", href: "tel:9422472939" },
-          { text: "Search on Google", google: "College Code 06413 OM SS Pune College of Physiotherapy" }
-        ]
-      };
-    }
-
-    // 2. Stray Vacancy Round / Dates / Schedule
-    if (raw.includes("stray") || raw.includes("schedule") || raw.includes("date") || raw.includes("round") || raw.includes("dates")) {
-      return {
-        reply: `
-          <p>📢 <strong>B.P.T. Stray Vacancy Round 1 Schedule (2025-26):</strong></p>
-          <ul>
-            <li><strong>Online Preference Form Filling:</strong> 12-Dec to 14-Dec-2025 (upto 5:30 PM)</li>
-            <li><strong>Publication of Selection List:</strong> 15-Dec-2025</li>
-            <li><strong>Physical Joining &amp; Document Verification:</strong> 16-Dec to 18-Dec-2025 (5:30 PM)</li>
-          </ul>
-          <p>College Code: <strong>06413</strong> | Please keep all original documents &amp; DD ready.</p>
-        `,
-        actions: [
-          { text: "Register Enquiry", action: "applyModal" },
-          { text: "Call 9422472939", href: "tel:9422472939" },
-          { text: "WhatsApp Us", href: "https://wa.me/919422472939?text=Hello%2C%20I%20want%20details%20for%20Stray%20Vacancy%20Round%201" }
-        ]
-      };
-    }
-
-    // 3. Admission Process / How to Apply
-    if (raw.includes("admission") || raw.includes("apply") || raw.includes("pravesh") || raw.includes("form") || raw.includes("kashi ghyaychi") || raw.includes("process")) {
-      return {
-        reply: `
-          <p>🎓 <strong>B.P.T. Admission Process (Academic Year 2025-26):</strong></p>
-          <ol>
-            <li>Fill the State CET Cell Maharashtra B.P.T Preference Form using College Code: <strong>06413</strong>.</li>
-            <li>Candidates must have appeared for NEET-UG 2025 and passed 12th Science (PCB).</li>
-            <li>You can submit an instant Admission Enquiry directly on our website or visit the campus at Urali Kanchan, Pune.</li>
-          </ol>
-        `,
-        actions: [
-          { text: "Open Admission Form", action: "applyModal" },
-          { text: "Call 8805029999", href: "tel:8805029999" },
-          { text: "Ask on ChatGPT", gpt: "How to prepare documents for Maharashtra BPT Physiotherapy Stray Vacancy admission?" }
-        ]
-      };
-    }
-
-    // 4. Eligibility / NEET / Cutoff / Marks
-    if (raw.includes("eligib") || raw.includes("neet") || raw.includes("cutoff") || raw.includes("mark") || raw.includes("pcb") || raw.includes("criteria") || raw.includes("percentage")) {
-      return {
-        reply: `
-          <p>📋 <strong>Eligibility Criteria for B.P.T:</strong></p>
-          <ul>
-            <li><strong>H.S.C (10+2):</strong> Passed 12th standard examination with Physics, Chemistry, Biology (PCB) and English.</li>
-            <li><strong>Minimum PCB Marks:</strong> 50% for Open/General category; 40% for Reserved categories (SC/ST/OBC).</li>
-            <li><strong>NEET-UG:</strong> Candidate must have appeared and qualified in NEET-UG 2025 as per State CET Cell guidelines.</li>
-          </ul>
-        `,
-        actions: [
-          { text: "Check My Eligibility", action: "applyModal" },
-          { text: "Call Admission Desk", href: "tel:9422472939" },
-          { text: "Search Cutoffs on Google", google: "MUHS Maharashtra BPT NEET cutoff marks" }
-        ]
-      };
-    }
-
-    // 5. Course Duration / Syllabus / BPT
-    if (raw.includes("course") || raw.includes("duration") || raw.includes("year") || raw.includes("syllabus") || raw.includes("internship") || raw.includes("bpt") || raw.includes("subject")) {
-      return {
-        reply: `
-          <p>📚 <strong>B.P.T Course Overview:</strong></p>
-          <ul>
-            <li><strong>Degree:</strong> Bachelor of Physiotherapy (B.P.T)</li>
-            <li><strong>Duration:</strong> 5 Years (4.5 Years Academic Study + 6 Months Compulsory Rotating Internship).</li>
-            <li><strong>Core Departments:</strong> Musculoskeletal, Neuro-Physiotherapy, Cardio-Respiratory, Sports Physiotherapy, Community Health.</li>
-            <li><strong>Affiliated to:</strong> MUHS Nashik (Maharashtra University of Health Sciences).</li>
-          </ul>
-        `,
-        actions: [
-          { text: "View Syllabus Section", href: "#syllabus" },
-          { text: "Ask ChatGPT on Syllabus", gpt: "Detailed syllabus of MUHS Bachelor of Physiotherapy 4.5 years course" }
-        ]
-      };
-    }
-
-    // 6. Location / Address / Where is college
-    if (raw.includes("location") || raw.includes("address") || raw.includes("where") || raw.includes("rali") || raw.includes("pune") || raw.includes("kuthe")) {
-      return {
-        reply: `
-          <p>📍 <strong>College Location &amp; Address:</strong></p>
-          <p><strong>Kranti Sangam Foundation's OM SS PUNE COLLEGE OF PHYSIOTHERAPY</strong><br>
-          At Post: Urali Kanchan, Taluka: Haveli, Dist. Pune, Maharashtra - 412202.<br>
-          Located conveniently along the Pune - Solapur National Highway, well connected by local trains, buses, and private transport.</p>
-        `,
-        actions: [
-          { text: "Google Maps / Search", google: "OM SS Pune College of Physiotherapy Urali Kanchan address" },
-          { text: "Helpline: 9422472939", href: "tel:9422472939" }
-        ]
-      };
-    }
-
-    // 7. Contact / Helpline / Phone / Email
-    if (raw.includes("contact") || raw.includes("phone") || raw.includes("call") || raw.includes("mobile") || raw.includes("number") || raw.includes("helpline") || raw.includes("email")) {
-      return {
-        reply: `
-          <p>📞 <strong>Official Contact &amp; Helplines:</strong></p>
-          <ul>
-            <li><strong>Admission Helpline 1:</strong> <a href="tel:9422472939">+91 9422472939</a></li>
-            <li><strong>Admission Helpline 2:</strong> <a href="tel:8805029999">+91 8805029999</a></li>
-            <li><strong>Email:</strong> <a href="mailto:krantisangamfoundation@gmail.com">krantisangamfoundation@gmail.com</a></li>
-            <li><strong>Website:</strong> <a href="https://ksf.org.in" target="_blank">ksf.org.in</a></li>
-          </ul>
-        `,
-        actions: [
-          { text: "Call Now (9422472939)", href: "tel:9422472939" },
-          { text: "Chat on WhatsApp", href: "https://wa.me/919422472939" }
-        ]
-      };
-    }
-
-    // 8. Facilities / Labs / Hospital / Hostel
-    if (raw.includes("hostel") || raw.includes("lab") || raw.includes("facilit") || raw.includes("hospital") || raw.includes("mess") || raw.includes("bus")) {
-      return {
-        reply: `
-          <p>🏥 <strong>Campus Infrastructure &amp; Clinical Facilities:</strong></p>
-          <ul>
-            <li><strong>Clinical Hospital:</strong> Affiliated with 100+ Bedded Multi-Speciality Hospitals for clinical rotation &amp; bedside patient training.</li>
-            <li><strong>Laboratories:</strong> Electrotherapy Lab, Exercise Therapy Gymnasium, Anatomy &amp; Physiology Demonstration Labs.</li>
-            <li><strong>Hostel &amp; Mess:</strong> Separate secure hostels for boys and girls with hygienic mess and 24x7 security.</li>
-            <li><strong>Library:</strong> Rich medical library with journals, digital resources, and study halls.</li>
-          </ul>
-        `,
-        actions: [
-          { text: "View Facilities", href: "#facilitiesSection" },
-          { text: "Ask ChatGPT on Physiotherapy Labs", gpt: "What equipment is essential in a modern Physiotherapy college OPD lab?" }
-        ]
-      };
-    }
-
-    // 9. Fees & Scholarships
-    if (raw.includes("fee") || raw.includes("fees") || raw.includes("scholarship") || raw.includes("cost") || raw.includes("paisa") || raw.includes("shulk")) {
-      return {
-        reply: `
-          <p>💰 <strong>Fee Structure &amp; Government Scholarships:</strong></p>
-          <ul>
-            <li>Fees are strictly decided as per the <strong>Fee Regulating Authority (FRA)</strong>, Govt. of Maharashtra &amp; MUHS Nashik norms.</li>
-            <li><strong>Government Scholarships:</strong> Eligible students receive benefits under EBC, SC/ST, VJNT, OBC, and Minority scholarship schemes as per Maharashtra Govt. rules.</li>
-            <li>For the exact fee breakdown for 2025-26, please contact our admission desk directly.</li>
-          </ul>
-        `,
-        actions: [
-          { text: "Contact Admission Desk", href: "tel:9422472939" },
-          { text: "Fill Enquiry Form", action: "applyModal" }
-        ]
-      };
-    }
-
-    // 10. Scope / Career / Salary after BPT
-    if (raw.includes("scope") || raw.includes("career") || raw.includes("salary") || raw.includes("job") || raw.includes("future")) {
-      return {
-        reply: `
-          <p>🌟 <strong>Career Opportunities after B.P.T:</strong></p>
-          <ul>
-            <li><strong>Hospitals &amp; ICUs:</strong> Consultant Physiotherapist in Multi-specialty hospitals.</li>
-            <li><strong>Sports &amp; Fitness:</strong> Sports Physiotherapist for state/national teams, fitness clubs, BCCI/IPL.</li>
-            <li><strong>Private Practice:</strong> Start your independent Physiotherapy &amp; Rehabilitation Clinic.</li>
-            <li><strong>Higher Studies &amp; Abroad:</strong> M.P.T (Master of Physiotherapy) or licensing to practice in UK (NHS), USA, Canada, Australia, and UAE.</li>
-          </ul>
-        `,
-        actions: [
-          { text: "Search BPT Scope on Google", google: "Career scope and salary of BPT Physiotherapist in India and abroad" },
-          { text: "Ask ChatGPT in Depth", gpt: "What is the complete career path and highest paying specializations in Physiotherapy?" }
-        ]
-      };
-    }
-
-    // 11. Greetings / Casual
-    if (raw.includes("hello") || raw.includes("hi") || raw.includes("hey") || raw.includes("namaskar") || raw.includes("namaste") || raw.includes("suprabhat")) {
-      return {
-        reply: `
-          <p>Namaskar! 😊 How can I help you today regarding <strong>OM SS Pune College of Physiotherapy</strong>?</p>
-          <p>You can ask about B.P.T Admission, Stray Vacancy dates, College Code (06413), Eligibility, or search Google &amp; ChatGPT!</p>
-        `,
-        actions: [
-          { text: "Apply for B.P.T", action: "applyModal" },
-          { text: "College Code 06413", action: "sendPrompt", prompt: "College Code 06413" },
-          { text: "Stray Vacancy Schedule", action: "sendPrompt", prompt: "Stray Vacancy Schedule" }
-        ]
-      };
-    }
-
-    // 12. General / AI Question Fallback
-    return {
-      reply: `
-        <p>🤖 <strong>AI Assistant Response:</strong></p>
-        <p>I have processed your query regarding: <em>"${escapeHTML(userText)}"</em>.</p>
-        <p>For official college matters (B.P.T admissions, College Code <strong>06413</strong>, Stray Vacancy, MUHS), our admission counselors are ready on <strong>+91 9422472939 / 8805029999</strong>.</p>
-        <p>Would you like to search this topic on Google (English) or ask ChatGPT for an in-depth answer?</p>
-      `,
-      actions: [
-        { text: "🔍 Search on Google (EN)", google: userText },
-        { text: "⚡ Ask on ChatGPT", gpt: userText },
-        { text: "📞 Call College Desk", href: "tel:9422472939" }
-      ]
-    };
-  };
-
-  const escapeHTML = (str) => {
-    return (str || "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#039;");
-  };
-
-  const scrollToBottom = () => {
-    if (aiChatBody) {
-      aiChatBody.scrollTop = aiChatBody.scrollHeight;
-    }
-  };
-
-  const appendUserMessage = (text) => {
+  const appendUserMsg = (text) => {
     if (!aiChatBody) return;
-    const msgDiv = document.createElement("div");
-    msgDiv.className = "ai-message user-msg";
-    msgDiv.innerHTML = `
-      <div class="ai-bubble">${escapeHTML(text)}</div>
-      <span class="msg-timestamp">Just now</span>
-    `;
-    aiChatBody.appendChild(msgDiv);
-    scrollToBottom();
+    const div = document.createElement("div");
+    div.className = "ai-bubble-user";
+    div.textContent = text;
+    aiChatBody.appendChild(div);
+    aiChatBody.scrollTop = aiChatBody.scrollHeight;
   };
 
-  const appendTypingIndicator = () => {
-    if (!aiChatBody) return null;
-    const typingDiv = document.createElement("div");
-    typingDiv.className = "ai-message bot-msg ai-typing-wrapper";
-    typingDiv.innerHTML = `
-      <div class="ai-typing-indicator">
-        <span></span><span></span><span></span>
-      </div>
-    `;
-    aiChatBody.appendChild(typingDiv);
-    scrollToBottom();
-    return typingDiv;
+  const botResponses = {
+    bpth: "<strong>Bachelor of Physiotherapy (B.P.Th):</strong><br>• Duration: 5 Years (4.5 academic years + 6 months mandatory rotatory clinical internship) under MUHS Nashik norms.<br>• Core Wings: Orthopedic, Neurology, Cardio-Pulmonary, Kinesiotherapy, and Sports Rehabilitation.",
+    code: "<strong>College Code: 0000</strong><br>Shiv Sangam Pune College of Physiotherapy (Phursungi, Tal. Haveli, Dist. Pune). Managed by Vivekanand Yuvak Mandal (Reg. No: MAHA/10600/Latur).",
+    eligibility: "<strong>B.P.Th Admission Eligibility:</strong><br>• 12th Science (HSC) passed with Physics, Chemistry, and Biology (PCB).<br>• Minimum PCB Aggregate: <strong>50% for Open Category</strong>, <strong>40% for Reserved Category</strong>.<br>• Valid non-zero score in <strong>NEET-UG</strong> entrance exam.",
+    leadership: "<strong>Institutional Leadership:</strong><br>• <strong>President:</strong> Hon. Shri Raghunath Patil<br>• <strong>Secretary:</strong> Hon. Shri Shivling Jevle<br>• <strong>Sponsoring Trust:</strong> Vivekanand Yuvak Mandal (Reg. No: MAHA/10600/Latur)",
+    hospital: "<strong>Attached Multi-Specialty Hospital:</strong><br>Our students get daily clinical bedside postings, hands-on patient evaluation in live OPDs, post-surgical mobilization in ICU wards, and specialized sports injury treatment.",
+    address: "<strong>Campus Address:</strong><br>Shiv Sangam Pune College of Physiotherapy<br>Phursungi, Tal. Haveli, Dist. Pune, Maharashtra - 412308 (Hadapsar-Saswad Road Corridor).<br>Helplines: +91 88050 29999 / +91 94224 72393.",
+    whatsapp: "Connect directly with our Admission Desk on WhatsApp:<br><a href='https://wa.me/918805029999?text=Hello%20Admission%20Officer,%20I%20need%20details%20for%20BPTh%20Admissions%20(Code:%200000)' target='_blank' style='color:#028090; font-weight:800;'><i class='fa-brands fa-whatsapp'></i> Click to Chat on WhatsApp (+91 88050 29999)</a>"
   };
 
-  const appendBotMessage = (content, actions = []) => {
-    if (!aiChatBody) return;
-    const msgDiv = document.createElement("div");
-    msgDiv.className = "ai-message bot-msg";
-
-    let actionsHTML = "";
-    if (actions && actions.length > 0) {
-      actionsHTML = `<div class="msg-actions-row">` + actions.map(act => {
-        if (act.action === "applyModal") {
-          return `<button type="button" class="msg-action-chip btn-trigger-modal"><i class="fa-solid fa-graduation-cap"></i> ${act.text}</button>`;
-        } else if (act.google) {
-          return `<button type="button" class="msg-action-chip btn-trigger-google" data-google="${escapeHTML(act.google)}"><i class="fa-brands fa-google"></i> ${act.text}</button>`;
-        } else if (act.gpt) {
-          return `<button type="button" class="msg-action-chip btn-trigger-gpt" data-gpt="${escapeHTML(act.gpt)}"><i class="fa-solid fa-bolt"></i> ${act.text}</button>`;
-        } else if (act.action === "sendPrompt") {
-          return `<button type="button" class="msg-action-chip btn-trigger-prompt" data-prompt="${escapeHTML(act.prompt)}"><i class="fa-solid fa-comment-dots"></i> ${act.text}</button>`;
-        } else if (act.href) {
-          return `<a href="${act.href}" class="msg-action-chip" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> ${act.text}</a>`;
-        }
-        return "";
-      }).join("") + `</div>`;
-    }
-
-    msgDiv.innerHTML = `
-      <div class="ai-bubble">
-        ${content}
-        ${actionsHTML}
-      </div>
-      <span class="msg-timestamp">Just now</span>
-    `;
-
-    aiChatBody.appendChild(msgDiv);
-    scrollToBottom();
-    attachMessageActionListeners(msgDiv);
-  };
-
-  const attachMessageActionListeners = (container) => {
-    // Open admission modal
-    container.querySelectorAll(".btn-trigger-modal").forEach(btn => {
-      btn.addEventListener("click", () => {
-        openModal();
-      });
-    });
-
-    // Google search action
-    container.querySelectorAll(".btn-trigger-google").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const query = btn.getAttribute("data-google");
-        searchGoogleInEnglish(query);
-      });
-    });
-
-    // ChatGPT action
-    container.querySelectorAll(".btn-trigger-gpt").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const query = btn.getAttribute("data-gpt");
-        openChatGPT(query);
-      });
-    });
-
-    // Send prompt directly
-    container.querySelectorAll(".btn-trigger-prompt").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const prompt = btn.getAttribute("data-prompt");
-        processUserInput(prompt);
-      });
-    });
-  };
-
-  const processUserInput = (text) => {
-    const query = (text || "").trim();
-    if (!query) return;
-
-    appendUserMessage(query);
-
-    const typingEl = appendTypingIndicator();
+  const processQuery = (query) => {
+    const q = query.toLowerCase().trim();
+    if (!q) return;
+    appendUserMsg(query);
 
     setTimeout(() => {
-      if (typingEl && typingEl.parentNode) {
-        typingEl.parentNode.removeChild(typingEl);
+      let resp = "";
+      if (q.includes("bpth") || q.includes("b.p.th") || q.includes("course") || q.includes("degree")) {
+        resp = botResponses.bpth;
+      } else if (q.includes("code") || q.includes("0000")) {
+        resp = botResponses.code;
+      } else if (q.includes("eligib") || q.includes("neet") || q.includes("marks")) {
+        resp = botResponses.eligibility;
+      } else if (q.includes("raghunath") || q.includes("patil") || q.includes("jevle") || q.includes("president") || q.includes("secretary") || q.includes("leader")) {
+        resp = botResponses.leadership;
+      } else if (q.includes("hospital") || q.includes("bedside") || q.includes("opd") || q.includes("icu")) {
+        resp = botResponses.hospital;
+      } else if (q.includes("address") || q.includes("location") || q.includes("campus") || q.includes("where")) {
+        resp = botResponses.address;
+      } else if (q.includes("whatsapp") || q.includes("phone") || q.includes("contact") || q.includes("call")) {
+        resp = botResponses.whatsapp;
+      } else {
+        resp = "Thank you for reaching out! For detailed admission guidance, fee structure, and document checklist, please click below to chat directly with our admission coordinator on WhatsApp:<br><a href='https://wa.me/918805029999?text=Hello%20Admission%20Officer' target='_blank' style='color:#028090; font-weight:800;'><i class='fa-brands fa-whatsapp'></i> Chat on WhatsApp (+91 88050 29999)</a>";
       }
-      const aiData = generateAIResponse(query);
-      appendBotMessage(aiData.reply, aiData.actions);
-    }, 450);
+      appendBotMsg(resp);
+    }, 300);
   };
+
+  document.querySelectorAll(".ai-chip-btn").forEach(chip => {
+    chip.addEventListener("click", () => {
+      const q = chip.getAttribute("data-query");
+      processQuery(chip.innerText);
+    });
+  });
 
   if (aiChatForm && aiUserInput) {
     aiChatForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      const text = aiUserInput.value.trim();
-      if (text) {
-        processUserInput(text);
+      const val = aiUserInput.value.trim();
+      if (val) {
+        processQuery(val);
         aiUserInput.value = "";
       }
     });
   }
-
-  const attachChipListeners = () => {
-    document.querySelectorAll(".quick-chip").forEach((chip) => {
-      chip.addEventListener("click", () => {
-        const query = chip.getAttribute("data-query") || chip.innerText;
-        processUserInput(query);
-      });
-    });
-  };
-
-  attachChipListeners();
 });
-
-</script>
+  </script>
 </body>
 </html>
